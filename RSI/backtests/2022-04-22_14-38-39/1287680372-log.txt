@@ -1,0 +1,4 @@
+2013-01-01 00:00:00 Launching analysis for 1287680372 with LEAN Engine v2.5.0.0
+2013-01-30 00:00:00 Warning: all market orders sent using daily data, or market orders sent after hours are automatically converted into MarketOnOpen orders.
+2013-01-30 00:00:00 Purchased SPY on 2013-01-30
+2015-01-01 00:00:00 Algorithm Id:(1287680372) completed in 0.87 seconds at 5k data points per second. Processing total of 4,537 data points.

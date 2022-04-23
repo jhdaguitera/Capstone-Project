@@ -1,0 +1,61 @@
+2021-01-01 00:00:00 Launching analysis for 1884919551 with LEAN Engine v2.5.0.0
+2021-01-01 00:00:00 Initilize is complete
+2021-01-01 00:00:00 Usage of QCAlgorithm.OnEndOfDay() without a symbol will be deprecated August 2021. Always use a symbol when overriding this method: OnEndOfDay(symbol)
+2021-06-30 00:00:00 RSI is greater then 70
+2021-06-30 00:00:00 Market order was closed to SELL
+2021-07-01 00:00:00 RSI is greater then 70
+2021-07-01 00:00:00 Market order was closed to SELL
+2021-07-02 00:00:00 RSI is greater then 70
+2021-07-02 00:00:00 Market order was closed to SELL
+2021-07-03 00:00:00 RSI is greater then 70
+2021-07-03 00:00:00 Market order was closed to SELL
+2021-07-07 00:00:00 RSI is greater then 70
+2021-07-07 00:00:00 Market order was closed to SELL
+2021-07-08 00:00:00 RSI is greater then 70
+2021-07-08 00:00:00 Market order was closed to SELL
+2021-07-09 00:00:00 RSI is greater then 70
+2021-07-09 00:00:00 Market order was closed to SELL
+2021-07-10 00:00:00 RSI is greater then 70
+2021-07-10 00:00:00 Market order was closed to SELL
+2021-07-13 00:00:00 RSI is greater then 70
+2021-07-13 00:00:00 Market order was closed to SELL
+2021-07-14 00:00:00 RSI is greater then 70
+2021-07-14 00:00:00 Market order was closed to SELL
+2021-07-15 00:00:00 RSI is greater then 70
+2021-07-15 00:00:00 Market order was closed to SELL
+2021-07-16 00:00:00 RSI is greater then 70
+2021-07-16 00:00:00 Market order was closed to SELL
+2021-07-27 00:00:00 RSI is greater then 70
+2021-07-27 00:00:00 Market order was closed to SELL
+2021-07-28 00:00:00 RSI is greater then 70
+2021-07-28 00:00:00 Market order was closed to SELL
+2021-09-01 00:00:00 RSI is greater then 70
+2021-09-01 00:00:00 Market order was closed to SELL
+2021-09-03 00:00:00 RSI is greater then 70
+2021-09-03 00:00:00 Market order was closed to SELL
+2021-09-08 00:00:00 RSI is greater then 70
+2021-09-08 00:00:00 Market order was closed to SELL
+2021-09-09 00:00:00 RSI is greater then 70
+2021-09-09 00:00:00 Market order was closed to SELL
+2021-10-06 00:00:00 RSI is less then 30
+2021-10-06 00:00:00 Market order was placed to BUY
+2021-10-06 00:00:00 Order Error: id: 1, Insufficient buying power to complete order (Value:309050.0069), Reason: Id: 1, Initial Margin: 309050.00686645508, Free Margin: 10000
+2021-11-03 00:00:00 RSI is greater then 70
+2021-11-03 00:00:00 Market order was closed to SELL
+2021-11-04 00:00:00 RSI is greater then 70
+2021-11-04 00:00:00 Market order was closed to SELL
+2021-11-05 00:00:00 RSI is greater then 70
+2021-11-05 00:00:00 Market order was closed to SELL
+2021-11-06 00:00:00 RSI is greater then 70
+2021-11-06 00:00:00 Market order was closed to SELL
+2021-11-09 00:00:00 RSI is greater then 70
+2021-11-09 00:00:00 Market order was closed to SELL
+2021-11-10 00:00:00 RSI is greater then 70
+2021-11-10 00:00:00 Market order was closed to SELL
+2021-11-11 00:00:00 RSI is greater then 70
+2021-11-11 00:00:00 Market order was closed to SELL
+2021-11-20 00:00:00 RSI is greater then 70
+2021-11-20 00:00:00 Market order was closed to SELL
+2021-11-23 00:00:00 RSI is greater then 70
+2021-11-23 00:00:00 Market order was closed to SELL
+2022-01-01 00:00:00 Algorithm Id:(1884919551) completed in 0.45 seconds at 2k data points per second. Processing total of 688 data points.

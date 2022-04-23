@@ -1,0 +1,8 @@
+2013-01-01 00:00:00 Launching analysis for 1867427635 with LEAN Engine v2.5.0.0
+2013-01-30 00:00:00 Warning: all market orders sent using daily data, or market orders sent after hours are automatically converted into MarketOnOpen orders.
+2013-01-30 00:00:00 Purchased SPY on 2013-01-30
+2013-01-30 16:00:00 Runtime Error: AttributeError : 'IndicatorSuiteAlgorithm' object has no attribute 'plt'
+  at update_plots
+    self.plt.Plot('RSI' in main.py: line 140
+
+2013-01-30 16:00:00 Algorithm Id:(1867427635) completed in 0.51 seconds at 0k data points per second. Processing total of 189 data points.

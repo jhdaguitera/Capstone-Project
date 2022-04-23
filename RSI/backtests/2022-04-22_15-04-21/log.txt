@@ -1,0 +1,143 @@
+2022-04-22T22:04:25.3150094Z TRACE:: Config.Get(): Configuration key not found. Key: data-directory - Using default value: ../../../Data/
+2022-04-22T22:04:25.3175318Z TRACE:: Config.Get(): Configuration key not found. Key: version-id - Using default value: 
+2022-04-22T22:04:25.3178054Z TRACE:: Config.Get(): Configuration key not found. Key: cache-location - Using default value: /Lean/Data
+2022-04-22T22:04:25.3181737Z TRACE:: Engine.Main(): LEAN ALGORITHMIC TRADING ENGINE v2.5.0.0 Mode: DEBUG (64bit) Host: DESKTOP-0LAT4UV
+2022-04-22T22:04:25.3234329Z TRACE:: Engine.Main(): Started 10:04 PM
+2022-04-22T22:04:25.3259644Z TRACE:: Config.Get(): Configuration key not found. Key: lean-manager-type - Using default value: LocalLeanManager
+2022-04-22T22:04:25.3435440Z TRACE:: JobQueue.NextJob(): Selected /LeanCLI/main.py
+2022-04-22T22:04:25.3991949Z TRACE:: Config.GetValue(): scheduled-event-leaky-bucket-capacity - Using default value: 120
+2022-04-22T22:04:25.3995990Z TRACE:: Config.GetValue(): scheduled-event-leaky-bucket-time-interval-minutes - Using default value: 1440
+2022-04-22T22:04:25.3998265Z TRACE:: Config.GetValue(): scheduled-event-leaky-bucket-refill-amount - Using default value: 18
+2022-04-22T22:04:25.4068836Z TRACE:: Config.Get(): Configuration key not found. Key: job-organization-id - Using default value: 
+2022-04-22T22:04:25.4077821Z TRACE:: Config.Get(): Configuration key not found. Key: data-permission-manager - Using default value: DataPermissionManager
+2022-04-22T22:04:25.4185604Z TRACE:: AlgorithmManager.CreateTokenBucket(): Initializing LeakyBucket: Capacity: 120 RefillAmount: 18 TimeInterval: 1440
+2022-04-22T22:04:25.4198771Z TRACE:: Config.GetValue(): algorithm-manager-time-loop-maximum - Using default value: 20
+2022-04-22T22:04:25.4304154Z TRACE:: TextSubscriptionDataSourceReader.SetCacheSize(): Setting cache size to 71582788 items
+2022-04-22T22:04:25.6365314Z TRACE:: Config.GetValue(): algorithm-creation-timeout - Using default value: 90
+2022-04-22T22:04:25.6407390Z TRACE:: PythonInitializer.Initialize(): start...
+2022-04-22T22:04:26.3911488Z TRACE:: PythonInitializer.Initialize(): ended
+2022-04-22T22:04:26.3952547Z TRACE:: AlgorithmPythonWrapper(): Python version 3.6.8 |Anaconda, Inc.| (default, Dec 30 2018, 01:25:33) 
+[GCC 7.3.0]: Importing python module main
+2022-04-22T22:04:28.0215152Z TRACE:: AlgorithmPythonWrapper(): main successfully imported.
+2022-04-22T22:04:28.0281034Z TRACE:: AlgorithmPythonWrapper(): Creating IAlgorithm instance.
+2022-04-22T22:04:28.0363483Z TRACE:: Config.GetValue(): api-data-update-period - Using default value: 1
+2022-04-22T22:04:28.1449582Z TRACE:: Config.GetValue(): mute-python-library-logging - Using default value: True
+2022-04-22T22:04:28.1586960Z TRACE:: LocalObjectStore.Initialize(): Storage Root: /Storage/QCAlgorithm. StorageFileCount 100. StorageLimitMB 5
+2022-04-22T22:04:28.1736991Z TRACE:: BacktestingSetupHandler.Setup(): Setting up job: UID: 0, PID: 725083943, Version: 2.5.0.0, Source: WebIDE
+2022-04-22T22:04:28.1778839Z TRACE:: Config.Get(): Configuration key not found. Key: security-data-feeds - Using default value: 
+2022-04-22T22:04:28.2946223Z TRACE:: Event Name "EveryDay: SPY: 0 min before MarketClose", scheduled to run at 12/31/2012 9:00:00 PM (UTC)...
+2022-04-22T22:04:28.3260039Z TRACE:: BaseSetupHandler.SetupCurrencyConversions():
+Symbol      Quantity    Conversion = Value in USD
+USD: $       25000.00 @       1.00 = $25000.0
+-------------------------------------------------
+CashBook Total Value:                $25000.0
+
+2022-04-22T22:04:28.3291680Z TRACE:: SetUp Backtesting: User: 0 ProjectId: 725083943 AlgoId: 1867427635
+2022-04-22T22:04:28.3299562Z TRACE:: Dates: Start: 01/01/2013 End: 12/31/2014 Cash: ¤25,000.00 MaximumRuntime: 100.00:00:00 MaxOrders: 2147483647
+2022-04-22T22:04:28.3326383Z TRACE:: BacktestingResultHandler(): Sample Period Set: 262.80
+2022-04-22T22:04:28.3342910Z TRACE:: Time.TradeableDates(): Security Count: 2
+2022-04-22T22:04:28.3363893Z TRACE:: Config.GetValue(): forward-console-messages - Using default value: True
+2022-04-22T22:04:28.3381719Z TRACE:: JOB HANDLERS: 
+2022-04-22T22:04:28.3384960Z TRACE::          DataFeed:     QuantConnect.Lean.Engine.DataFeeds.FileSystemDataFeed
+2022-04-22T22:04:28.3387413Z TRACE::          Setup:        QuantConnect.Lean.Engine.Setup.BacktestingSetupHandler
+2022-04-22T22:04:28.3389598Z TRACE::          RealTime:     QuantConnect.Lean.Engine.RealTime.BacktestingRealTimeHandler
+2022-04-22T22:04:28.3392492Z TRACE::          Results:      QuantConnect.Lean.Engine.Results.BacktestingResultHandler
+2022-04-22T22:04:28.3394567Z TRACE::          Transactions: QuantConnect.Lean.Engine.TransactionHandlers.BacktestingTransactionHandler
+2022-04-22T22:04:28.3397528Z TRACE::          Alpha:        QuantConnect.Lean.Engine.Alphas.DefaultAlphaHandler
+2022-04-22T22:04:28.3399624Z TRACE::          ObjectStore:  QuantConnect.Lean.Engine.Storage.LocalObjectStore
+2022-04-22T22:04:28.3401911Z TRACE::          History Provider:     QuantConnect.Lean.Engine.HistoricalData.HistoryProviderManager
+2022-04-22T22:04:28.3674452Z TRACE:: Event Name "Daily Sampling", scheduled to run at 1/1/2013 5:00:00 AM (UTC)...
+2022-04-22T22:04:28.3857618Z TRACE:: AlgorithmManager.Run(): Begin DataStream - Start: 1/1/2013 12:00:00 AM Stop: 12/31/2014 11:59:59 PM
+2022-04-22T22:04:28.3972626Z TRACE:: Debug: Launching analysis for 1867427635 with LEAN Engine v2.5.0.0
+2022-04-22T22:04:28.4302679Z TRACE:: Config.GetValue(): data-feed-max-work-weight - Using default value: 400
+2022-04-22T22:04:28.4308739Z TRACE:: Config.GetValue(): data-feed-workers-count - Using default value: 8
+2022-04-22T22:04:28.4311590Z TRACE:: WeightedWorkScheduler(): will use 8 workers and MaxWorkWeight is 400
+2022-04-22T22:04:28.4471633Z TRACE:: Config.GetValue(): show-missing-data-logs - Using default value: False
+2022-04-22T22:04:28.5236419Z TRACE:: UniverseSelection.AddPendingInternalDataFeeds(): Adding internal benchmark data feed SPY,#0,SPY,Hour,TradeBar,Trade,Adjusted,OpenInterest,Internal
+2022-04-22T22:04:28.7485195Z TRACE:: Debug: Warning: all market orders sent using daily data, or market orders sent after hours are automatically converted into MarketOnOpen orders.
+Purchased SPY on 2013-01-30
+2022-04-22T22:04:28.7571634Z ERROR:: Extensions.SetRuntimeError(): Extensions.SetRuntimeError(): RuntimeError at 1/30/2013 9:00:00 PM UTC. Context: Scheduled event: 'EveryDay: SPY: 0 min before MarketClose' at 1/30/2013 9:00:00 PM Python.Runtime.PythonException: AttributeError : 'IndicatorSuiteAlgorithm' object has no attribute 'plt'
+  File "/LeanCLI/main.py", line 140, in update_plots
+    self.plt.Plot('RSI', self.indicators['RSI'])
+===
+   at Python.Runtime.PyObject.Invoke(PyObject[] args)
+   at QuantConnect.Scheduling.ScheduleManager.<>c__DisplayClass15_0.<On>b__0(String name, DateTime time) in /LeanCloud/CI.Builder/bin/Debug/src/QuantConnect/Lean/Common/Scheduling/ScheduleManager.cs:line 142
+   at QuantConnect.Scheduling.ScheduledEvent.OnEventFired(DateTime triggerTime) in /LeanCloud/CI.Builder/bin/Debug/src/QuantConnect/Lean/Common/Scheduling/ScheduledEvent.cs:line 250
+   at QuantConnect.Scheduling.ScheduledEvent.Scan(DateTime utcTime) in /LeanCloud/CI.Builder/bin/Debug/src/QuantConnect/Lean/Common/Scheduling/ScheduledEvent.cs:line 176
+   at QuantConnect.IsolatorLimitResultProvider.<>c__DisplayClass1_0.<Consume>b__0() in /LeanCloud/CI.Builder/bin/Debug/src/QuantConnect/Lean/Common/IsolatorLimitResultProvider.cs:line 48
+   at QuantConnect.IsolatorLimitResultProvider.Consume(IIsolatorLimitResultProvider isolatorLimitProvider, ITimeProvider timeProvider, Action code, TimeMonitor timeMonitor) in /LeanCloud/CI.Builder/bin/Debug/src/QuantConnect/Lean/Common/IsolatorLimitResultProvider.cs:line 75
+   at QuantConnect.IsolatorLimitResultProvider.Consume(IIsolatorLimitResultProvider isolatorLimitProvider, ScheduledEvent scheduledEvent, DateTime scanTimeUtc, TimeMonitor timeMonitor) in /LeanCloud/CI.Builder/bin/Debug/src/QuantConnect/Lean/Common/IsolatorLimitResultProvider.cs:line 48
+   at QuantConnect.Lean.Engine.RealTime.BacktestingRealTimeHandler.SetTime(DateTime time) in /LeanCloud/CI.Builder/bin/Debug/src/QuantConnect/Lean/Engine/RealTime/BacktestingRealTimeHandler.cs:line 111
+2022-04-22T22:04:28.8472895Z ERROR:: AlgorithmManager.Run(): Stopping, encountered a runtime error at 1/30/2013 9:00:00 PM UTC.
+2022-04-22T22:04:28.8479433Z TRACE:: Engine.Run(): Exiting Algorithm Manager
+2022-04-22T22:04:28.8489327Z TRACE:: FileSystemDataFeed.Exit(): Start. Setting cancellation token...
+2022-04-22T22:04:28.8500326Z TRACE:: FileSystemDataFeed.Exit(): Exit Finished.
+2022-04-22T22:04:28.8503071Z TRACE:: Engine.Run(): Sending runtime error to user...
+2022-04-22T22:04:28.8550691Z TRACE:: DefaultAlphaHandler.Exit(): Exiting...
+2022-04-22T22:04:28.8590731Z TRACE:: DefaultAlphaHandler.Exit(): Ended
+2022-04-22T22:04:28.8596924Z TRACE:: BacktestingResultHandler.Exit(): starting...
+2022-04-22T22:04:28.8602023Z TRACE:: BacktestingResultHandler.Exit(): Saving logs...
+2022-04-22T22:04:28.8676763Z ERROR:: Runtime Error: AttributeError : 'IndicatorSuiteAlgorithm' object has no attribute 'plt'
+  at update_plots
+    self.plt.Plot('RSI' in main.py: line 140
+
+ AttributeError : 'IndicatorSuiteAlgorithm' object has no attribute 'plt'
+  at update_plots
+    self.plt.Plot('RSI' in main.py: line 140
+
+2022-04-22T22:04:28.8677615Z TRACE:: StopSafely(): waiting for 'Result Thread' thread to stop...
+2022-04-22T22:04:28.8679315Z TRACE:: Debug: Algorithm Id:(1867427635) completed in 0.51 seconds at 0k data points per second. Processing total of 189 data points.
+2022-04-22T22:04:28.8683235Z TRACE:: Debug: Your log was successfully created and can be retrieved from: /Results/1867427635-log.txt
+2022-04-22T22:04:28.8685214Z TRACE:: BacktestingResultHandler.Run(): Ending Thread...
+2022-04-22T22:04:28.9855198Z TRACE:: 
+STATISTICS:: Total Trades 0
+STATISTICS:: Average Win 0%
+STATISTICS:: Average Loss 0%
+STATISTICS:: Compounding Annual Return 0%
+STATISTICS:: Drawdown 0%
+STATISTICS:: Expectancy 0
+STATISTICS:: Net Profit 0%
+STATISTICS:: Sharpe Ratio 0
+STATISTICS:: Probabilistic Sharpe Ratio 0%
+STATISTICS:: Loss Rate 0%
+STATISTICS:: Win Rate 0%
+STATISTICS:: Profit-Loss Ratio 0
+STATISTICS:: Alpha 0
+STATISTICS:: Beta 0
+STATISTICS:: Annual Standard Deviation 0
+STATISTICS:: Annual Variance 0
+STATISTICS:: Information Ratio -7.674
+STATISTICS:: Tracking Error 0.085
+STATISTICS:: Treynor Ratio 0
+STATISTICS:: Total Fees $0.00
+STATISTICS:: Estimated Strategy Capacity $0
+STATISTICS:: Lowest Capacity Asset 
+STATISTICS:: Fitness Score 0
+STATISTICS:: Kelly Criterion Estimate 0
+STATISTICS:: Kelly Criterion Probability Value 0
+STATISTICS:: Sortino Ratio 79228162514264337593543950335
+STATISTICS:: Return Over Maximum Drawdown 79228162514264337593543950335
+STATISTICS:: Portfolio Turnover 0
+STATISTICS:: Total Insights Generated 0
+STATISTICS:: Total Insights Closed 0
+STATISTICS:: Total Insights Analysis Completed 0
+STATISTICS:: Long Insight Count 0
+STATISTICS:: Short Insight Count 0
+STATISTICS:: Long/Short Ratio 100%
+STATISTICS:: Estimated Monthly Alpha Value $0
+STATISTICS:: Total Accumulated Estimated Alpha Value $0
+STATISTICS:: Mean Population Estimated Insight Value $0
+STATISTICS:: Mean Population Direction 0%
+STATISTICS:: Mean Population Magnitude 0%
+STATISTICS:: Rolling Averaged Population Direction 0%
+STATISTICS:: Rolling Averaged Population Magnitude 0%
+STATISTICS:: OrderListHash be3b683b233df7c2f573077359ad3c75
+2022-04-22T22:04:28.9857568Z TRACE:: BacktestingResultHandler.SendAnalysisResult(): Processed final packet
+2022-04-22T22:04:28.9862239Z TRACE:: Engine.Run(): Disconnecting from brokerage...
+2022-04-22T22:04:28.9864897Z TRACE:: Engine.Run(): Disposing of setup handler...
+2022-04-22T22:04:28.9871974Z TRACE:: Engine.Main(): Analysis Completed and Results Posted.
+2022-04-22T22:04:28.9879260Z TRACE:: Engine.Main(): Packet removed from queue: 1867427635
+2022-04-22T22:04:28.9882946Z TRACE:: LeanEngineSystemHandlers.Dispose(): start...
+2022-04-22T22:04:28.9886443Z TRACE:: LeanEngineSystemHandlers.Dispose(): Disposed of system handlers.
+2022-04-22T22:04:28.9889602Z TRACE:: LeanEngineAlgorithmHandlers.Dispose(): start...
+2022-04-22T22:04:28.9943301Z TRACE:: LeanEngineAlgorithmHandlers.Dispose(): Disposed of algorithm handlers.
