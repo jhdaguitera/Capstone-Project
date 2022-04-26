@@ -1,0 +1,8 @@
+2021-01-01 00:00:00 Launching analysis for 1987812928 with LEAN Engine v2.5.0.0
+2020-12-30 00:00:00 Runtime Error: AttributeError : 'ROC' object has no attribute 'sym'
+  at OnData
+    sym = self.sym
+===
+   at Python.Runtime.PyObject.Invoke(PyTuple args in main.py: line 26
+
+2020-12-30 00:00:00 Algorithm Id:(1987812928) completed in 0.31 seconds at 0k data points per second. Processing total of 3 data points.

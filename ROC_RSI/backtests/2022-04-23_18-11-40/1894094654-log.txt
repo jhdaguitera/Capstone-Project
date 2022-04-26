@@ -1,0 +1,8 @@
+2021-01-01 00:00:00 Launching analysis for 1894094654 with LEAN Engine v2.5.0.0
+2020-12-30 00:00:00 Runtime Error: AttributeError : 'ROC_in_Percent' object has no attribute 'roc'
+  at OnData
+    if self.roc.Current.Value < 0:
+===
+   at Python.Runtime.PyObject.Invoke(PyTuple args in main.py: line 40
+
+2020-12-30 00:00:00 Algorithm Id:(1894094654) completed in 0.27 seconds at 0k data points per second. Processing total of 3 data points.

@@ -1,0 +1,74 @@
+2022-04-26T20:38:39.6147233Z TRACE:: Config.Get(): Configuration key not found. Key: data-directory - Using default value: ../../../Data/
+2022-04-26T20:38:39.6693947Z TRACE:: Config.Get(): Configuration key not found. Key: version-id - Using default value: 
+2022-04-26T20:38:39.6699129Z TRACE:: Config.Get(): Configuration key not found. Key: cache-location - Using default value: /Lean/Data
+2022-04-26T20:38:39.6703513Z TRACE:: Engine.Main(): LEAN ALGORITHMIC TRADING ENGINE v2.5.0.0 Mode: DEBUG (64bit) Host: DESKTOP-0LAT4UV
+2022-04-26T20:38:39.6747227Z TRACE:: Engine.Main(): Started 8:38 PM
+2022-04-26T20:38:39.6795172Z TRACE:: Config.Get(): Configuration key not found. Key: lean-manager-type - Using default value: LocalLeanManager
+2022-04-26T20:38:39.7148486Z TRACE:: JobQueue.NextJob(): Selected /LeanCLI/main.py
+2022-04-26T20:38:39.8115708Z TRACE:: Config.GetValue(): scheduled-event-leaky-bucket-capacity - Using default value: 120
+2022-04-26T20:38:39.8119589Z TRACE:: Config.GetValue(): scheduled-event-leaky-bucket-time-interval-minutes - Using default value: 1440
+2022-04-26T20:38:39.8127209Z TRACE:: Config.GetValue(): scheduled-event-leaky-bucket-refill-amount - Using default value: 18
+2022-04-26T20:38:39.8267191Z TRACE:: Config.Get(): Configuration key not found. Key: job-organization-id - Using default value: 
+2022-04-26T20:38:39.8289778Z TRACE:: Config.Get(): Configuration key not found. Key: data-permission-manager - Using default value: DataPermissionManager
+2022-04-26T20:38:39.8507885Z TRACE:: AlgorithmManager.CreateTokenBucket(): Initializing LeakyBucket: Capacity: 120 RefillAmount: 18 TimeInterval: 1440
+2022-04-26T20:38:39.8626840Z TRACE:: Config.GetValue(): algorithm-manager-time-loop-maximum - Using default value: 20
+2022-04-26T20:38:39.8853976Z TRACE:: TextSubscriptionDataSourceReader.SetCacheSize(): Setting cache size to 71582788 items
+2022-04-26T20:38:45.6048347Z TRACE:: Config.GetValue(): algorithm-creation-timeout - Using default value: 90
+2022-04-26T20:38:45.6745990Z TRACE:: PythonInitializer.Initialize(): start...
+2022-04-26T20:39:09.0823833Z ERROR:: Loader.TryCreatePythonAlgorithm():  System.TimeoutException: Timeout while waiting for assemblies to load
+   at Python.Runtime.AssemblyManager.Initialize()
+   at Python.Runtime.Runtime.Initialize(Boolean initSigs, ShutdownMode mode)
+   at Python.Runtime.PythonEngine.Initialize(IEnumerable`1 args, Boolean setSysArgv, Boolean initSigs, ShutdownMode mode)
+   at Python.Runtime.PythonEngine.Initialize(Boolean setSysArgv, Boolean initSigs, ShutdownMode mode)
+   at Python.Runtime.PythonEngine.Initialize()
+   at QuantConnect.Python.PythonInitializer.Initialize() in /LeanCloud/CI.Builder/bin/Debug/src/QuantConnect/Lean/Common/Python/PythonInitializer.cs:line 45
+   at QuantConnect.AlgorithmFactory.Loader.TryCreatePythonAlgorithm(String assemblyPath, IAlgorithm& algorithmInstance, String& errorMessage) in /LeanCloud/CI.Builder/bin/Debug/src/QuantConnect/Lean/AlgorithmFactory/Loader.cs:line 171
+2022-04-26T20:39:09.1007698Z ERROR:: Engine.Run():  QuantConnect.Lean.Engine.Setup.AlgorithmSetupException: During the algorithm initialization, the following exception has occurred: Loader.TryCreatePythonAlgorithm(): Unable to import python module /LeanCLI/main.py. Timeout while waiting for assemblies to load
+   at QuantConnect.Lean.Engine.Setup.BacktestingSetupHandler.CreateAlgorithmInstance(AlgorithmNodePacket algorithmNodePacket, String assemblyPath) in /LeanCloud/CI.Builder/bin/Debug/src/QuantConnect/Lean/Engine/Setup/BacktestingSetupHandler.cs:line 104
+   at QuantConnect.Lean.Engine.Engine.Run(AlgorithmNodePacket job, AlgorithmManager manager, String assemblyPath, WorkerThread workerThread) in /LeanCloud/CI.Builder/bin/Debug/src/QuantConnect/Lean/Engine/Engine.cs:line 117
+2022-04-26T20:39:09.1150465Z TRACE:: JOB HANDLERS: 
+2022-04-26T20:39:09.1189511Z TRACE::          DataFeed:     QuantConnect.Lean.Engine.DataFeeds.FileSystemDataFeed
+2022-04-26T20:39:09.1223877Z TRACE::          Setup:        QuantConnect.Lean.Engine.Setup.BacktestingSetupHandler
+2022-04-26T20:39:09.1399544Z TRACE::          RealTime:     QuantConnect.Lean.Engine.RealTime.BacktestingRealTimeHandler
+2022-04-26T20:39:09.1595061Z TRACE::          Results:      QuantConnect.Lean.Engine.Results.BacktestingResultHandler
+2022-04-26T20:39:09.1720632Z TRACE::          Transactions: QuantConnect.Lean.Engine.TransactionHandlers.BacktestingTransactionHandler
+2022-04-26T20:39:09.1854746Z TRACE::          Alpha:        QuantConnect.Lean.Engine.Alphas.DefaultAlphaHandler
+2022-04-26T20:39:09.1997317Z TRACE::          ObjectStore:  QuantConnect.Lean.Engine.Storage.LocalObjectStore
+2022-04-26T20:39:09.2127288Z ERROR:: Algorithm.Initialize() Error: During the algorithm initialization, the following exception has occurred: Loader.TryCreatePythonAlgorithm(): Unable to import python module /LeanCLI/main.py. Timeout while waiting for assemblies to load Stack Trace: During the algorithm initialization, the following exception has occurred: Loader.TryCreatePythonAlgorithm(): Unable to import python module /LeanCLI/main.py. Timeout while waiting for assemblies to load
+ During the algorithm initialization, the following exception has occurred: Loader.TryCreatePythonAlgorithm(): Unable to import python module /LeanCLI/main.py. Timeout while waiting for assemblies to load
+2022-04-26T20:39:09.2450687Z TRACE:: DefaultAlphaHandler.Exit(): Exiting...
+2022-04-26T20:39:09.2607250Z TRACE:: DefaultAlphaHandler.Exit(): Ended
+2022-04-26T20:39:09.2885427Z TRACE:: BacktestingResultHandler.Exit(): starting...
+2022-04-26T20:39:09.3139921Z TRACE:: BacktestingResultHandler.Exit(): Saving logs...
+2022-04-26T20:39:09.3844732Z TRACE:: Debug: Your log was successfully created and can be retrieved from: /Results/1799016201-log.txt
+2022-04-26T20:39:09.3972127Z TRACE:: StopSafely(): waiting for 'Result Thread' thread to stop...
+2022-04-26T20:39:09.4048714Z TRACE:: BacktestingResultHandler.Run(): Ending Thread...
+2022-04-26T20:39:11.6480518Z TRACE:: 
+STATISTICS:: Fitness Score 0
+STATISTICS:: Kelly Criterion Estimate 0
+STATISTICS:: Kelly Criterion Probability Value 0
+STATISTICS:: Sortino Ratio 0
+STATISTICS:: Return Over Maximum Drawdown 0
+STATISTICS:: Portfolio Turnover 0
+STATISTICS:: Total Insights Generated 0
+STATISTICS:: Total Insights Closed 0
+STATISTICS:: Total Insights Analysis Completed 0
+STATISTICS:: Long Insight Count 0
+STATISTICS:: Short Insight Count 0
+STATISTICS:: Long/Short Ratio 100%
+STATISTICS:: Estimated Monthly Alpha Value $0
+STATISTICS:: Total Accumulated Estimated Alpha Value $0
+STATISTICS:: Mean Population Estimated Insight Value $0
+STATISTICS:: Mean Population Direction 0%
+STATISTICS:: Mean Population Magnitude 0%
+STATISTICS:: Rolling Averaged Population Direction 0%
+STATISTICS:: Rolling Averaged Population Magnitude 0%
+STATISTICS:: OrderListHash d41d8cd98f00b204e9800998ecf8427e
+2022-04-26T20:39:11.6926249Z TRACE:: BacktestingResultHandler.SendAnalysisResult(): Processed final packet
+2022-04-26T20:39:11.7335305Z TRACE:: Engine.Run(): Disposing of setup handler...
+2022-04-26T20:39:11.7605172Z TRACE:: Engine.Main(): Analysis Completed and Results Posted.
+2022-04-26T20:39:11.7839467Z TRACE:: Engine.Main(): Packet removed from queue: 1799016201
+2022-04-26T20:39:11.8238248Z TRACE:: LeanEngineSystemHandlers.Dispose(): start...
+2022-04-26T20:39:11.8443031Z TRACE:: LeanEngineSystemHandlers.Dispose(): Disposed of system handlers.
+2022-04-26T20:39:11.8641468Z TRACE:: LeanEngineAlgorithmHandlers.Dispose(): start...
+2022-04-26T20:39:11.8810107Z TRACE:: LeanEngineAlgorithmHandlers.Dispose(): Disposed of algorithm handlers.

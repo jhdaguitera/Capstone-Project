@@ -1,0 +1,8 @@
+2021-01-01 00:00:00 Launching analysis for 1122184968 with LEAN Engine v2.5.0.0
+2020-12-30 00:00:00 Runtime Error: AttributeError : 'float' object has no attribute 'Current'
+  at OnData
+    if self.roc_since_open.Current.Value < 0:
+===
+   at Python.Runtime.PyObject.Invoke(PyTuple args in main.py: line 40
+
+2020-12-30 00:00:00 Algorithm Id:(1122184968) completed in 0.26 seconds at 0k data points per second. Processing total of 3 data points.

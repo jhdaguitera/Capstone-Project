@@ -1,0 +1,1107 @@
+2022-04-26T19:14:59.0057937Z TRACE:: Config.Get(): Configuration key not found. Key: data-directory - Using default value: ../../../Data/
+2022-04-26T19:14:59.0492391Z TRACE:: Config.Get(): Configuration key not found. Key: version-id - Using default value: 
+2022-04-26T19:14:59.0502112Z TRACE:: Config.Get(): Configuration key not found. Key: cache-location - Using default value: /Lean/Data
+2022-04-26T19:14:59.0513034Z TRACE:: Engine.Main(): LEAN ALGORITHMIC TRADING ENGINE v2.5.0.0 Mode: DEBUG (64bit) Host: DESKTOP-0LAT4UV
+2022-04-26T19:14:59.0572408Z TRACE:: Engine.Main(): Started 7:14 PM
+2022-04-26T19:14:59.0596550Z TRACE:: Config.Get(): Configuration key not found. Key: lean-manager-type - Using default value: LocalLeanManager
+2022-04-26T19:14:59.0789607Z TRACE:: JobQueue.NextJob(): Selected /LeanCLI/main.py
+2022-04-26T19:14:59.1465836Z TRACE:: Config.GetValue(): scheduled-event-leaky-bucket-capacity - Using default value: 120
+2022-04-26T19:14:59.1468700Z TRACE:: Config.GetValue(): scheduled-event-leaky-bucket-time-interval-minutes - Using default value: 1440
+2022-04-26T19:14:59.1470896Z TRACE:: Config.GetValue(): scheduled-event-leaky-bucket-refill-amount - Using default value: 18
+2022-04-26T19:14:59.1524223Z TRACE:: Config.Get(): Configuration key not found. Key: job-organization-id - Using default value: 
+2022-04-26T19:14:59.1531625Z TRACE:: Config.Get(): Configuration key not found. Key: data-permission-manager - Using default value: DataPermissionManager
+2022-04-26T19:14:59.1607122Z TRACE:: AlgorithmManager.CreateTokenBucket(): Initializing LeakyBucket: Capacity: 120 RefillAmount: 18 TimeInterval: 1440
+2022-04-26T19:14:59.1628875Z TRACE:: Config.GetValue(): algorithm-manager-time-loop-maximum - Using default value: 20
+2022-04-26T19:14:59.1753393Z TRACE:: TextSubscriptionDataSourceReader.SetCacheSize(): Setting cache size to 71582788 items
+2022-04-26T19:14:59.4119220Z TRACE:: Config.GetValue(): algorithm-creation-timeout - Using default value: 90
+2022-04-26T19:14:59.4161968Z TRACE:: PythonInitializer.Initialize(): start...
+2022-04-26T19:15:00.2782378Z TRACE:: PythonInitializer.Initialize(): ended
+2022-04-26T19:15:00.2815865Z TRACE:: AlgorithmPythonWrapper(): Python version 3.6.8 |Anaconda, Inc.| (default, Dec 30 2018, 01:25:33) 
+[GCC 7.3.0]: Importing python module main
+2022-04-26T19:15:02.1318410Z TRACE:: AlgorithmPythonWrapper(): main successfully imported.
+2022-04-26T19:15:02.1396106Z TRACE:: AlgorithmPythonWrapper(): Creating IAlgorithm instance.
+2022-04-26T19:15:02.1476771Z TRACE:: Config.GetValue(): api-data-update-period - Using default value: 1
+2022-04-26T19:15:02.2486256Z TRACE:: Config.GetValue(): mute-python-library-logging - Using default value: True
+2022-04-26T19:15:02.2627315Z TRACE:: LocalObjectStore.Initialize(): Storage Root: /Storage/QCAlgorithm. StorageFileCount 100. StorageLimitMB 5
+2022-04-26T19:15:02.2768628Z TRACE:: BacktestingSetupHandler.Setup(): Setting up job: UID: 0, PID: 907417205, Version: 2.5.0.0, Source: WebIDE
+2022-04-26T19:15:02.2811161Z TRACE:: Config.Get(): Configuration key not found. Key: security-data-feeds - Using default value: 
+2022-04-26T19:15:02.4046638Z TRACE:: BaseSetupHandler.SetupCurrencyConversions():
+Symbol      Quantity    Conversion = Value in USD
+USD: $      100000.00 @       1.00 = $100000.0
+-------------------------------------------------
+CashBook Total Value:                $100000.0
+
+2022-04-26T19:15:02.4078757Z TRACE:: SetUp Backtesting: User: 0 ProjectId: 907417205 AlgoId: 1262208876
+2022-04-26T19:15:02.4085833Z TRACE:: Dates: Start: 01/01/2021 End: 01/01/2022 Cash: ¤100,000.00 MaximumRuntime: 100.00:00:00 MaxOrders: 2147483647
+2022-04-26T19:15:02.4108084Z TRACE:: BacktestingResultHandler(): Sample Period Set: 131.76
+2022-04-26T19:15:02.4119918Z TRACE:: Time.TradeableDates(): Security Count: 1
+2022-04-26T19:15:02.4174788Z TRACE:: Config.GetValue(): forward-console-messages - Using default value: True
+2022-04-26T19:15:02.4191262Z TRACE:: JOB HANDLERS: 
+2022-04-26T19:15:02.4193801Z TRACE::          DataFeed:     QuantConnect.Lean.Engine.DataFeeds.FileSystemDataFeed
+2022-04-26T19:15:02.4196460Z TRACE::          Setup:        QuantConnect.Lean.Engine.Setup.BacktestingSetupHandler
+2022-04-26T19:15:02.4198244Z TRACE::          RealTime:     QuantConnect.Lean.Engine.RealTime.BacktestingRealTimeHandler
+2022-04-26T19:15:02.4200301Z TRACE::          Results:      QuantConnect.Lean.Engine.Results.BacktestingResultHandler
+2022-04-26T19:15:02.4202080Z TRACE::          Transactions: QuantConnect.Lean.Engine.TransactionHandlers.BacktestingTransactionHandler
+2022-04-26T19:15:02.4204346Z TRACE::          Alpha:        QuantConnect.Lean.Engine.Alphas.DefaultAlphaHandler
+2022-04-26T19:15:02.4206483Z TRACE::          ObjectStore:  QuantConnect.Lean.Engine.Storage.LocalObjectStore
+2022-04-26T19:15:02.4210003Z TRACE::          History Provider:     QuantConnect.Lean.Engine.HistoricalData.HistoryProviderManager
+2022-04-26T19:15:02.4457096Z TRACE:: Event Name "Daily Sampling", scheduled to run at 1/1/2021 5:00:00 AM (UTC)...
+2022-04-26T19:15:02.4460003Z TRACE:: AlgorithmManager.Run(): Begin DataStream - Start: 1/1/2021 12:00:00 AM Stop: 1/1/2022 11:59:59 PM
+2022-04-26T19:15:02.4521822Z TRACE:: Debug: Launching analysis for 1262208876 with LEAN Engine v2.5.0.0
+2022-04-26T19:15:02.4631398Z TRACE:: AlgorithmManager.Stream(): WarmupHistoryRequest: TQQQ.YahooData: Start: 9/23/2020 4:00:00 AM End: 1/1/2021 5:00:00 AM Resolution: Daily
+2022-04-26T19:15:02.4684773Z TRACE:: Config.GetValue(): data-feed-max-work-weight - Using default value: 400
+2022-04-26T19:15:02.4688201Z TRACE:: Config.GetValue(): data-feed-workers-count - Using default value: 8
+2022-04-26T19:15:02.4690353Z TRACE:: WeightedWorkScheduler(): will use 8 workers and MaxWorkWeight is 400
+2022-04-26T19:15:02.4857217Z TRACE:: Config.GetValue(): show-missing-data-logs - Using default value: False
+2022-04-26T19:15:02.6003697Z TRACE:: AlgorithmManager.Stream(): Finished warmup
+2022-04-26T19:15:02.6027856Z TRACE:: Debug: Initilize Complete.
+Algorithm warming up...
+TQQQ - 2020-12-30 00:00:00: Close=45.1
+DOWN Trend********************************************************
+Momentum = -49.0
+ROC = -1.0
+2022-04-26T19:15:02.6031017Z TRACE:: Debug: TQQQ - 2020-12-31 00:00:00: Close=45.1
+DOWN Trend********************************************************
+Momentum = -51.0
+ROC = -1.0
+2022-04-26T19:15:02.6033170Z TRACE:: Debug: TQQQ - 2021-01-01 00:00:00: Close=45.45
+UP Trend**********************************************************
+Momentum = 38.0
+ROC = 1.0
+2022-04-26T19:15:02.6404495Z TRACE:: UniverseSelection.AddPendingInternalDataFeeds(): Adding internal benchmark data feed SPY,#0,SPY,Hour,TradeBar,Trade,Adjusted,OpenInterest,Internal
+2022-04-26T19:15:02.8042627Z TRACE:: Debug: Algorithm finished warming up.
+TQQQ - 2021-01-01 00:00:00: Close=45.45
+UP Trend**********************************************************
+Momentum = 38.0
+ROC = 1.0
+2022-04-26T19:15:02.8045623Z TRACE:: Debug: TQQQ - 2021-01-05 00:00:00: Close=43.46
+DOWN Trend********************************************************
+Momentum = -256.0
+ROC = -6.0
+2022-04-26T19:15:02.8048144Z TRACE:: Debug: TQQQ - 2021-01-06 00:00:00: Close=44.55
+UP Trend**********************************************************
+Momentum = 148.0
+ROC = 3.0
+2022-04-26T19:15:02.8050155Z TRACE:: Debug: TQQQ - 2021-01-07 00:00:00: Close=42.71
+UP Trend**********************************************************
+Momentum = 24.0
+ROC = 1.0
+2022-04-26T19:15:02.8051983Z TRACE:: Debug: TQQQ - 2021-01-08 00:00:00: Close=45.79
+UP Trend**********************************************************
+Momentum = 195.0
+ROC = 4.0
+2022-04-26T19:15:02.8054136Z TRACE:: Debug: TQQQ - 2021-01-09 00:00:00: Close=47.57
+UP Trend**********************************************************
+Momentum = 74.0
+ROC = 2.0
+2022-04-26T19:15:02.8056972Z TRACE:: Debug: TQQQ - 2021-01-12 00:00:00: Close=45.47
+DOWN Trend********************************************************
+Momentum = -73.0
+ROC = -2.0
+2022-04-26T19:15:02.8058804Z TRACE:: Debug: TQQQ - 2021-01-13 00:00:00: Close=45.27
+DOWN Trend********************************************************
+Momentum = -26.0
+ROC = -1.0
+2022-04-26T19:15:02.8061421Z TRACE:: Debug: TQQQ - 2021-01-14 00:00:00: Close=46.15
+UP Trend**********************************************************
+Momentum = 76.0
+ROC = 2.0
+2022-04-26T19:15:02.8064225Z TRACE:: Debug: TQQQ - 2021-01-15 00:00:00: Close=45.45
+DOWN Trend********************************************************
+Momentum = -93.0
+ROC = -2.0
+2022-04-26T19:15:02.8068402Z TRACE:: Debug: TQQQ - 2021-01-16 00:00:00: Close=44.34
+DOWN Trend********************************************************
+Momentum = -101.0
+ROC = -2.0
+2022-04-26T19:15:02.8071971Z TRACE:: Debug: TQQQ - 2021-01-20 00:00:00: Close=46.26
+UP Trend**********************************************************
+Momentum = 90.0
+ROC = 2.0
+2022-04-26T19:15:02.8075684Z TRACE:: Debug: TQQQ - 2021-01-21 00:00:00: Close=49.49
+UP Trend**********************************************************
+Momentum = 156.0
+ROC = 3.0
+2022-04-26T19:15:02.8079552Z TRACE:: Debug: TQQQ - 2021-01-22 00:00:00: Close=50.72
+UP Trend**********************************************************
+Momentum = 60.0
+ROC = 1.0
+2022-04-26T19:15:02.8081815Z TRACE:: Debug: TQQQ - 2021-01-23 00:00:00: Close=50.26
+Momentum = 5.0
+ROC = 0.0
+2022-04-26T19:15:02.8084471Z TRACE:: Debug: TQQQ - 2021-01-26 00:00:00: Close=51.65
+Momentum = -23.0
+ROC = -0.0
+2022-04-26T19:15:02.8087502Z TRACE:: Debug: TQQQ - 2021-01-27 00:00:00: Close=51.71
+Momentum = -15.0
+ROC = -0.0
+2022-04-26T19:15:02.8094558Z TRACE:: Debug: TQQQ - 2021-01-28 00:00:00: Close=47.54
+DOWN Trend********************************************************
+Momentum = -309.0
+ROC = -6.0
+2022-04-26T19:15:02.8096989Z TRACE:: Debug: TQQQ - 2021-01-29 00:00:00: Close=48.24
+UP Trend**********************************************************
+Momentum = 30.0
+ROC = 1.0
+2022-04-26T19:15:02.8101915Z TRACE:: Debug: TQQQ - 2021-01-30 00:00:00: Close=45.24
+DOWN Trend********************************************************
+Momentum = -221.0
+ROC = -5.0
+2022-04-26T19:15:02.8103913Z TRACE:: Debug: TQQQ - 2021-02-02 00:00:00: Close=48.56
+UP Trend**********************************************************
+Momentum = 178.0
+ROC = 4.0
+2022-04-26T19:15:02.8106089Z TRACE:: Debug: TQQQ - 2021-02-03 00:00:00: Close=50.91
+UP Trend**********************************************************
+Momentum = 97.0
+ROC = 2.0
+2022-04-26T19:15:02.8109252Z TRACE:: Debug: TQQQ - 2021-02-04 00:00:00: Close=50.33
+DOWN Trend********************************************************
+Momentum = -164.0
+ROC = -3.0
+2022-04-26T19:15:02.8112663Z TRACE:: Debug: TQQQ - 2021-02-05 00:00:00: Close=52.1
+UP Trend**********************************************************
+Momentum = 108.0
+ROC = 2.0
+2022-04-26T19:15:02.8116008Z TRACE:: Debug: TQQQ - 2021-02-06 00:00:00: Close=52.65
+Momentum = 5.0
+ROC = 0.0
+2022-04-26T19:15:02.8120090Z TRACE:: Debug: TQQQ - 2021-02-09 00:00:00: Close=53.68
+Momentum = 20.0
+ROC = 0.0
+2022-04-26T19:15:02.8122403Z TRACE:: Debug: TQQQ - 2021-02-10 00:00:00: Close=53.65
+UP Trend**********************************************************
+Momentum = 41.0
+ROC = 1.0
+2022-04-26T19:15:02.8127404Z TRACE:: Debug: TQQQ - 2021-02-11 00:00:00: Close=53.28
+DOWN Trend********************************************************
+Momentum = -111.0
+ROC = -2.0
+2022-04-26T19:15:02.8130372Z TRACE:: Debug: TQQQ - 2021-02-12 00:00:00: Close=54.13
+Momentum = 5.0
+ROC = 0.0
+2022-04-26T19:15:02.8133650Z TRACE:: Debug: TQQQ - 2021-02-13 00:00:00: Close=55.06
+UP Trend**********************************************************
+Momentum = 127.0
+ROC = 2.0
+2022-04-26T19:15:02.8137861Z TRACE:: Debug: TQQQ - 2021-02-17 00:00:00: Close=54.6
+DOWN Trend********************************************************
+Momentum = -88.0
+ROC = -2.0
+2022-04-26T19:15:02.8140380Z TRACE:: Debug: TQQQ - 2021-02-18 00:00:00: Close=53.83
+UP Trend**********************************************************
+Momentum = 71.0
+ROC = 1.0
+2022-04-26T19:15:02.8142894Z TRACE:: Debug: TQQQ - 2021-02-19 00:00:00: Close=53.11
+UP Trend**********************************************************
+Momentum = 108.0
+ROC = 2.0
+2022-04-26T19:15:02.8146280Z TRACE:: Debug: TQQQ - 2021-02-20 00:00:00: Close=52.41
+DOWN Trend********************************************************
+Momentum = -141.0
+ROC = -3.0
+2022-04-26T19:15:02.8148812Z TRACE:: Debug: TQQQ - 2021-02-23 00:00:00: Close=48.35
+DOWN Trend********************************************************
+Momentum = -192.0
+ROC = -4.0
+2022-04-26T19:15:02.8153313Z TRACE:: Debug: TQQQ - 2021-02-24 00:00:00: Close=47.92
+UP Trend**********************************************************
+Momentum = 203.0
+ROC = 4.0
+2022-04-26T19:15:02.8656725Z TRACE:: Debug: TQQQ - 2021-02-25 00:00:00: Close=49.08
+UP Trend**********************************************************
+Momentum = 246.0
+ROC = 5.0
+2022-04-26T19:15:02.8660045Z TRACE:: Debug: TQQQ - 2021-02-26 00:00:00: Close=43.95
+DOWN Trend********************************************************
+Momentum = -386.0
+ROC = -8.0
+2022-04-26T19:15:02.8662786Z TRACE:: Debug: TQQQ - 2021-02-27 00:00:00: Close=44.61
+DOWN Trend********************************************************
+Momentum = -58.0
+ROC = -1.0
+2022-04-26T19:15:02.8667336Z TRACE:: Debug: TQQQ - 2021-03-02 00:00:00: Close=48.5
+UP Trend**********************************************************
+Momentum = 182.0
+ROC = 4.0
+2022-04-26T19:15:02.8670674Z TRACE:: Debug: TQQQ - 2021-03-03 00:00:00: Close=46.17
+DOWN Trend********************************************************
+Momentum = -260.0
+ROC = -5.0
+2022-04-26T19:15:02.8673376Z TRACE:: Debug: TQQQ - 2021-03-04 00:00:00: Close=42.17
+DOWN Trend********************************************************
+Momentum = -352.0
+ROC = -8.0
+2022-04-26T19:15:02.8676349Z TRACE:: Debug: TQQQ - 2021-03-05 00:00:00: Close=40.08
+DOWN Trend********************************************************
+Momentum = -191.0
+ROC = -5.0
+2022-04-26T19:15:02.8678255Z TRACE:: Debug: TQQQ - 2021-03-06 00:00:00: Close=41.88
+UP Trend**********************************************************
+Momentum = 73.0
+ROC = 2.0
+2022-04-26T19:15:02.8680476Z TRACE:: Debug: TQQQ - 2021-03-09 00:00:00: Close=38.3
+DOWN Trend********************************************************
+Momentum = -334.0
+ROC = -8.0
+2022-04-26T19:15:02.8682652Z TRACE:: Debug: TQQQ - 2021-03-10 00:00:00: Close=42.81
+UP Trend**********************************************************
+Momentum = 157.0
+ROC = 4.0
+2022-04-26T19:15:02.8685382Z TRACE:: Debug: TQQQ - 2021-03-11 00:00:00: Close=42.44
+DOWN Trend********************************************************
+Momentum = -219.0
+ROC = -5.0
+2022-04-26T19:15:02.8687761Z TRACE:: Debug: TQQQ - 2021-03-12 00:00:00: Close=45.39
+UP Trend**********************************************************
+Momentum = 88.0
+ROC = 2.0
+2022-04-26T19:15:02.8689516Z TRACE:: Debug: TQQQ - 2021-03-13 00:00:00: Close=44.26
+UP Trend**********************************************************
+Momentum = 68.0
+ROC = 2.0
+2022-04-26T19:15:02.8692236Z TRACE:: Debug: TQQQ - 2021-03-16 00:00:00: Close=45.67
+UP Trend**********************************************************
+Momentum = 127.0
+ROC = 3.0
+2022-04-26T19:15:02.8694267Z TRACE:: Debug: TQQQ - 2021-03-17 00:00:00: Close=46.42
+DOWN Trend********************************************************
+Momentum = -25.0
+ROC = -1.0
+2022-04-26T19:15:02.8696541Z TRACE:: Debug: TQQQ - 2021-03-18 00:00:00: Close=47.01
+UP Trend**********************************************************
+Momentum = 195.0
+ROC = 4.0
+2022-04-26T19:15:02.8698291Z TRACE:: Debug: TQQQ - 2021-03-19 00:00:00: Close=42.69
+DOWN Trend********************************************************
+Momentum = -212.0
+ROC = -5.0
+2022-04-26T19:15:02.8700262Z TRACE:: Debug: TQQQ - 2021-03-20 00:00:00: Close=43.24
+UP Trend**********************************************************
+Momentum = 62.0
+ROC = 1.0
+2022-04-26T19:15:02.8702711Z TRACE:: Debug: TQQQ - 2021-03-23 00:00:00: Close=45.54
+UP Trend**********************************************************
+Momentum = 139.0
+ROC = 3.0
+2022-04-26T19:15:02.8704844Z TRACE:: Debug: TQQQ - 2021-03-24 00:00:00: Close=44.95
+DOWN Trend********************************************************
+Momentum = -108.0
+ROC = -2.0
+2022-04-26T19:15:02.8707720Z TRACE:: Debug: TQQQ - 2021-03-25 00:00:00: Close=42.68
+DOWN Trend********************************************************
+Momentum = -286.0
+ROC = -6.0
+2022-04-26T19:15:02.8709860Z TRACE:: Debug: TQQQ - 2021-03-26 00:00:00: Close=42.45
+UP Trend**********************************************************
+Momentum = 54.0
+ROC = 1.0
+2022-04-26T19:15:02.8712626Z TRACE:: Debug: TQQQ - 2021-03-27 00:00:00: Close=44.33
+UP Trend**********************************************************
+Momentum = 197.0
+ROC = 5.0
+2022-04-26T19:15:02.8715029Z TRACE:: Debug: TQQQ - 2021-03-30 00:00:00: Close=44.3
+Momentum = 18.0
+ROC = 0.0
+2022-04-26T19:15:02.8717269Z TRACE:: Debug: TQQQ - 2021-03-31 00:00:00: Close=43.67
+Momentum = 20.0
+ROC = 0.0
+2022-04-26T19:15:02.8719818Z TRACE:: Debug: TQQQ - 2021-04-01 00:00:00: Close=45.63
+UP Trend**********************************************************
+Momentum = 123.0
+ROC = 3.0
+2022-04-26T19:15:02.8722047Z TRACE:: Debug: TQQQ - 2021-04-02 00:00:00: Close=47.95
+UP Trend**********************************************************
+Momentum = 63.0
+ROC = 1.0
+2022-04-26T19:15:02.8724625Z TRACE:: Debug: TQQQ - 2021-04-06 00:00:00: Close=50.83
+UP Trend**********************************************************
+Momentum = 173.0
+ROC = 4.0
+2022-04-26T19:15:02.8726931Z TRACE:: Debug: TQQQ - 2021-04-07 00:00:00: Close=50.71
+Momentum = 3.0
+ROC = 0.0
+2022-04-26T19:15:02.8729852Z TRACE:: Debug: TQQQ - 2021-04-08 00:00:00: Close=51.08
+UP Trend**********************************************************
+Momentum = 57.0
+ROC = 1.0
+2022-04-26T19:15:02.8732703Z TRACE:: Debug: TQQQ - 2021-04-09 00:00:00: Close=52.68
+Momentum = 22.0
+ROC = 0.0
+2022-04-26T19:15:02.8734899Z TRACE:: Debug: TQQQ - 2021-04-10 00:00:00: Close=53.63
+UP Trend**********************************************************
+Momentum = 162.0
+ROC = 3.0
+2022-04-26T19:15:02.8737502Z TRACE:: Debug: TQQQ - 2021-04-13 00:00:00: Close=53.42
+UP Trend**********************************************************
+Momentum = 27.0
+ROC = 1.0
+2022-04-26T19:15:02.8740539Z TRACE:: Debug: TQQQ - 2021-04-14 00:00:00: Close=55.26
+UP Trend**********************************************************
+Momentum = 107.0
+ROC = 2.0
+2022-04-26T19:15:02.8743171Z TRACE:: Debug: TQQQ - 2021-04-15 00:00:00: Close=53.31
+DOWN Trend********************************************************
+Momentum = -209.0
+ROC = -4.0
+2022-04-26T19:15:02.8745046Z TRACE:: Debug: TQQQ - 2021-04-16 00:00:00: Close=55.67
+UP Trend**********************************************************
+Momentum = 98.0
+ROC = 2.0
+2022-04-26T19:15:02.8747048Z TRACE:: Debug: TQQQ - 2021-04-17 00:00:00: Close=55.9
+Momentum = -6.0
+ROC = -0.0
+2022-04-26T19:15:02.8749891Z TRACE:: Debug: TQQQ - 2021-04-20 00:00:00: Close=54.38
+DOWN Trend********************************************************
+Momentum = -70.0
+ROC = -1.0
+2022-04-26T19:15:02.8751988Z TRACE:: Debug: TQQQ - 2021-04-21 00:00:00: Close=53.19
+DOWN Trend********************************************************
+Momentum = -84.0
+ROC = -2.0
+2022-04-26T19:15:02.8754248Z TRACE:: Debug: TQQQ - 2021-04-22 00:00:00: Close=54.53
+UP Trend**********************************************************
+Momentum = 203.0
+ROC = 4.0
+2022-04-26T19:15:02.8757318Z TRACE:: Debug: TQQQ - 2021-04-23 00:00:00: Close=52.55
+DOWN Trend********************************************************
+Momentum = -178.0
+ROC = -3.0
+2022-04-26T19:15:02.8759703Z TRACE:: Debug: TQQQ - 2021-04-24 00:00:00: Close=54.53
+UP Trend**********************************************************
+Momentum = 167.0
+ROC = 3.0
+2022-04-26T19:15:02.8762430Z TRACE:: Debug: TQQQ - 2021-04-27 00:00:00: Close=55.61
+UP Trend**********************************************************
+Momentum = 96.0
+ROC = 2.0
+2022-04-26T19:15:02.9266925Z TRACE:: Debug: TQQQ - 2021-04-28 00:00:00: Close=54.88
+DOWN Trend********************************************************
+Momentum = -86.0
+ROC = -2.0
+2022-04-26T19:15:02.9270177Z TRACE:: Debug: TQQQ - 2021-04-29 00:00:00: Close=54.31
+DOWN Trend********************************************************
+Momentum = -38.0
+ROC = -1.0
+2022-04-26T19:15:02.9273284Z TRACE:: Debug: TQQQ - 2021-04-30 00:00:00: Close=54.86
+DOWN Trend********************************************************
+Momentum = -107.0
+ROC = -2.0
+2022-04-26T19:15:02.9276199Z TRACE:: Debug: TQQQ - 2021-05-01 00:00:00: Close=53.83
+Momentum = 18.0
+ROC = 0.0
+2022-04-26T19:15:02.9279614Z TRACE:: Debug: TQQQ - 2021-05-04 00:00:00: Close=52.95
+DOWN Trend********************************************************
+Momentum = -143.0
+ROC = -3.0
+2022-04-26T19:15:02.9287420Z TRACE:: Debug: TQQQ - 2021-05-05 00:00:00: Close=50.16
+DOWN Trend********************************************************
+Momentum = -156.0
+ROC = -3.0
+2022-04-26T19:15:02.9290546Z TRACE:: Debug: TQQQ - 2021-05-06 00:00:00: Close=49.58
+DOWN Trend********************************************************
+Momentum = -144.0
+ROC = -3.0
+2022-04-26T19:15:02.9294654Z TRACE:: Debug: TQQQ - 2021-05-07 00:00:00: Close=50.66
+UP Trend**********************************************************
+Momentum = 122.0
+ROC = 2.0
+2022-04-26T19:15:02.9297374Z TRACE:: Debug: TQQQ - 2021-05-08 00:00:00: Close=51.9
+Momentum = -9.0
+ROC = -0.0
+2022-04-26T19:15:02.9300365Z TRACE:: Debug: TQQQ - 2021-05-11 00:00:00: Close=48.0
+DOWN Trend********************************************************
+Momentum = -324.0
+ROC = -6.0
+2022-04-26T19:15:02.9303744Z TRACE:: Debug: TQQQ - 2021-05-12 00:00:00: Close=47.76
+UP Trend**********************************************************
+Momentum = 247.0
+ROC = 5.0
+2022-04-26T19:15:02.9309353Z TRACE:: Debug: TQQQ - 2021-05-13 00:00:00: Close=44.12
+DOWN Trend********************************************************
+Momentum = -139.0
+ROC = -3.0
+2022-04-26T19:15:02.9316468Z TRACE:: Debug: TQQQ - 2021-05-14 00:00:00: Close=45.06
+DOWN Trend********************************************************
+Momentum = -24.0
+ROC = -1.0
+2022-04-26T19:15:02.9321179Z TRACE:: Debug: TQQQ - 2021-05-15 00:00:00: Close=47.99
+UP Trend**********************************************************
+Momentum = 155.0
+ROC = 3.0
+2022-04-26T19:15:02.9324260Z TRACE:: Debug: TQQQ - 2021-05-18 00:00:00: Close=47.17
+Momentum = -9.0
+ROC = -0.0
+2022-04-26T19:15:02.9327739Z TRACE:: Debug: TQQQ - 2021-05-19 00:00:00: Close=46.19
+DOWN Trend********************************************************
+Momentum = -141.0
+ROC = -3.0
+2022-04-26T19:15:02.9329973Z TRACE:: Debug: TQQQ - 2021-05-20 00:00:00: Close=46.35
+UP Trend**********************************************************
+Momentum = 252.0
+ROC = 6.0
+2022-04-26T19:15:02.9333017Z TRACE:: Debug: TQQQ - 2021-05-21 00:00:00: Close=49.03
+UP Trend**********************************************************
+Momentum = 200.0
+ROC = 4.0
+2022-04-26T19:15:02.9337012Z TRACE:: Debug: TQQQ - 2021-05-22 00:00:00: Close=48.22
+DOWN Trend********************************************************
+Momentum = -155.0
+ROC = -3.0
+2022-04-26T19:15:02.9339609Z TRACE:: Debug: TQQQ - 2021-05-25 00:00:00: Close=50.64
+UP Trend**********************************************************
+Momentum = 136.0
+ROC = 3.0
+2022-04-26T19:15:02.9342551Z TRACE:: Debug: TQQQ - 2021-05-26 00:00:00: Close=50.88
+DOWN Trend********************************************************
+Momentum = -50.0
+ROC = -1.0
+2022-04-26T19:15:02.9344614Z TRACE:: Debug: TQQQ - 2021-05-27 00:00:00: Close=51.4
+Momentum = 22.0
+ROC = 0.0
+2022-04-26T19:15:02.9346947Z TRACE:: Debug: TQQQ - 2021-05-28 00:00:00: Close=50.8
+DOWN Trend********************************************************
+Momentum = -39.0
+ROC = -1.0
+2022-04-26T19:15:02.9349334Z TRACE:: Debug: TQQQ - 2021-05-29 00:00:00: Close=51.29
+Momentum = -10.0
+ROC = -0.0
+2022-04-26T19:15:02.9351090Z TRACE:: Debug: TQQQ - 2021-06-02 00:00:00: Close=50.79
+DOWN Trend********************************************************
+Momentum = -113.0
+ROC = -2.0
+2022-04-26T19:15:02.9353279Z TRACE:: Debug: TQQQ - 2021-06-03 00:00:00: Close=51.06
+Momentum = 9.0
+ROC = 0.0
+2022-04-26T19:15:02.9355457Z TRACE:: Debug: TQQQ - 2021-06-04 00:00:00: Close=49.46
+DOWN Trend********************************************************
+Momentum = -28.0
+ROC = -1.0
+2022-04-26T19:15:02.9357814Z TRACE:: Debug: TQQQ - 2021-06-05 00:00:00: Close=51.99
+UP Trend**********************************************************
+Momentum = 168.0
+ROC = 3.0
+2022-04-26T19:15:02.9360328Z TRACE:: Debug: TQQQ - 2021-06-08 00:00:00: Close=52.45
+UP Trend**********************************************************
+Momentum = 73.0
+ROC = 1.0
+2022-04-26T19:15:02.9362214Z TRACE:: Debug: TQQQ - 2021-06-09 00:00:00: Close=52.51
+DOWN Trend********************************************************
+Momentum = -78.0
+ROC = -1.0
+2022-04-26T19:15:02.9364890Z TRACE:: Debug: TQQQ - 2021-06-10 00:00:00: Close=52.57
+DOWN Trend********************************************************
+Momentum = -61.0
+ROC = -1.0
+2022-04-26T19:15:02.9366607Z TRACE:: Debug: TQQQ - 2021-06-11 00:00:00: Close=54.18
+UP Trend**********************************************************
+Momentum = 146.0
+ROC = 3.0
+2022-04-26T19:15:02.9368351Z TRACE:: Debug: TQQQ - 2021-06-12 00:00:00: Close=54.61
+UP Trend**********************************************************
+Momentum = 40.0
+ROC = 1.0
+2022-04-26T19:15:02.9370876Z TRACE:: Debug: TQQQ - 2021-06-15 00:00:00: Close=56.14
+UP Trend**********************************************************
+Momentum = 132.0
+ROC = 2.0
+2022-04-26T19:15:02.9372332Z TRACE:: Debug: TQQQ - 2021-06-16 00:00:00: Close=55.1
+DOWN Trend********************************************************
+Momentum = -91.0
+ROC = -2.0
+2022-04-26T19:15:02.9374252Z TRACE:: Debug: TQQQ - 2021-06-17 00:00:00: Close=54.51
+DOWN Trend********************************************************
+Momentum = -80.0
+ROC = -1.0
+2022-04-26T19:15:02.9376526Z TRACE:: Debug: TQQQ - 2021-06-18 00:00:00: Close=56.54
+UP Trend**********************************************************
+Momentum = 256.0
+ROC = 5.0
+2022-04-26T19:15:02.9378389Z TRACE:: Debug: TQQQ - 2021-06-19 00:00:00: Close=55.19
+DOWN Trend********************************************************
+Momentum = -52.0
+ROC = -1.0
+2022-04-26T19:15:02.9379999Z TRACE:: Debug: TQQQ - 2021-06-22 00:00:00: Close=56.21
+UP Trend**********************************************************
+Momentum = 90.0
+ROC = 2.0
+2022-04-26T19:15:02.9381838Z TRACE:: Debug: TQQQ - 2021-06-23 00:00:00: Close=57.78
+UP Trend**********************************************************
+Momentum = 163.0
+ROC = 3.0
+2022-04-26T19:15:02.9383688Z TRACE:: Debug: TQQQ - 2021-06-24 00:00:00: Close=57.88
+Momentum = 10.0
+ROC = 0.0
+2022-04-26T19:15:02.9385842Z TRACE:: Debug: TQQQ - 2021-06-25 00:00:00: Close=58.94
+Momentum = 7.0
+ROC = 0.0
+2022-04-26T19:15:02.9387896Z TRACE:: Debug: TQQQ - 2021-06-26 00:00:00: Close=58.76
+DOWN Trend********************************************************
+Momentum = -48.0
+ROC = -1.0
+2022-04-26T19:15:02.9390370Z TRACE:: Debug: TQQQ - 2021-06-29 00:00:00: Close=60.83
+UP Trend**********************************************************
+Momentum = 145.0
+ROC = 2.0
+2022-04-26T19:15:02.9392308Z TRACE:: Debug: TQQQ - 2021-06-30 00:00:00: Close=61.52
+UP Trend**********************************************************
+Momentum = 74.0
+ROC = 1.0
+2022-04-26T19:15:02.9394099Z TRACE:: Debug: TQQQ - 2021-07-01 00:00:00: Close=61.25
+Momentum = -19.0
+ROC = -0.0
+2022-04-26T19:15:02.9395782Z TRACE:: Debug: TQQQ - 2021-07-02 00:00:00: Close=61.28
+Momentum = 24.0
+ROC = 0.0
+2022-04-26T19:15:02.9398863Z TRACE:: Debug: TQQQ - 2021-07-03 00:00:00: Close=63.36
+UP Trend**********************************************************
+Momentum = 104.0
+ROC = 2.0
+2022-04-26T19:15:02.9401413Z TRACE:: Debug: TQQQ - 2021-07-07 00:00:00: Close=64.21
+UP Trend**********************************************************
+Momentum = 49.0
+ROC = 1.0
+2022-04-26T19:15:02.9403707Z TRACE:: Debug: TQQQ - 2021-07-08 00:00:00: Close=64.62
+DOWN Trend********************************************************
+Momentum = -83.0
+ROC = -1.0
+2022-04-26T19:15:02.9406796Z TRACE:: Debug: TQQQ - 2021-07-09 00:00:00: Close=63.5
+UP Trend**********************************************************
+Momentum = 165.0
+ROC = 3.0
+2022-04-26T19:15:02.9409045Z TRACE:: Debug: TQQQ - 2021-07-10 00:00:00: Close=64.57
+UP Trend**********************************************************
+Momentum = 143.0
+ROC = 2.0
+2022-04-26T19:15:02.9414057Z TRACE:: Debug: TQQQ - 2021-07-13 00:00:00: Close=65.39
+Momentum = -1.0
+ROC = -0.0
+2022-04-26T19:15:02.9416103Z TRACE:: Debug: TQQQ - 2021-07-14 00:00:00: Close=65.35
+Momentum = 16.0
+ROC = 0.0
+2022-04-26T19:15:02.9419222Z TRACE:: Debug: TQQQ - 2021-07-15 00:00:00: Close=65.71
+DOWN Trend********************************************************
+Momentum = -97.0
+ROC = -1.0
+2022-04-26T19:15:02.9421066Z TRACE:: Debug: TQQQ - 2021-07-16 00:00:00: Close=64.35
+DOWN Trend********************************************************
+Momentum = -136.0
+ROC = -2.0
+2022-04-26T19:15:02.9422724Z TRACE:: Debug: TQQQ - 2021-07-17 00:00:00: Close=62.76
+DOWN Trend********************************************************
+Momentum = -207.0
+ROC = -3.0
+2022-04-26T19:15:02.9425107Z TRACE:: Debug: TQQQ - 2021-07-20 00:00:00: Close=61.26
+UP Trend**********************************************************
+Momentum = 36.0
+ROC = 1.0
+2022-04-26T19:15:02.9426736Z TRACE:: Debug: TQQQ - 2021-07-21 00:00:00: Close=63.28
+UP Trend**********************************************************
+Momentum = 156.0
+ROC = 3.0
+2022-04-26T19:15:02.9428685Z TRACE:: Debug: TQQQ - 2021-07-22 00:00:00: Close=64.72
+UP Trend**********************************************************
+Momentum = 157.0
+ROC = 2.0
+2022-04-26T19:15:02.9430736Z TRACE:: Debug: TQQQ - 2021-07-23 00:00:00: Close=66.08
+UP Trend**********************************************************
+Momentum = 115.0
+ROC = 2.0
+2022-04-26T19:15:02.9434194Z TRACE:: Debug: TQQQ - 2021-07-24 00:00:00: Close=68.28
+UP Trend**********************************************************
+Momentum = 143.0
+ROC = 2.0
+2022-04-26T19:15:02.9436018Z TRACE:: Debug: TQQQ - 2021-07-27 00:00:00: Close=68.57
+UP Trend**********************************************************
+Momentum = 56.0
+ROC = 1.0
+2022-04-26T19:15:02.9438823Z TRACE:: Debug: TQQQ - 2021-07-28 00:00:00: Close=66.32
+DOWN Trend********************************************************
+Momentum = -210.0
+ROC = -3.0
+2022-04-26T19:15:02.9441435Z TRACE:: Debug: TQQQ - 2021-07-29 00:00:00: Close=67.05
+Momentum = 12.0
+ROC = 0.0
+2022-04-26T19:15:02.9443850Z TRACE:: Debug: TQQQ - 2021-07-30 00:00:00: Close=67.38
+UP Trend**********************************************************
+Momentum = 64.0
+ROC = 1.0
+2022-04-26T19:15:02.9447782Z TRACE:: Debug: TQQQ - 2021-07-31 00:00:00: Close=66.37
+UP Trend**********************************************************
+Momentum = 119.0
+ROC = 2.0
+2022-04-26T19:15:02.9450086Z TRACE:: Debug: TQQQ - 2021-08-03 00:00:00: Close=66.35
+DOWN Trend********************************************************
+Momentum = -92.0
+ROC = -1.0
+2022-04-26T19:15:02.9954171Z TRACE:: Debug: TQQQ - 2021-08-04 00:00:00: Close=67.5
+UP Trend**********************************************************
+Momentum = 78.0
+ROC = 1.0
+2022-04-26T19:15:03.0059694Z TRACE:: Debug: TQQQ - 2021-08-05 00:00:00: Close=67.84
+Momentum = 30.0
+ROC = 0.0
+2022-04-26T19:15:03.0065921Z TRACE:: Debug: TQQQ - 2021-08-06 00:00:00: Close=69.11
+UP Trend**********************************************************
+Momentum = 83.0
+ROC = 1.0
+2022-04-26T19:15:03.0071481Z TRACE:: Debug: TQQQ - 2021-08-07 00:00:00: Close=68.21
+Momentum = -18.0
+ROC = -0.0
+2022-04-26T19:15:03.0077065Z TRACE:: Debug: TQQQ - 2021-08-10 00:00:00: Close=68.58
+Momentum = 12.0
+ROC = 0.0
+2022-04-26T19:15:03.0082521Z TRACE:: Debug: TQQQ - 2021-08-11 00:00:00: Close=67.56
+DOWN Trend********************************************************
+Momentum = -133.0
+ROC = -2.0
+2022-04-26T19:15:03.0085785Z TRACE:: Debug: TQQQ - 2021-08-12 00:00:00: Close=67.19
+DOWN Trend********************************************************
+Momentum = -106.0
+ROC = -2.0
+2022-04-26T19:15:03.0088589Z TRACE:: Debug: TQQQ - 2021-08-13 00:00:00: Close=67.89
+UP Trend**********************************************************
+Momentum = 99.0
+ROC = 1.0
+2022-04-26T19:15:03.0091755Z TRACE:: Debug: TQQQ - 2021-08-14 00:00:00: Close=68.57
+UP Trend**********************************************************
+Momentum = 48.0
+ROC = 1.0
+2022-04-26T19:15:03.0096739Z TRACE:: Debug: TQQQ - 2021-08-17 00:00:00: Close=68.69
+UP Trend**********************************************************
+Momentum = 72.0
+ROC = 1.0
+2022-04-26T19:15:03.0100109Z TRACE:: Debug: TQQQ - 2021-08-18 00:00:00: Close=66.89
+Momentum = -22.0
+ROC = -0.0
+2022-04-26T19:15:03.0106355Z TRACE:: Debug: TQQQ - 2021-08-19 00:00:00: Close=64.94
+DOWN Trend********************************************************
+Momentum = -161.0
+ROC = -2.0
+2022-04-26T19:15:03.0109669Z TRACE:: Debug: TQQQ - 2021-08-20 00:00:00: Close=65.86
+UP Trend**********************************************************
+Momentum = 199.0
+ROC = 3.0
+2022-04-26T19:15:03.0115050Z TRACE:: Debug: TQQQ - 2021-08-21 00:00:00: Close=67.9
+UP Trend**********************************************************
+Momentum = 143.0
+ROC = 2.0
+2022-04-26T19:15:03.0124042Z TRACE:: Debug: TQQQ - 2021-08-24 00:00:00: Close=70.93
+UP Trend**********************************************************
+Momentum = 242.0
+ROC = 4.0
+2022-04-26T19:15:03.0126794Z TRACE:: Debug: TQQQ - 2021-08-25 00:00:00: Close=71.62
+Momentum = 31.0
+ROC = 0.0
+2022-04-26T19:15:03.0130233Z TRACE:: Debug: TQQQ - 2021-08-26 00:00:00: Close=71.71
+Momentum = -4.0
+ROC = -0.0
+2022-04-26T19:15:03.0133161Z TRACE:: Debug: TQQQ - 2021-08-27 00:00:00: Close=70.49
+DOWN Trend********************************************************
+Momentum = -84.0
+ROC = -1.0
+2022-04-26T19:15:03.0136629Z TRACE:: Debug: TQQQ - 2021-08-28 00:00:00: Close=72.55
+UP Trend**********************************************************
+Momentum = 170.0
+ROC = 2.0
+2022-04-26T19:15:03.0139035Z TRACE:: Debug: TQQQ - 2021-08-31 00:00:00: Close=74.96
+UP Trend**********************************************************
+Momentum = 196.0
+ROC = 3.0
+2022-04-26T19:15:03.0141301Z TRACE:: Debug: TQQQ - 2021-09-01 00:00:00: Close=74.75
+Momentum = -36.0
+ROC = -0.0
+2022-04-26T19:15:03.0143913Z TRACE:: Debug: TQQQ - 2021-09-02 00:00:00: Close=75.15
+Momentum = -27.0
+ROC = -0.0
+2022-04-26T19:15:03.0146957Z TRACE:: Debug: TQQQ - 2021-09-03 00:00:00: Close=75.05
+DOWN Trend********************************************************
+Momentum = -92.0
+ROC = -1.0
+2022-04-26T19:15:03.0149146Z TRACE:: Debug: TQQQ - 2021-09-04 00:00:00: Close=75.72
+UP Trend**********************************************************
+Momentum = 137.0
+ROC = 2.0
+2022-04-26T19:15:03.0151430Z TRACE:: Debug: TQQQ - 2021-09-08 00:00:00: Close=76.04
+Momentum = 26.0
+ROC = 0.0
+2022-04-26T19:15:03.0154237Z TRACE:: Debug: TQQQ - 2021-09-09 00:00:00: Close=75.25
+DOWN Trend********************************************************
+Momentum = -65.0
+ROC = -1.0
+2022-04-26T19:15:03.0157793Z TRACE:: Debug: TQQQ - 2021-09-10 00:00:00: Close=74.45
+DOWN Trend********************************************************
+Momentum = -91.0
+ROC = -1.0
+2022-04-26T19:15:03.0159775Z TRACE:: Debug: TQQQ - 2021-09-11 00:00:00: Close=72.78
+DOWN Trend********************************************************
+Momentum = -272.0
+ROC = -4.0
+2022-04-26T19:15:03.0161506Z TRACE:: Debug: TQQQ - 2021-09-14 00:00:00: Close=72.61
+DOWN Trend********************************************************
+Momentum = -153.0
+ROC = -2.0
+2022-04-26T19:15:03.0163386Z TRACE:: Debug: TQQQ - 2021-09-15 00:00:00: Close=71.99
+DOWN Trend********************************************************
+Momentum = -148.0
+ROC = -2.0
+2022-04-26T19:15:03.0165062Z TRACE:: Debug: TQQQ - 2021-09-16 00:00:00: Close=73.58
+UP Trend**********************************************************
+Momentum = 133.0
+ROC = 2.0
+2022-04-26T19:15:03.0169208Z TRACE:: Debug: TQQQ - 2021-09-17 00:00:00: Close=73.72
+UP Trend**********************************************************
+Momentum = 94.0
+ROC = 1.0
+2022-04-26T19:15:03.0171278Z TRACE:: Debug: TQQQ - 2021-09-18 00:00:00: Close=71.12
+DOWN Trend********************************************************
+Momentum = -233.0
+ROC = -3.0
+2022-04-26T19:15:03.0173698Z TRACE:: Debug: TQQQ - 2021-09-21 00:00:00: Close=66.75
+DOWN Trend********************************************************
+Momentum = -96.0
+ROC = -1.0
+2022-04-26T19:15:03.0175494Z TRACE:: Debug: TQQQ - 2021-09-22 00:00:00: Close=66.83
+DOWN Trend********************************************************
+Momentum = -86.0
+ROC = -1.0
+2022-04-26T19:15:03.0177914Z TRACE:: Debug: TQQQ - 2021-09-23 00:00:00: Close=68.79
+UP Trend**********************************************************
+Momentum = 136.0
+ROC = 2.0
+2022-04-26T19:15:03.0180117Z TRACE:: Debug: TQQQ - 2021-09-24 00:00:00: Close=70.69
+UP Trend**********************************************************
+Momentum = 123.0
+ROC = 2.0
+2022-04-26T19:15:03.0182507Z TRACE:: Debug: TQQQ - 2021-09-25 00:00:00: Close=70.89
+UP Trend**********************************************************
+Momentum = 153.0
+ROC = 2.0
+2022-04-26T19:15:03.0185270Z TRACE:: Debug: TQQQ - 2021-09-28 00:00:00: Close=69.18
+Momentum = 7.0
+ROC = 0.0
+2022-04-26T19:15:03.0187926Z TRACE:: Debug: TQQQ - 2021-09-29 00:00:00: Close=63.42
+DOWN Trend********************************************************
+Momentum = -315.0
+ROC = -5.0
+2022-04-26T19:15:03.0189935Z TRACE:: Debug: TQQQ - 2021-09-30 00:00:00: Close=62.99
+DOWN Trend********************************************************
+Momentum = -99.0
+ROC = -2.0
+2022-04-26T19:15:03.0193939Z TRACE:: Debug: TQQQ - 2021-10-01 00:00:00: Close=62.28
+DOWN Trend********************************************************
+Momentum = -161.0
+ROC = -3.0
+2022-04-26T19:15:03.0196589Z TRACE:: Debug: TQQQ - 2021-10-02 00:00:00: Close=63.42
+UP Trend**********************************************************
+Momentum = 80.0
+ROC = 1.0
+2022-04-26T19:15:03.0200149Z TRACE:: Debug: TQQQ - 2021-10-05 00:00:00: Close=59.52
+DOWN Trend********************************************************
+Momentum = -303.0
+ROC = -5.0
+2022-04-26T19:15:03.0202624Z TRACE:: Debug: TQQQ - 2021-10-06 00:00:00: Close=61.81
+UP Trend**********************************************************
+Momentum = 182.0
+ROC = 3.0
+2022-04-26T19:15:03.0204497Z TRACE:: Debug: TQQQ - 2021-10-07 00:00:00: Close=63.03
+UP Trend**********************************************************
+Momentum = 290.0
+ROC = 5.0
+2022-04-26T19:15:03.0206847Z TRACE:: Debug: TQQQ - 2021-10-08 00:00:00: Close=64.74
+Momentum = 8.0
+ROC = 0.0
+2022-04-26T19:15:03.0209084Z TRACE:: Debug: TQQQ - 2021-10-09 00:00:00: Close=63.74
+DOWN Trend********************************************************
+Momentum = -159.0
+ROC = -2.0
+2022-04-26T19:15:03.0210982Z TRACE:: Debug: TQQQ - 2021-10-12 00:00:00: Close=62.33
+DOWN Trend********************************************************
+Momentum = -60.0
+ROC = -1.0
+2022-04-26T19:15:03.0217468Z TRACE:: Debug: TQQQ - 2021-10-13 00:00:00: Close=61.69
+DOWN Trend********************************************************
+Momentum = -139.0
+ROC = -2.0
+2022-04-26T19:15:03.0224289Z TRACE:: Debug: TQQQ - 2021-10-14 00:00:00: Close=63.13
+Momentum = 24.0
+ROC = 0.0
+2022-04-26T19:15:03.0245677Z TRACE:: Debug: TQQQ - 2021-10-15 00:00:00: Close=66.62
+UP Trend**********************************************************
+Momentum = 156.0
+ROC = 2.0
+2022-04-26T19:15:03.0262829Z TRACE:: Debug: TQQQ - 2021-10-16 00:00:00: Close=67.86
+UP Trend**********************************************************
+Momentum = 56.0
+ROC = 1.0
+2022-04-26T19:15:03.0268480Z TRACE:: Debug: TQQQ - 2021-10-19 00:00:00: Close=69.89
+UP Trend**********************************************************
+Momentum = 277.0
+ROC = 4.0
+2022-04-26T19:15:03.0276051Z TRACE:: Debug: TQQQ - 2021-10-20 00:00:00: Close=71.43
+UP Trend**********************************************************
+Momentum = 91.0
+ROC = 1.0
+2022-04-26T19:15:03.0281703Z TRACE:: Debug: TQQQ - 2021-10-21 00:00:00: Close=71.2
+DOWN Trend********************************************************
+Momentum = -55.0
+ROC = -1.0
+2022-04-26T19:15:03.0292746Z TRACE:: Debug: TQQQ - 2021-10-22 00:00:00: Close=72.47
+UP Trend**********************************************************
+Momentum = 175.0
+ROC = 2.0
+2022-04-26T19:15:03.0294829Z TRACE:: Debug: TQQQ - 2021-10-23 00:00:00: Close=70.64
+DOWN Trend********************************************************
+Momentum = -110.0
+ROC = -2.0
+2022-04-26T19:15:03.0297765Z TRACE:: Debug: TQQQ - 2021-10-26 00:00:00: Close=72.76
+UP Trend**********************************************************
+Momentum = 126.0
+ROC = 2.0
+2022-04-26T19:15:03.0302536Z TRACE:: Debug: TQQQ - 2021-10-27 00:00:00: Close=73.44
+DOWN Trend********************************************************
+Momentum = -72.0
+ROC = -1.0
+2022-04-26T19:15:03.0307637Z TRACE:: Debug: TQQQ - 2021-10-28 00:00:00: Close=74.02
+Momentum = 24.0
+ROC = 0.0
+2022-04-26T19:15:03.0312745Z TRACE:: Debug: TQQQ - 2021-10-29 00:00:00: Close=76.45
+UP Trend**********************************************************
+Momentum = 130.0
+ROC = 2.0
+2022-04-26T19:15:03.0315916Z TRACE:: Debug: TQQQ - 2021-10-30 00:00:00: Close=77.58
+UP Trend**********************************************************
+Momentum = 298.0
+ROC = 4.0
+2022-04-26T19:15:03.0323028Z TRACE:: Debug: TQQQ - 2021-11-02 00:00:00: Close=78.35
+UP Trend**********************************************************
+Momentum = 45.0
+ROC = 1.0
+2022-04-26T19:15:03.0335364Z TRACE:: Debug: TQQQ - 2021-11-03 00:00:00: Close=79.39
+UP Trend**********************************************************
+Momentum = 138.0
+ROC = 2.0
+2022-04-26T19:15:03.0340299Z TRACE:: Debug: TQQQ - 2021-11-04 00:00:00: Close=81.91
+UP Trend**********************************************************
+Momentum = 224.0
+ROC = 3.0
+2022-04-26T19:15:03.0844438Z TRACE:: Debug: TQQQ - 2021-11-05 00:00:00: Close=84.96
+UP Trend**********************************************************
+Momentum = 225.0
+ROC = 3.0
+2022-04-26T19:15:03.0847491Z TRACE:: Debug: TQQQ - 2021-11-06 00:00:00: Close=85.28
+DOWN Trend********************************************************
+Momentum = -95.0
+ROC = -1.0
+2022-04-26T19:15:03.0850529Z TRACE:: Debug: TQQQ - 2021-11-09 00:00:00: Close=84.93
+Momentum = -32.0
+ROC = -0.0
+2022-04-26T19:15:03.0853094Z TRACE:: Debug: TQQQ - 2021-11-10 00:00:00: Close=83.18
+DOWN Trend********************************************************
+Momentum = -244.0
+ROC = -3.0
+2022-04-26T19:15:03.0856566Z TRACE:: Debug: TQQQ - 2021-11-11 00:00:00: Close=79.54
+DOWN Trend********************************************************
+Momentum = -182.0
+ROC = -2.0
+2022-04-26T19:15:03.0859155Z TRACE:: Debug: TQQQ - 2021-11-12 00:00:00: Close=80.18
+DOWN Trend********************************************************
+Momentum = -120.0
+ROC = -1.0
+2022-04-26T19:15:03.0861823Z TRACE:: Debug: TQQQ - 2021-11-13 00:00:00: Close=82.72
+UP Trend**********************************************************
+Momentum = 182.0
+ROC = 2.0
+2022-04-26T19:15:03.0865087Z TRACE:: Debug: TQQQ - 2021-11-16 00:00:00: Close=82.7
+DOWN Trend********************************************************
+Momentum = -76.0
+ROC = -1.0
+2022-04-26T19:15:03.0868928Z TRACE:: Debug: TQQQ - 2021-11-17 00:00:00: Close=84.41
+UP Trend**********************************************************
+Momentum = 227.0
+ROC = 3.0
+2022-04-26T19:15:03.0870997Z TRACE:: Debug: TQQQ - 2021-11-18 00:00:00: Close=84.51
+Momentum = -10.0
+ROC = -0.0
+2022-04-26T19:15:03.0872927Z TRACE:: Debug: TQQQ - 2021-11-19 00:00:00: Close=87.1
+UP Trend**********************************************************
+Momentum = 126.0
+ROC = 1.0
+2022-04-26T19:15:03.1171539Z TRACE:: Synchronizer.GetEnumerator(): Exited thread.
+2022-04-26T19:15:03.1175895Z TRACE:: AlgorithmManager.Run(): Firing On End Of Algorithm...
+2022-04-26T19:15:03.1201641Z TRACE:: Engine.Run(): Exiting Algorithm Manager
+2022-04-26T19:15:03.1228550Z TRACE:: FileSystemDataFeed.Exit(): Start. Setting cancellation token...
+2022-04-26T19:15:03.1245915Z TRACE:: FileSystemDataFeed.Exit(): Exit Finished.
+2022-04-26T19:15:03.1253817Z TRACE:: DefaultAlphaHandler.Exit(): Exiting...
+2022-04-26T19:15:03.1309318Z TRACE:: DefaultAlphaHandler.Exit(): Ended
+2022-04-26T19:15:03.1318473Z TRACE:: BacktestingResultHandler.Exit(): starting...
+2022-04-26T19:15:03.1322142Z TRACE:: BacktestingResultHandler.Exit(): Saving logs...
+2022-04-26T19:15:03.1376429Z TRACE:: Debug: TQQQ - 2021-11-20 00:00:00: Close=88.57
+Momentum = 36.0
+ROC = 0.0
+2022-04-26T19:15:03.1380193Z TRACE:: Debug: TQQQ - 2021-11-23 00:00:00: Close=85.5
+DOWN Trend********************************************************
+Momentum = -414.0
+ROC = -5.0
+2022-04-26T19:15:03.1382300Z TRACE:: Debug: TQQQ - 2021-11-24 00:00:00: Close=84.33
+Momentum = -39.0
+ROC = -0.0
+2022-04-26T19:15:03.1384392Z TRACE:: Debug: TQQQ - 2021-11-25 00:00:00: Close=85.11
+UP Trend**********************************************************
+Momentum = 246.0
+ROC = 3.0
+2022-04-26T19:15:03.1386200Z TRACE:: Debug: TQQQ - 2021-11-27 00:00:00: Close=80.42
+DOWN Trend********************************************************
+Momentum = -297.0
+ROC = -4.0
+2022-04-26T19:15:03.1388795Z TRACE:: Debug: TQQQ - 2021-11-30 00:00:00: Close=85.42
+UP Trend**********************************************************
+Momentum = 232.0
+ROC = 3.0
+2022-04-26T19:15:03.1390736Z TRACE:: Debug: TQQQ - 2021-12-01 00:00:00: Close=81.75
+DOWN Trend********************************************************
+Momentum = -309.0
+ROC = -4.0
+2022-04-26T19:15:03.1392644Z TRACE:: Debug: TQQQ - 2021-12-02 00:00:00: Close=77.55
+DOWN Trend********************************************************
+Momentum = -688.0
+ROC = -8.0
+2022-04-26T19:15:03.1394861Z TRACE:: Debug: TQQQ - 2021-12-03 00:00:00: Close=79.01
+UP Trend**********************************************************
+Momentum = 230.0
+ROC = 3.0
+2022-04-26T19:15:03.1397374Z TRACE:: Debug: TQQQ - 2021-12-04 00:00:00: Close=75.04
+DOWN Trend********************************************************
+Momentum = -496.0
+ROC = -6.0
+2022-04-26T19:15:03.1400917Z TRACE:: Debug: TQQQ - 2021-12-07 00:00:00: Close=76.79
+UP Trend**********************************************************
+Momentum = 150.0
+ROC = 2.0
+2022-04-26T19:15:03.1403119Z TRACE:: Debug: TQQQ - 2021-12-08 00:00:00: Close=83.72
+UP Trend**********************************************************
+Momentum = 283.0
+ROC = 3.0
+2022-04-26T19:15:03.1404645Z TRACE:: StopSafely(): waiting for 'Result Thread' thread to stop...
+2022-04-26T19:15:03.1408069Z TRACE:: Debug: TQQQ - 2021-12-09 00:00:00: Close=84.89
+UP Trend**********************************************************
+Momentum = 95.0
+ROC = 1.0
+2022-04-26T19:15:03.1414248Z TRACE:: Debug: TQQQ - 2021-12-10 00:00:00: Close=81.22
+DOWN Trend********************************************************
+Momentum = -285.0
+ROC = -3.0
+2022-04-26T19:15:03.1417869Z TRACE:: Debug: TQQQ - 2021-12-11 00:00:00: Close=83.74
+UP Trend**********************************************************
+Momentum = 85.0
+ROC = 1.0
+2022-04-26T19:15:03.1421427Z TRACE:: Debug: TQQQ - 2021-12-14 00:00:00: Close=80.14
+DOWN Trend********************************************************
+Momentum = -360.0
+ROC = -4.0
+2022-04-26T19:15:03.1426794Z TRACE:: Debug: TQQQ - 2021-12-15 00:00:00: Close=77.75
+UP Trend**********************************************************
+Momentum = 69.0
+ROC = 1.0
+2022-04-26T19:15:03.1429567Z TRACE:: Debug: TQQQ - 2021-12-16 00:00:00: Close=82.89
+UP Trend**********************************************************
+Momentum = 541.0
+ROC = 7.0
+2022-04-26T19:15:03.1432285Z TRACE:: Debug: TQQQ - 2021-12-17 00:00:00: Close=76.57
+DOWN Trend********************************************************
+Momentum = -693.0
+ROC = -8.0
+2022-04-26T19:15:03.1434779Z TRACE:: Debug: TQQQ - 2021-12-18 00:00:00: Close=75.4
+UP Trend**********************************************************
+Momentum = 98.0
+ROC = 1.0
+2022-04-26T19:15:03.1437643Z TRACE:: Debug: TQQQ - 2021-12-21 00:00:00: Close=73.14
+UP Trend**********************************************************
+Momentum = 63.0
+ROC = 1.0
+2022-04-26T19:15:03.1440746Z TRACE:: Debug: TQQQ - 2021-12-22 00:00:00: Close=78.04
+UP Trend**********************************************************
+Momentum = 296.0
+ROC = 4.0
+2022-04-26T19:15:03.1442674Z TRACE:: Debug: TQQQ - 2021-12-23 00:00:00: Close=80.82
+UP Trend**********************************************************
+Momentum = 303.0
+ROC = 4.0
+2022-04-26T19:15:03.1446354Z TRACE:: Debug: TQQQ - 2021-12-24 00:00:00: Close=82.74
+UP Trend**********************************************************
+Momentum = 166.0
+ROC = 2.0
+2022-04-26T19:15:03.1448247Z TRACE:: Debug: TQQQ - 2021-12-28 00:00:00: Close=86.69
+UP Trend**********************************************************
+Momentum = 315.0
+ROC = 4.0
+2022-04-26T19:15:03.1450255Z TRACE:: Debug: TQQQ - 2021-12-29 00:00:00: Close=85.68
+DOWN Trend********************************************************
+Momentum = -170.0
+ROC = -2.0
+2022-04-26T19:15:03.1452520Z TRACE:: Debug: TQQQ - 2021-12-30 00:00:00: Close=85.54
+Momentum = -11.0
+ROC = -0.0
+2022-04-26T19:15:03.1454302Z TRACE:: Debug: TQQQ - 2021-12-31 00:00:00: Close=84.74
+DOWN Trend********************************************************
+Momentum = -65.0
+ROC = -1.0
+2022-04-26T19:15:03.1457051Z TRACE:: Debug: TQQQ - 2022-01-01 00:00:00: Close=83.17
+DOWN Trend********************************************************
+Momentum = -115.0
+ROC = -1.0
+2022-04-26T19:15:03.1459375Z TRACE:: Debug: Algorithm Id:(1262208876) completed in 0.70 seconds at 1k data points per second. Processing total of 694 data points.
+2022-04-26T19:15:03.1462739Z TRACE:: Debug: Your log was successfully created and can be retrieved from: /Results/1262208876-log.txt
+2022-04-26T19:15:03.1464529Z TRACE:: BacktestingResultHandler.Run(): Ending Thread...
+2022-04-26T19:15:03.3221994Z TRACE:: 
+STATISTICS:: Total Trades 0
+STATISTICS:: Average Win 0%
+STATISTICS:: Average Loss 0%
+STATISTICS:: Compounding Annual Return 0%
+STATISTICS:: Drawdown 0%
+STATISTICS:: Expectancy 0
+STATISTICS:: Net Profit 0%
+STATISTICS:: Sharpe Ratio 0
+STATISTICS:: Probabilistic Sharpe Ratio 0%
+STATISTICS:: Loss Rate 0%
+STATISTICS:: Win Rate 0%
+STATISTICS:: Profit-Loss Ratio 0
+STATISTICS:: Alpha 0
+STATISTICS:: Beta 0
+STATISTICS:: Annual Standard Deviation 0
+STATISTICS:: Annual Variance 0
+STATISTICS:: Information Ratio -0.714
+STATISTICS:: Tracking Error 0.064
+STATISTICS:: Treynor Ratio 0
+STATISTICS:: Total Fees $0.00
+STATISTICS:: Estimated Strategy Capacity $0
+STATISTICS:: Lowest Capacity Asset 
+STATISTICS:: Fitness Score 0
+STATISTICS:: Kelly Criterion Estimate 0
+STATISTICS:: Kelly Criterion Probability Value 0
+STATISTICS:: Sortino Ratio 79228162514264337593543950335
+STATISTICS:: Return Over Maximum Drawdown 79228162514264337593543950335
+STATISTICS:: Portfolio Turnover 0
+STATISTICS:: Total Insights Generated 0
+STATISTICS:: Total Insights Closed 0
+STATISTICS:: Total Insights Analysis Completed 0
+STATISTICS:: Long Insight Count 0
+STATISTICS:: Short Insight Count 0
+STATISTICS:: Long/Short Ratio 100%
+STATISTICS:: Estimated Monthly Alpha Value $0
+STATISTICS:: Total Accumulated Estimated Alpha Value $0
+STATISTICS:: Mean Population Estimated Insight Value $0
+STATISTICS:: Mean Population Direction 0%
+STATISTICS:: Mean Population Magnitude 0%
+STATISTICS:: Rolling Averaged Population Direction 0%
+STATISTICS:: Rolling Averaged Population Magnitude 0%
+STATISTICS:: OrderListHash d41d8cd98f00b204e9800998ecf8427e
+2022-04-26T19:15:03.3224303Z TRACE:: BacktestingResultHandler.SendAnalysisResult(): Processed final packet
+2022-04-26T19:15:03.3230428Z TRACE:: Engine.Run(): Disconnecting from brokerage...
+2022-04-26T19:15:03.3233274Z TRACE:: Engine.Run(): Disposing of setup handler...
+2022-04-26T19:15:03.3242415Z TRACE:: Engine.Main(): Analysis Completed and Results Posted.
+2022-04-26T19:15:03.3253182Z TRACE:: Engine.Main(): Packet removed from queue: 1262208876
+2022-04-26T19:15:03.3257550Z TRACE:: LeanEngineSystemHandlers.Dispose(): start...
+2022-04-26T19:15:03.3261296Z TRACE:: LeanEngineSystemHandlers.Dispose(): Disposed of system handlers.
+2022-04-26T19:15:03.3266942Z TRACE:: LeanEngineAlgorithmHandlers.Dispose(): start...
+2022-04-26T19:15:03.3344522Z TRACE:: LeanEngineAlgorithmHandlers.Dispose(): Disposed of algorithm handlers.

@@ -1,0 +1,640 @@
+2022-04-24T01:04:46.1951190Z TRACE:: Config.Get(): Configuration key not found. Key: data-directory - Using default value: ../../../Data/
+2022-04-24T01:04:46.2320294Z TRACE:: Config.Get(): Configuration key not found. Key: version-id - Using default value: 
+2022-04-24T01:04:46.2322953Z TRACE:: Config.Get(): Configuration key not found. Key: cache-location - Using default value: /Lean/Data
+2022-04-24T01:04:46.2326385Z TRACE:: Engine.Main(): LEAN ALGORITHMIC TRADING ENGINE v2.5.0.0 Mode: DEBUG (64bit) Host: DESKTOP-0LAT4UV
+2022-04-24T01:04:46.2370583Z TRACE:: Engine.Main(): Started 1:04 AM
+2022-04-24T01:04:46.2408107Z TRACE:: Config.Get(): Configuration key not found. Key: lean-manager-type - Using default value: LocalLeanManager
+2022-04-24T01:04:46.2576565Z TRACE:: JobQueue.NextJob(): Selected /LeanCLI/main.py
+2022-04-24T01:04:46.3330703Z TRACE:: Config.GetValue(): scheduled-event-leaky-bucket-capacity - Using default value: 120
+2022-04-24T01:04:46.3334655Z TRACE:: Config.GetValue(): scheduled-event-leaky-bucket-time-interval-minutes - Using default value: 1440
+2022-04-24T01:04:46.3338708Z TRACE:: Config.GetValue(): scheduled-event-leaky-bucket-refill-amount - Using default value: 18
+2022-04-24T01:04:46.3426011Z TRACE:: Config.Get(): Configuration key not found. Key: job-organization-id - Using default value: 
+2022-04-24T01:04:46.3433424Z TRACE:: Config.Get(): Configuration key not found. Key: data-permission-manager - Using default value: DataPermissionManager
+2022-04-24T01:04:46.3596823Z TRACE:: AlgorithmManager.CreateTokenBucket(): Initializing LeakyBucket: Capacity: 120 RefillAmount: 18 TimeInterval: 1440
+2022-04-24T01:04:46.3612018Z TRACE:: Config.GetValue(): algorithm-manager-time-loop-maximum - Using default value: 20
+2022-04-24T01:04:46.3750985Z TRACE:: TextSubscriptionDataSourceReader.SetCacheSize(): Setting cache size to 71582788 items
+2022-04-24T01:04:46.7249583Z TRACE:: Config.GetValue(): algorithm-creation-timeout - Using default value: 90
+2022-04-24T01:04:46.7285087Z TRACE:: PythonInitializer.Initialize(): start...
+2022-04-24T01:04:47.5447412Z TRACE:: PythonInitializer.Initialize(): ended
+2022-04-24T01:04:47.5484635Z TRACE:: AlgorithmPythonWrapper(): Python version 3.6.8 |Anaconda, Inc.| (default, Dec 30 2018, 01:25:33) 
+[GCC 7.3.0]: Importing python module main
+2022-04-24T01:04:49.4764679Z TRACE:: AlgorithmPythonWrapper(): main successfully imported.
+2022-04-24T01:04:49.4833634Z TRACE:: AlgorithmPythonWrapper(): Creating IAlgorithm instance.
+2022-04-24T01:04:49.4899063Z TRACE:: Config.GetValue(): api-data-update-period - Using default value: 1
+2022-04-24T01:04:49.5952939Z TRACE:: Config.GetValue(): mute-python-library-logging - Using default value: True
+2022-04-24T01:04:49.6101950Z TRACE:: LocalObjectStore.Initialize(): Storage Root: /Storage/QCAlgorithm. StorageFileCount 100. StorageLimitMB 5
+2022-04-24T01:04:49.6255581Z TRACE:: BacktestingSetupHandler.Setup(): Setting up job: UID: 0, PID: 907417205, Version: 2.5.0.0, Source: WebIDE
+2022-04-24T01:04:49.6295659Z TRACE:: Config.Get(): Configuration key not found. Key: security-data-feeds - Using default value: 
+2022-04-24T01:04:49.7718673Z TRACE:: BaseSetupHandler.SetupCurrencyConversions():
+Symbol      Quantity    Conversion = Value in USD
+USD: $      100000.00 @       1.00 = $100000.0
+-------------------------------------------------
+CashBook Total Value:                $100000.0
+
+2022-04-24T01:04:49.7764068Z TRACE:: SetUp Backtesting: User: 0 ProjectId: 907417205 AlgoId: 1666764420
+2022-04-24T01:04:49.7772729Z TRACE:: Dates: Start: 01/01/2021 End: 01/01/2022 Cash: ¤100,000.00 MaximumRuntime: 100.00:00:00 MaxOrders: 2147483647
+2022-04-24T01:04:49.7797679Z TRACE:: BacktestingResultHandler(): Sample Period Set: 131.76
+2022-04-24T01:04:49.8045622Z TRACE:: Time.TradeableDates(): Security Count: 1
+2022-04-24T01:04:49.8104308Z TRACE:: Config.GetValue(): forward-console-messages - Using default value: True
+2022-04-24T01:04:49.8130627Z TRACE:: JOB HANDLERS: 
+2022-04-24T01:04:49.8134639Z TRACE::          DataFeed:     QuantConnect.Lean.Engine.DataFeeds.FileSystemDataFeed
+2022-04-24T01:04:49.8138548Z TRACE::          Setup:        QuantConnect.Lean.Engine.Setup.BacktestingSetupHandler
+2022-04-24T01:04:49.8142209Z TRACE::          RealTime:     QuantConnect.Lean.Engine.RealTime.BacktestingRealTimeHandler
+2022-04-24T01:04:49.8147562Z TRACE::          Results:      QuantConnect.Lean.Engine.Results.BacktestingResultHandler
+2022-04-24T01:04:49.8150449Z TRACE::          Transactions: QuantConnect.Lean.Engine.TransactionHandlers.BacktestingTransactionHandler
+2022-04-24T01:04:49.8193579Z TRACE::          Alpha:        QuantConnect.Lean.Engine.Alphas.DefaultAlphaHandler
+2022-04-24T01:04:49.8211620Z TRACE::          ObjectStore:  QuantConnect.Lean.Engine.Storage.LocalObjectStore
+2022-04-24T01:04:49.8221636Z TRACE::          History Provider:     QuantConnect.Lean.Engine.HistoricalData.HistoryProviderManager
+2022-04-24T01:04:49.8367792Z ERROR:: BacktestingResultHandler.Update():  System.DivideByZeroException: Attempted to divide by zero.
+   at System.Decimal.DecCalc.VarDecDiv(DecCalc& d1, DecCalc& d2)
+   at QuantConnect.Lean.Engine.Results.BacktestingResultHandler.Update() in /LeanCloud/CI.Builder/bin/Debug/src/QuantConnect/Lean/Engine/Results/BacktestingResultHandler.cs:line 147
+2022-04-24T01:04:49.8371649Z TRACE:: Debug: Launching analysis for 1666764420 with LEAN Engine v2.5.0.0
+2022-04-24T01:04:49.8574126Z TRACE:: Event Name "Daily Sampling", scheduled to run at 1/1/2021 5:00:00 AM (UTC)...
+2022-04-24T01:04:49.8578260Z TRACE:: AlgorithmManager.Run(): Begin DataStream - Start: 1/1/2021 12:00:00 AM Stop: 1/1/2022 11:59:59 PM
+2022-04-24T01:04:49.8856946Z TRACE:: AlgorithmManager.Stream(): WarmupHistoryRequest: TQQQ.YahooData: Start: 9/23/2020 4:00:00 AM End: 1/1/2021 5:00:00 AM Resolution: Daily
+2022-04-24T01:04:49.8918056Z TRACE:: Config.GetValue(): data-feed-max-work-weight - Using default value: 400
+2022-04-24T01:04:49.8921494Z TRACE:: Config.GetValue(): data-feed-workers-count - Using default value: 8
+2022-04-24T01:04:49.8923703Z TRACE:: WeightedWorkScheduler(): will use 8 workers and MaxWorkWeight is 400
+2022-04-24T01:04:49.9104742Z TRACE:: Config.GetValue(): show-missing-data-logs - Using default value: False
+2022-04-24T01:04:50.0364461Z TRACE:: AlgorithmManager.Stream(): Finished warmup
+2022-04-24T01:04:50.0379888Z TRACE:: Debug: Initilize Complete.
+Algorithm warming up...
+TQQQ - 2020-12-30 00:00:00: Close=45.1
+ROC = -0.01, ROC Percent = -1.0%
+2022-04-24T01:04:50.0383036Z TRACE:: Debug: TQQQ - 2020-12-31 00:00:00: Close=45.1
+ROC = -0.01, ROC Percent = -1.0%
+2022-04-24T01:04:50.0386551Z TRACE:: Debug: TQQQ - 2021-01-01 00:00:00: Close=45.45
+ROC = 0.01, ROC Percent = 1.0%
+2022-04-24T01:04:50.0863903Z TRACE:: UniverseSelection.AddPendingInternalDataFeeds(): Adding internal benchmark data feed SPY,#0,SPY,Hour,TradeBar,Trade,Adjusted,OpenInterest,Internal
+2022-04-24T01:04:50.2895513Z TRACE:: Debug: Algorithm finished warming up.
+TQQQ - 2021-01-01 00:00:00: Close=45.45
+ROC = 0.01, ROC Percent = 1.0%
+2022-04-24T01:04:50.3399530Z TRACE:: Debug: TQQQ - 2021-01-05 00:00:00: Close=43.46
+ROC = -0.06, ROC Percent = -6.0%
+2022-04-24T01:04:50.3402522Z TRACE:: Debug: TQQQ - 2021-01-06 00:00:00: Close=44.55
+ROC = 0.03, ROC Percent = 3.0%
+2022-04-24T01:04:50.3404853Z TRACE:: Debug: TQQQ - 2021-01-07 00:00:00: Close=42.71
+ROC = 0.01, ROC Percent = 1.0%
+2022-04-24T01:04:50.3409320Z TRACE:: Debug: TQQQ - 2021-01-08 00:00:00: Close=45.79
+ROC = 0.04, ROC Percent = 4.0%
+2022-04-24T01:04:50.3411360Z TRACE:: Debug: TQQQ - 2021-01-09 00:00:00: Close=47.57
+ROC = 0.02, ROC Percent = 2.0%
+2022-04-24T01:04:50.3417141Z TRACE:: Debug: TQQQ - 2021-01-12 00:00:00: Close=45.47
+ROC = -0.02, ROC Percent = -2.0%
+2022-04-24T01:04:50.3420048Z TRACE:: Debug: TQQQ - 2021-01-13 00:00:00: Close=45.27
+ROC = -0.01, ROC Percent = -1.0%
+2022-04-24T01:04:50.3426510Z TRACE:: Debug: TQQQ - 2021-01-14 00:00:00: Close=46.15
+ROC = 0.02, ROC Percent = 2.0%
+2022-04-24T01:04:50.3429338Z TRACE:: Debug: TQQQ - 2021-01-15 00:00:00: Close=45.45
+ROC = -0.02, ROC Percent = -2.0%
+2022-04-24T01:04:50.3434609Z TRACE:: Debug: TQQQ - 2021-01-16 00:00:00: Close=44.34
+ROC = -0.02, ROC Percent = -2.0%
+2022-04-24T01:04:50.3441546Z TRACE:: Debug: TQQQ - 2021-01-20 00:00:00: Close=46.26
+ROC = 0.02, ROC Percent = 2.0%
+2022-04-24T01:04:50.3443600Z TRACE:: Debug: TQQQ - 2021-01-21 00:00:00: Close=49.49
+ROC = 0.03, ROC Percent = 3.0%
+2022-04-24T01:04:50.3446301Z TRACE:: Debug: TQQQ - 2021-01-22 00:00:00: Close=50.72
+ROC = 0.01, ROC Percent = 1.0%
+2022-04-24T01:04:50.3449831Z TRACE:: Debug: TQQQ - 2021-01-23 00:00:00: Close=50.26
+ROC = 0.0, ROC Percent = 0.0%
+2022-04-24T01:04:50.3452906Z TRACE:: Debug: TQQQ - 2021-01-26 00:00:00: Close=51.65
+ROC = -0.0, ROC Percent = -0.0%
+2022-04-24T01:04:50.3456337Z TRACE:: Debug: TQQQ - 2021-01-27 00:00:00: Close=51.71
+ROC = -0.0, ROC Percent = -0.0%
+2022-04-24T01:04:50.3460444Z TRACE:: Debug: TQQQ - 2021-01-28 00:00:00: Close=47.54
+ROC = -0.06, ROC Percent = -6.0%
+2022-04-24T01:04:50.3463310Z TRACE:: Debug: TQQQ - 2021-01-29 00:00:00: Close=48.24
+ROC = 0.01, ROC Percent = 1.0%
+2022-04-24T01:04:50.3467976Z TRACE:: Debug: TQQQ - 2021-01-30 00:00:00: Close=45.24
+ROC = -0.05, ROC Percent = -5.0%
+2022-04-24T01:04:50.3470325Z TRACE:: Debug: TQQQ - 2021-02-02 00:00:00: Close=48.56
+ROC = 0.04, ROC Percent = 4.0%
+2022-04-24T01:04:50.3475161Z TRACE:: Debug: TQQQ - 2021-02-03 00:00:00: Close=50.91
+ROC = 0.02, ROC Percent = 2.0%
+2022-04-24T01:04:50.3482599Z TRACE:: Debug: TQQQ - 2021-02-04 00:00:00: Close=50.33
+ROC = -0.03, ROC Percent = -3.0%
+2022-04-24T01:04:50.3489036Z TRACE:: Debug: TQQQ - 2021-02-05 00:00:00: Close=52.1
+ROC = 0.02, ROC Percent = 2.0%
+2022-04-24T01:04:50.3499668Z TRACE:: Debug: TQQQ - 2021-02-06 00:00:00: Close=52.65
+ROC = 0.0, ROC Percent = 0.0%
+2022-04-24T01:04:50.3504033Z TRACE:: Debug: TQQQ - 2021-02-09 00:00:00: Close=53.68
+ROC = 0.0, ROC Percent = 0.0%
+2022-04-24T01:04:50.3511151Z TRACE:: Debug: TQQQ - 2021-02-10 00:00:00: Close=53.65
+ROC = 0.01, ROC Percent = 1.0%
+2022-04-24T01:04:50.3514162Z TRACE:: Debug: TQQQ - 2021-02-11 00:00:00: Close=53.28
+ROC = -0.02, ROC Percent = -2.0%
+2022-04-24T01:04:50.3527452Z TRACE:: Debug: TQQQ - 2021-02-12 00:00:00: Close=54.13
+ROC = 0.0, ROC Percent = 0.0%
+2022-04-24T01:04:50.3531339Z TRACE:: Debug: TQQQ - 2021-02-13 00:00:00: Close=55.06
+ROC = 0.02, ROC Percent = 2.0%
+2022-04-24T01:04:50.3539977Z TRACE:: Debug: TQQQ - 2021-02-17 00:00:00: Close=54.6
+ROC = -0.02, ROC Percent = -2.0%
+2022-04-24T01:04:50.3542452Z TRACE:: Debug: TQQQ - 2021-02-18 00:00:00: Close=53.83
+ROC = 0.01, ROC Percent = 1.0%
+2022-04-24T01:04:50.3545550Z TRACE:: Debug: TQQQ - 2021-02-19 00:00:00: Close=53.11
+ROC = 0.02, ROC Percent = 2.0%
+2022-04-24T01:04:50.3547732Z TRACE:: Debug: TQQQ - 2021-02-20 00:00:00: Close=52.41
+ROC = -0.03, ROC Percent = -3.0%
+2022-04-24T01:04:50.3549809Z TRACE:: Debug: TQQQ - 2021-02-23 00:00:00: Close=48.35
+ROC = -0.04, ROC Percent = -4.0%
+2022-04-24T01:04:50.3552240Z TRACE:: Debug: TQQQ - 2021-02-24 00:00:00: Close=47.92
+ROC = 0.04, ROC Percent = 4.0%
+2022-04-24T01:04:50.3554907Z TRACE:: Debug: TQQQ - 2021-02-25 00:00:00: Close=49.08
+ROC = 0.05, ROC Percent = 5.0%
+2022-04-24T01:04:50.3557814Z TRACE:: Debug: TQQQ - 2021-02-26 00:00:00: Close=43.95
+ROC = -0.08, ROC Percent = -8.0%
+2022-04-24T01:04:50.3560519Z TRACE:: Debug: TQQQ - 2021-02-27 00:00:00: Close=44.61
+ROC = -0.01, ROC Percent = -1.0%
+2022-04-24T01:04:50.3563522Z TRACE:: Debug: TQQQ - 2021-03-02 00:00:00: Close=48.5
+ROC = 0.04, ROC Percent = 4.0%
+2022-04-24T01:04:50.3567996Z TRACE:: Debug: TQQQ - 2021-03-03 00:00:00: Close=46.17
+ROC = -0.05, ROC Percent = -5.0%
+2022-04-24T01:04:50.3570488Z TRACE:: Debug: TQQQ - 2021-03-04 00:00:00: Close=42.17
+ROC = -0.08, ROC Percent = -8.0%
+2022-04-24T01:04:50.3579009Z TRACE:: Debug: TQQQ - 2021-03-05 00:00:00: Close=40.08
+ROC = -0.05, ROC Percent = -5.0%
+2022-04-24T01:04:50.3586675Z TRACE:: Debug: TQQQ - 2021-03-06 00:00:00: Close=41.88
+ROC = 0.02, ROC Percent = 2.0%
+2022-04-24T01:04:50.3588938Z TRACE:: Debug: TQQQ - 2021-03-09 00:00:00: Close=38.3
+ROC = -0.08, ROC Percent = -8.0%
+2022-04-24T01:04:50.3597610Z TRACE:: Debug: TQQQ - 2021-03-10 00:00:00: Close=42.81
+ROC = 0.04, ROC Percent = 4.0%
+2022-04-24T01:04:50.3604105Z TRACE:: Debug: TQQQ - 2021-03-11 00:00:00: Close=42.44
+ROC = -0.05, ROC Percent = -5.0%
+2022-04-24T01:04:50.3608161Z TRACE:: Debug: TQQQ - 2021-03-12 00:00:00: Close=45.39
+ROC = 0.02, ROC Percent = 2.0%
+2022-04-24T01:04:50.3617477Z TRACE:: Debug: TQQQ - 2021-03-13 00:00:00: Close=44.26
+ROC = 0.02, ROC Percent = 2.0%
+2022-04-24T01:04:50.3620409Z TRACE:: Debug: TQQQ - 2021-03-16 00:00:00: Close=45.67
+ROC = 0.03, ROC Percent = 3.0%
+2022-04-24T01:04:50.3624190Z TRACE:: Debug: TQQQ - 2021-03-17 00:00:00: Close=46.42
+ROC = -0.01, ROC Percent = -1.0%
+2022-04-24T01:04:50.3626626Z TRACE:: Debug: TQQQ - 2021-03-18 00:00:00: Close=47.01
+ROC = 0.04, ROC Percent = 4.0%
+2022-04-24T01:04:50.3628953Z TRACE:: Debug: TQQQ - 2021-03-19 00:00:00: Close=42.69
+ROC = -0.05, ROC Percent = -5.0%
+2022-04-24T01:04:50.3631698Z TRACE:: Debug: TQQQ - 2021-03-20 00:00:00: Close=43.24
+ROC = 0.01, ROC Percent = 1.0%
+2022-04-24T01:04:50.3637785Z TRACE:: Debug: TQQQ - 2021-03-23 00:00:00: Close=45.54
+ROC = 0.03, ROC Percent = 3.0%
+2022-04-24T01:04:50.3641326Z TRACE:: Debug: TQQQ - 2021-03-24 00:00:00: Close=44.95
+ROC = -0.02, ROC Percent = -2.0%
+2022-04-24T01:04:50.3644226Z TRACE:: Debug: TQQQ - 2021-03-25 00:00:00: Close=42.68
+ROC = -0.06, ROC Percent = -6.0%
+2022-04-24T01:04:50.3647649Z TRACE:: Debug: TQQQ - 2021-03-26 00:00:00: Close=42.45
+ROC = 0.01, ROC Percent = 1.0%
+2022-04-24T01:04:50.3659951Z TRACE:: Debug: TQQQ - 2021-03-27 00:00:00: Close=44.33
+ROC = 0.05, ROC Percent = 5.0%
+2022-04-24T01:04:50.3676288Z TRACE:: Debug: TQQQ - 2021-03-30 00:00:00: Close=44.3
+ROC = 0.0, ROC Percent = 0.0%
+2022-04-24T01:04:50.3680128Z TRACE:: Debug: TQQQ - 2021-03-31 00:00:00: Close=43.67
+ROC = 0.0, ROC Percent = 0.0%
+2022-04-24T01:04:50.3691364Z TRACE:: Debug: TQQQ - 2021-04-01 00:00:00: Close=45.63
+ROC = 0.03, ROC Percent = 3.0%
+2022-04-24T01:04:50.3701694Z TRACE:: Debug: TQQQ - 2021-04-02 00:00:00: Close=47.95
+ROC = 0.01, ROC Percent = 1.0%
+2022-04-24T01:04:50.3708221Z TRACE:: Debug: TQQQ - 2021-04-06 00:00:00: Close=50.83
+ROC = 0.04, ROC Percent = 4.0%
+2022-04-24T01:04:50.3710859Z TRACE:: Debug: TQQQ - 2021-04-07 00:00:00: Close=50.71
+ROC = 0.0, ROC Percent = 0.0%
+2022-04-24T01:04:50.3718146Z TRACE:: Debug: TQQQ - 2021-04-08 00:00:00: Close=51.08
+ROC = 0.01, ROC Percent = 1.0%
+2022-04-24T01:04:50.3722575Z TRACE:: Debug: TQQQ - 2021-04-09 00:00:00: Close=52.68
+ROC = 0.0, ROC Percent = 0.0%
+2022-04-24T01:04:50.3724625Z TRACE:: Debug: TQQQ - 2021-04-10 00:00:00: Close=53.63
+ROC = 0.03, ROC Percent = 3.0%
+2022-04-24T01:04:50.3726757Z TRACE:: Debug: TQQQ - 2021-04-13 00:00:00: Close=53.42
+ROC = 0.01, ROC Percent = 1.0%
+2022-04-24T01:04:50.3728761Z TRACE:: Debug: TQQQ - 2021-04-14 00:00:00: Close=55.26
+ROC = 0.02, ROC Percent = 2.0%
+2022-04-24T01:04:50.3730479Z TRACE:: Debug: TQQQ - 2021-04-15 00:00:00: Close=53.31
+ROC = -0.04, ROC Percent = -4.0%
+2022-04-24T01:04:50.4240563Z TRACE:: Debug: TQQQ - 2021-04-16 00:00:00: Close=55.67
+ROC = 0.02, ROC Percent = 2.0%
+2022-04-24T01:04:50.4244425Z TRACE:: Debug: TQQQ - 2021-04-17 00:00:00: Close=55.9
+ROC = -0.0, ROC Percent = -0.0%
+2022-04-24T01:04:50.4248824Z TRACE:: Debug: TQQQ - 2021-04-20 00:00:00: Close=54.38
+ROC = -0.01, ROC Percent = -1.0%
+2022-04-24T01:04:50.4256693Z TRACE:: Debug: TQQQ - 2021-04-21 00:00:00: Close=53.19
+ROC = -0.02, ROC Percent = -2.0%
+2022-04-24T01:04:50.4261770Z TRACE:: Debug: TQQQ - 2021-04-22 00:00:00: Close=54.53
+ROC = 0.04, ROC Percent = 4.0%
+2022-04-24T01:04:50.4267718Z TRACE:: Debug: TQQQ - 2021-04-23 00:00:00: Close=52.55
+ROC = -0.03, ROC Percent = -3.0%
+2022-04-24T01:04:50.4269909Z TRACE:: Debug: TQQQ - 2021-04-24 00:00:00: Close=54.53
+ROC = 0.03, ROC Percent = 3.0%
+2022-04-24T01:04:50.4274947Z TRACE:: Debug: TQQQ - 2021-04-27 00:00:00: Close=55.61
+ROC = 0.02, ROC Percent = 2.0%
+2022-04-24T01:04:50.4278696Z TRACE:: Debug: TQQQ - 2021-04-28 00:00:00: Close=54.88
+ROC = -0.02, ROC Percent = -2.0%
+2022-04-24T01:04:50.4283489Z TRACE:: Debug: TQQQ - 2021-04-29 00:00:00: Close=54.31
+ROC = -0.01, ROC Percent = -1.0%
+2022-04-24T01:04:50.4285868Z TRACE:: Debug: TQQQ - 2021-04-30 00:00:00: Close=54.86
+ROC = -0.02, ROC Percent = -2.0%
+2022-04-24T01:04:50.4288103Z TRACE:: Debug: TQQQ - 2021-05-01 00:00:00: Close=53.83
+ROC = 0.0, ROC Percent = 0.0%
+2022-04-24T01:04:50.4292281Z TRACE:: Debug: TQQQ - 2021-05-04 00:00:00: Close=52.95
+ROC = -0.03, ROC Percent = -3.0%
+2022-04-24T01:04:50.4297315Z TRACE:: Debug: TQQQ - 2021-05-05 00:00:00: Close=50.16
+ROC = -0.03, ROC Percent = -3.0%
+2022-04-24T01:04:50.4299301Z TRACE:: Debug: TQQQ - 2021-05-06 00:00:00: Close=49.58
+ROC = -0.03, ROC Percent = -3.0%
+2022-04-24T01:04:50.4301921Z TRACE:: Debug: TQQQ - 2021-05-07 00:00:00: Close=50.66
+ROC = 0.02, ROC Percent = 2.0%
+2022-04-24T01:04:50.4304089Z TRACE:: Debug: TQQQ - 2021-05-08 00:00:00: Close=51.9
+ROC = -0.0, ROC Percent = -0.0%
+2022-04-24T01:04:50.4306870Z TRACE:: Debug: TQQQ - 2021-05-11 00:00:00: Close=48.0
+ROC = -0.06, ROC Percent = -6.0%
+2022-04-24T01:04:50.4309381Z TRACE:: Debug: TQQQ - 2021-05-12 00:00:00: Close=47.76
+ROC = 0.05, ROC Percent = 5.0%
+2022-04-24T01:04:50.4312086Z TRACE:: Debug: TQQQ - 2021-05-13 00:00:00: Close=44.12
+ROC = -0.03, ROC Percent = -3.0%
+2022-04-24T01:04:50.4314142Z TRACE:: Debug: TQQQ - 2021-05-14 00:00:00: Close=45.06
+ROC = -0.01, ROC Percent = -1.0%
+2022-04-24T01:04:50.4316980Z TRACE:: Debug: TQQQ - 2021-05-15 00:00:00: Close=47.99
+ROC = 0.03, ROC Percent = 3.0%
+2022-04-24T01:04:50.4321275Z TRACE:: Debug: TQQQ - 2021-05-18 00:00:00: Close=47.17
+ROC = -0.0, ROC Percent = -0.0%
+2022-04-24T01:04:50.4332980Z TRACE:: Debug: TQQQ - 2021-05-19 00:00:00: Close=46.19
+ROC = -0.03, ROC Percent = -3.0%
+2022-04-24T01:04:50.4337751Z TRACE:: Debug: TQQQ - 2021-05-20 00:00:00: Close=46.35
+ROC = 0.06, ROC Percent = 6.0%
+2022-04-24T01:04:50.4345738Z TRACE:: Debug: TQQQ - 2021-05-21 00:00:00: Close=49.03
+ROC = 0.04, ROC Percent = 4.0%
+2022-04-24T01:04:50.4356944Z TRACE:: Debug: TQQQ - 2021-05-22 00:00:00: Close=48.22
+ROC = -0.03, ROC Percent = -3.0%
+2022-04-24T01:04:50.4363246Z TRACE:: Debug: TQQQ - 2021-05-25 00:00:00: Close=50.64
+ROC = 0.03, ROC Percent = 3.0%
+2022-04-24T01:04:50.4368305Z TRACE:: Debug: TQQQ - 2021-05-26 00:00:00: Close=50.88
+ROC = -0.01, ROC Percent = -1.0%
+2022-04-24T01:04:50.4373544Z TRACE:: Debug: TQQQ - 2021-05-27 00:00:00: Close=51.4
+ROC = 0.0, ROC Percent = 0.0%
+2022-04-24T01:04:50.4375636Z TRACE:: Debug: TQQQ - 2021-05-28 00:00:00: Close=50.8
+ROC = -0.01, ROC Percent = -1.0%
+2022-04-24T01:04:50.4378200Z TRACE:: Debug: TQQQ - 2021-05-29 00:00:00: Close=51.29
+ROC = -0.0, ROC Percent = -0.0%
+2022-04-24T01:04:50.4384001Z TRACE:: Debug: TQQQ - 2021-06-02 00:00:00: Close=50.79
+ROC = -0.02, ROC Percent = -2.0%
+2022-04-24T01:04:50.4386354Z TRACE:: Debug: TQQQ - 2021-06-03 00:00:00: Close=51.06
+ROC = 0.0, ROC Percent = 0.0%
+2022-04-24T01:04:50.4391840Z TRACE:: Debug: TQQQ - 2021-06-04 00:00:00: Close=49.46
+ROC = -0.01, ROC Percent = -1.0%
+2022-04-24T01:04:50.4394429Z TRACE:: Debug: TQQQ - 2021-06-05 00:00:00: Close=51.99
+ROC = 0.03, ROC Percent = 3.0%
+2022-04-24T01:04:50.4399489Z TRACE:: Debug: TQQQ - 2021-06-08 00:00:00: Close=52.45
+ROC = 0.01, ROC Percent = 1.0%
+2022-04-24T01:04:50.4401776Z TRACE:: Debug: TQQQ - 2021-06-09 00:00:00: Close=52.51
+ROC = -0.01, ROC Percent = -1.0%
+2022-04-24T01:04:50.4407018Z TRACE:: Debug: TQQQ - 2021-06-10 00:00:00: Close=52.57
+ROC = -0.01, ROC Percent = -1.0%
+2022-04-24T01:04:50.4409394Z TRACE:: Debug: TQQQ - 2021-06-11 00:00:00: Close=54.18
+ROC = 0.03, ROC Percent = 3.0%
+2022-04-24T01:04:50.4411703Z TRACE:: Debug: TQQQ - 2021-06-12 00:00:00: Close=54.61
+ROC = 0.01, ROC Percent = 1.0%
+2022-04-24T01:04:50.4417826Z TRACE:: Debug: TQQQ - 2021-06-15 00:00:00: Close=56.14
+ROC = 0.02, ROC Percent = 2.0%
+2022-04-24T01:04:50.4420338Z TRACE:: Debug: TQQQ - 2021-06-16 00:00:00: Close=55.1
+ROC = -0.02, ROC Percent = -2.0%
+2022-04-24T01:04:50.4423386Z TRACE:: Debug: TQQQ - 2021-06-17 00:00:00: Close=54.51
+ROC = -0.01, ROC Percent = -1.0%
+2022-04-24T01:04:50.4429091Z TRACE:: Debug: TQQQ - 2021-06-18 00:00:00: Close=56.54
+ROC = 0.05, ROC Percent = 5.0%
+2022-04-24T01:04:50.4933120Z TRACE:: Debug: TQQQ - 2021-06-19 00:00:00: Close=55.19
+ROC = -0.01, ROC Percent = -1.0%
+2022-04-24T01:04:50.4939504Z TRACE:: Debug: TQQQ - 2021-06-22 00:00:00: Close=56.21
+ROC = 0.02, ROC Percent = 2.0%
+2022-04-24T01:04:50.4943165Z TRACE:: Debug: TQQQ - 2021-06-23 00:00:00: Close=57.78
+ROC = 0.03, ROC Percent = 3.0%
+2022-04-24T01:04:50.4955068Z TRACE:: Debug: TQQQ - 2021-06-24 00:00:00: Close=57.88
+ROC = 0.0, ROC Percent = 0.0%
+2022-04-24T01:04:50.4958534Z TRACE:: Debug: TQQQ - 2021-06-25 00:00:00: Close=58.94
+ROC = 0.0, ROC Percent = 0.0%
+2022-04-24T01:04:50.4960624Z TRACE:: Debug: TQQQ - 2021-06-26 00:00:00: Close=58.76
+ROC = -0.01, ROC Percent = -1.0%
+2022-04-24T01:04:50.4965877Z TRACE:: Debug: TQQQ - 2021-06-29 00:00:00: Close=60.83
+ROC = 0.02, ROC Percent = 2.0%
+2022-04-24T01:04:50.4968961Z TRACE:: Debug: TQQQ - 2021-06-30 00:00:00: Close=61.52
+ROC = 0.01, ROC Percent = 1.0%
+2022-04-24T01:04:50.4972672Z TRACE:: Debug: TQQQ - 2021-07-01 00:00:00: Close=61.25
+ROC = -0.0, ROC Percent = -0.0%
+2022-04-24T01:04:50.4982198Z TRACE:: Debug: TQQQ - 2021-07-02 00:00:00: Close=61.28
+ROC = 0.0, ROC Percent = 0.0%
+2022-04-24T01:04:50.4985310Z TRACE:: Debug: TQQQ - 2021-07-03 00:00:00: Close=63.36
+ROC = 0.02, ROC Percent = 2.0%
+2022-04-24T01:04:50.4995602Z TRACE:: Debug: TQQQ - 2021-07-07 00:00:00: Close=64.21
+ROC = 0.01, ROC Percent = 1.0%
+2022-04-24T01:04:50.5008454Z TRACE:: Debug: TQQQ - 2021-07-08 00:00:00: Close=64.62
+ROC = -0.01, ROC Percent = -1.0%
+2022-04-24T01:04:50.5017368Z TRACE:: Debug: TQQQ - 2021-07-09 00:00:00: Close=63.5
+ROC = 0.03, ROC Percent = 3.0%
+2022-04-24T01:04:50.5047778Z TRACE:: Debug: TQQQ - 2021-07-10 00:00:00: Close=64.57
+ROC = 0.02, ROC Percent = 2.0%
+2022-04-24T01:04:50.5051715Z TRACE:: Debug: TQQQ - 2021-07-13 00:00:00: Close=65.39
+ROC = -0.0, ROC Percent = -0.0%
+2022-04-24T01:04:50.5064179Z TRACE:: Debug: TQQQ - 2021-07-14 00:00:00: Close=65.35
+ROC = 0.0, ROC Percent = 0.0%
+2022-04-24T01:04:50.5069664Z TRACE:: Debug: TQQQ - 2021-07-15 00:00:00: Close=65.71
+ROC = -0.01, ROC Percent = -1.0%
+2022-04-24T01:04:50.5077011Z TRACE:: Debug: TQQQ - 2021-07-16 00:00:00: Close=64.35
+ROC = -0.02, ROC Percent = -2.0%
+2022-04-24T01:04:50.5083176Z TRACE:: Debug: TQQQ - 2021-07-17 00:00:00: Close=62.76
+ROC = -0.03, ROC Percent = -3.0%
+2022-04-24T01:04:50.5089335Z TRACE:: Debug: TQQQ - 2021-07-20 00:00:00: Close=61.26
+ROC = 0.01, ROC Percent = 1.0%
+2022-04-24T01:04:50.5092111Z TRACE:: Debug: TQQQ - 2021-07-21 00:00:00: Close=63.28
+ROC = 0.03, ROC Percent = 3.0%
+2022-04-24T01:04:50.5094423Z TRACE:: Debug: TQQQ - 2021-07-22 00:00:00: Close=64.72
+ROC = 0.02, ROC Percent = 2.0%
+2022-04-24T01:04:50.5102213Z TRACE:: Debug: TQQQ - 2021-07-23 00:00:00: Close=66.08
+ROC = 0.02, ROC Percent = 2.0%
+2022-04-24T01:04:50.5108784Z TRACE:: Debug: TQQQ - 2021-07-24 00:00:00: Close=68.28
+ROC = 0.02, ROC Percent = 2.0%
+2022-04-24T01:04:50.5111839Z TRACE:: Debug: TQQQ - 2021-07-27 00:00:00: Close=68.57
+ROC = 0.01, ROC Percent = 1.0%
+2022-04-24T01:04:50.5120482Z TRACE:: Debug: TQQQ - 2021-07-28 00:00:00: Close=66.32
+ROC = -0.03, ROC Percent = -3.0%
+2022-04-24T01:04:50.5125651Z TRACE:: Debug: TQQQ - 2021-07-29 00:00:00: Close=67.05
+ROC = 0.0, ROC Percent = 0.0%
+2022-04-24T01:04:50.5129581Z TRACE:: Debug: TQQQ - 2021-07-30 00:00:00: Close=67.38
+ROC = 0.01, ROC Percent = 1.0%
+2022-04-24T01:04:50.5137837Z TRACE:: Debug: TQQQ - 2021-07-31 00:00:00: Close=66.37
+ROC = 0.02, ROC Percent = 2.0%
+2022-04-24T01:04:50.5144147Z TRACE:: Debug: TQQQ - 2021-08-03 00:00:00: Close=66.35
+ROC = -0.01, ROC Percent = -1.0%
+2022-04-24T01:04:50.5146667Z TRACE:: Debug: TQQQ - 2021-08-04 00:00:00: Close=67.5
+ROC = 0.01, ROC Percent = 1.0%
+2022-04-24T01:04:50.5148875Z TRACE:: Debug: TQQQ - 2021-08-05 00:00:00: Close=67.84
+ROC = 0.0, ROC Percent = 0.0%
+2022-04-24T01:04:50.5152210Z TRACE:: Debug: TQQQ - 2021-08-06 00:00:00: Close=69.11
+ROC = 0.01, ROC Percent = 1.0%
+2022-04-24T01:04:50.5179248Z TRACE:: Debug: TQQQ - 2021-08-07 00:00:00: Close=68.21
+ROC = -0.0, ROC Percent = -0.0%
+2022-04-24T01:04:50.5223416Z TRACE:: Debug: TQQQ - 2021-08-10 00:00:00: Close=68.58
+ROC = 0.0, ROC Percent = 0.0%
+2022-04-24T01:04:50.5243756Z TRACE:: Debug: TQQQ - 2021-08-11 00:00:00: Close=67.56
+ROC = -0.02, ROC Percent = -2.0%
+2022-04-24T01:04:50.5264870Z TRACE:: Debug: TQQQ - 2021-08-12 00:00:00: Close=67.19
+ROC = -0.02, ROC Percent = -2.0%
+2022-04-24T01:04:50.5271196Z TRACE:: Debug: TQQQ - 2021-08-13 00:00:00: Close=67.89
+ROC = 0.01, ROC Percent = 1.0%
+2022-04-24T01:04:50.5277839Z TRACE:: Debug: TQQQ - 2021-08-14 00:00:00: Close=68.57
+ROC = 0.01, ROC Percent = 1.0%
+2022-04-24T01:04:50.5283328Z TRACE:: Debug: TQQQ - 2021-08-17 00:00:00: Close=68.69
+ROC = 0.01, ROC Percent = 1.0%
+2022-04-24T01:04:50.5287317Z TRACE:: Debug: TQQQ - 2021-08-18 00:00:00: Close=66.89
+ROC = -0.0, ROC Percent = -0.0%
+2022-04-24T01:04:50.5291310Z TRACE:: Debug: TQQQ - 2021-08-19 00:00:00: Close=64.94
+ROC = -0.02, ROC Percent = -2.0%
+2022-04-24T01:04:50.5294826Z TRACE:: Debug: TQQQ - 2021-08-20 00:00:00: Close=65.86
+ROC = 0.03, ROC Percent = 3.0%
+2022-04-24T01:04:50.5298547Z TRACE:: Debug: TQQQ - 2021-08-21 00:00:00: Close=67.9
+ROC = 0.02, ROC Percent = 2.0%
+2022-04-24T01:04:50.5301078Z TRACE:: Debug: TQQQ - 2021-08-24 00:00:00: Close=70.93
+ROC = 0.04, ROC Percent = 4.0%
+2022-04-24T01:04:50.5303209Z TRACE:: Debug: TQQQ - 2021-08-25 00:00:00: Close=71.62
+ROC = 0.0, ROC Percent = 0.0%
+2022-04-24T01:04:50.5323599Z TRACE:: Debug: TQQQ - 2021-08-26 00:00:00: Close=71.71
+ROC = -0.0, ROC Percent = -0.0%
+2022-04-24T01:04:50.5329850Z TRACE:: Debug: TQQQ - 2021-08-27 00:00:00: Close=70.49
+ROC = -0.01, ROC Percent = -1.0%
+2022-04-24T01:04:50.5360876Z TRACE:: Debug: TQQQ - 2021-08-28 00:00:00: Close=72.55
+ROC = 0.02, ROC Percent = 2.0%
+2022-04-24T01:04:50.5869170Z TRACE:: Debug: TQQQ - 2021-08-31 00:00:00: Close=74.96
+ROC = 0.03, ROC Percent = 3.0%
+2022-04-24T01:04:50.5879786Z TRACE:: Debug: TQQQ - 2021-09-01 00:00:00: Close=74.75
+ROC = -0.0, ROC Percent = -0.0%
+2022-04-24T01:04:50.5884977Z TRACE:: Debug: TQQQ - 2021-09-02 00:00:00: Close=75.15
+ROC = -0.0, ROC Percent = -0.0%
+2022-04-24T01:04:50.5891329Z TRACE:: Debug: TQQQ - 2021-09-03 00:00:00: Close=75.05
+ROC = -0.01, ROC Percent = -1.0%
+2022-04-24T01:04:50.5895857Z TRACE:: Debug: TQQQ - 2021-09-04 00:00:00: Close=75.72
+ROC = 0.02, ROC Percent = 2.0%
+2022-04-24T01:04:50.5902382Z TRACE:: Debug: TQQQ - 2021-09-08 00:00:00: Close=76.04
+ROC = 0.0, ROC Percent = 0.0%
+2022-04-24T01:04:50.5907144Z TRACE:: Debug: TQQQ - 2021-09-09 00:00:00: Close=75.25
+ROC = -0.01, ROC Percent = -1.0%
+2022-04-24T01:04:50.5911374Z TRACE:: Debug: TQQQ - 2021-09-10 00:00:00: Close=74.45
+ROC = -0.01, ROC Percent = -1.0%
+2022-04-24T01:04:50.5914643Z TRACE:: Debug: TQQQ - 2021-09-11 00:00:00: Close=72.78
+ROC = -0.04, ROC Percent = -4.0%
+2022-04-24T01:04:50.5924614Z TRACE:: Debug: TQQQ - 2021-09-14 00:00:00: Close=72.61
+ROC = -0.02, ROC Percent = -2.0%
+2022-04-24T01:04:50.5932841Z TRACE:: Debug: TQQQ - 2021-09-15 00:00:00: Close=71.99
+ROC = -0.02, ROC Percent = -2.0%
+2022-04-24T01:04:50.5935659Z TRACE:: Debug: TQQQ - 2021-09-16 00:00:00: Close=73.58
+ROC = 0.02, ROC Percent = 2.0%
+2022-04-24T01:04:50.5943027Z TRACE:: Debug: TQQQ - 2021-09-17 00:00:00: Close=73.72
+ROC = 0.01, ROC Percent = 1.0%
+2022-04-24T01:04:50.5945028Z TRACE:: Debug: TQQQ - 2021-09-18 00:00:00: Close=71.12
+ROC = -0.03, ROC Percent = -3.0%
+2022-04-24T01:04:50.5946745Z TRACE:: Debug: TQQQ - 2021-09-21 00:00:00: Close=66.75
+ROC = -0.01, ROC Percent = -1.0%
+2022-04-24T01:04:50.5949139Z TRACE:: Debug: TQQQ - 2021-09-22 00:00:00: Close=66.83
+ROC = -0.01, ROC Percent = -1.0%
+2022-04-24T01:04:50.5953284Z TRACE:: Debug: TQQQ - 2021-09-23 00:00:00: Close=68.79
+ROC = 0.02, ROC Percent = 2.0%
+2022-04-24T01:04:50.5960971Z TRACE:: Debug: TQQQ - 2021-09-24 00:00:00: Close=70.69
+ROC = 0.02, ROC Percent = 2.0%
+2022-04-24T01:04:50.5964300Z TRACE:: Debug: TQQQ - 2021-09-25 00:00:00: Close=70.89
+ROC = 0.02, ROC Percent = 2.0%
+2022-04-24T01:04:50.5967778Z TRACE:: Debug: TQQQ - 2021-09-28 00:00:00: Close=69.18
+ROC = 0.0, ROC Percent = 0.0%
+2022-04-24T01:04:50.5969942Z TRACE:: Debug: TQQQ - 2021-09-29 00:00:00: Close=63.42
+ROC = -0.05, ROC Percent = -5.0%
+2022-04-24T01:04:50.5973039Z TRACE:: Debug: TQQQ - 2021-09-30 00:00:00: Close=62.99
+ROC = -0.02, ROC Percent = -2.0%
+2022-04-24T01:04:50.5978050Z TRACE:: Debug: TQQQ - 2021-10-01 00:00:00: Close=62.28
+ROC = -0.03, ROC Percent = -3.0%
+2022-04-24T01:04:50.5980064Z TRACE:: Debug: TQQQ - 2021-10-02 00:00:00: Close=63.42
+ROC = 0.01, ROC Percent = 1.0%
+2022-04-24T01:04:50.5982788Z TRACE:: Debug: TQQQ - 2021-10-05 00:00:00: Close=59.52
+ROC = -0.05, ROC Percent = -5.0%
+2022-04-24T01:04:50.5985387Z TRACE:: Debug: TQQQ - 2021-10-06 00:00:00: Close=61.81
+ROC = 0.03, ROC Percent = 3.0%
+2022-04-24T01:04:50.5988717Z TRACE:: Debug: TQQQ - 2021-10-07 00:00:00: Close=63.03
+ROC = 0.05, ROC Percent = 5.0%
+2022-04-24T01:04:50.6000340Z TRACE:: Debug: TQQQ - 2021-10-08 00:00:00: Close=64.74
+ROC = 0.0, ROC Percent = 0.0%
+2022-04-24T01:04:50.6013371Z TRACE:: Debug: TQQQ - 2021-10-09 00:00:00: Close=63.74
+ROC = -0.02, ROC Percent = -2.0%
+2022-04-24T01:04:50.6031634Z TRACE:: Debug: TQQQ - 2021-10-12 00:00:00: Close=62.33
+ROC = -0.01, ROC Percent = -1.0%
+2022-04-24T01:04:50.6038318Z TRACE:: Debug: TQQQ - 2021-10-13 00:00:00: Close=61.69
+ROC = -0.02, ROC Percent = -2.0%
+2022-04-24T01:04:50.6041780Z TRACE:: Debug: TQQQ - 2021-10-14 00:00:00: Close=63.13
+ROC = 0.0, ROC Percent = 0.0%
+2022-04-24T01:04:50.6045261Z TRACE:: Debug: TQQQ - 2021-10-15 00:00:00: Close=66.62
+ROC = 0.02, ROC Percent = 2.0%
+2022-04-24T01:04:50.6048330Z TRACE:: Debug: TQQQ - 2021-10-16 00:00:00: Close=67.86
+ROC = 0.01, ROC Percent = 1.0%
+2022-04-24T01:04:50.6050568Z TRACE:: Debug: TQQQ - 2021-10-19 00:00:00: Close=69.89
+ROC = 0.04, ROC Percent = 4.0%
+2022-04-24T01:04:50.6055121Z TRACE:: Debug: TQQQ - 2021-10-20 00:00:00: Close=71.43
+ROC = 0.01, ROC Percent = 1.0%
+2022-04-24T01:04:50.6057670Z TRACE:: Debug: TQQQ - 2021-10-21 00:00:00: Close=71.2
+ROC = -0.01, ROC Percent = -1.0%
+2022-04-24T01:04:50.6564812Z TRACE:: Debug: TQQQ - 2021-10-22 00:00:00: Close=72.47
+ROC = 0.02, ROC Percent = 2.0%
+2022-04-24T01:04:50.6568255Z TRACE:: Debug: TQQQ - 2021-10-23 00:00:00: Close=70.64
+ROC = -0.02, ROC Percent = -2.0%
+2022-04-24T01:04:50.6574071Z TRACE:: Debug: TQQQ - 2021-10-26 00:00:00: Close=72.76
+ROC = 0.02, ROC Percent = 2.0%
+2022-04-24T01:04:50.6586051Z TRACE:: Debug: TQQQ - 2021-10-27 00:00:00: Close=73.44
+ROC = -0.01, ROC Percent = -1.0%
+2022-04-24T01:04:50.6590460Z TRACE:: Debug: TQQQ - 2021-10-28 00:00:00: Close=74.02
+ROC = 0.0, ROC Percent = 0.0%
+2022-04-24T01:04:50.6596516Z TRACE:: Debug: TQQQ - 2021-10-29 00:00:00: Close=76.45
+ROC = 0.02, ROC Percent = 2.0%
+2022-04-24T01:04:50.6600454Z TRACE:: Debug: TQQQ - 2021-10-30 00:00:00: Close=77.58
+ROC = 0.04, ROC Percent = 4.0%
+2022-04-24T01:04:50.6603789Z TRACE:: Debug: TQQQ - 2021-11-02 00:00:00: Close=78.35
+ROC = 0.01, ROC Percent = 1.0%
+2022-04-24T01:04:50.6607011Z TRACE:: Debug: TQQQ - 2021-11-03 00:00:00: Close=79.39
+ROC = 0.02, ROC Percent = 2.0%
+2022-04-24T01:04:50.6609331Z TRACE:: Debug: TQQQ - 2021-11-04 00:00:00: Close=81.91
+ROC = 0.03, ROC Percent = 3.0%
+2022-04-24T01:04:50.6611440Z TRACE:: Debug: TQQQ - 2021-11-05 00:00:00: Close=84.96
+ROC = 0.03, ROC Percent = 3.0%
+2022-04-24T01:04:50.6614078Z TRACE:: Debug: TQQQ - 2021-11-06 00:00:00: Close=85.28
+ROC = -0.01, ROC Percent = -1.0%
+2022-04-24T01:04:50.6616005Z TRACE:: Debug: TQQQ - 2021-11-09 00:00:00: Close=84.93
+ROC = -0.0, ROC Percent = -0.0%
+2022-04-24T01:04:50.6618523Z TRACE:: Debug: TQQQ - 2021-11-10 00:00:00: Close=83.18
+ROC = -0.03, ROC Percent = -3.0%
+2022-04-24T01:04:50.6620344Z TRACE:: Debug: TQQQ - 2021-11-11 00:00:00: Close=79.54
+ROC = -0.02, ROC Percent = -2.0%
+2022-04-24T01:04:50.6622229Z TRACE:: Debug: TQQQ - 2021-11-12 00:00:00: Close=80.18
+ROC = -0.01, ROC Percent = -1.0%
+2022-04-24T01:04:50.6624305Z TRACE:: Debug: TQQQ - 2021-11-13 00:00:00: Close=82.72
+ROC = 0.02, ROC Percent = 2.0%
+2022-04-24T01:04:50.6631743Z TRACE:: Debug: TQQQ - 2021-11-16 00:00:00: Close=82.7
+ROC = -0.01, ROC Percent = -1.0%
+2022-04-24T01:04:50.6638904Z TRACE:: Debug: TQQQ - 2021-11-17 00:00:00: Close=84.41
+ROC = 0.03, ROC Percent = 3.0%
+2022-04-24T01:04:50.6641120Z TRACE:: Debug: TQQQ - 2021-11-18 00:00:00: Close=84.51
+ROC = -0.0, ROC Percent = -0.0%
+2022-04-24T01:04:50.6643337Z TRACE:: Debug: TQQQ - 2021-11-19 00:00:00: Close=87.1
+ROC = 0.01, ROC Percent = 1.0%
+2022-04-24T01:04:50.7147871Z TRACE:: Debug: TQQQ - 2021-11-20 00:00:00: Close=88.57
+ROC = 0.0, ROC Percent = 0.0%
+2022-04-24T01:04:50.7156045Z TRACE:: Debug: TQQQ - 2021-11-23 00:00:00: Close=85.5
+ROC = -0.05, ROC Percent = -5.0%
+2022-04-24T01:04:50.7160966Z TRACE:: Debug: TQQQ - 2021-11-24 00:00:00: Close=84.33
+ROC = -0.0, ROC Percent = -0.0%
+2022-04-24T01:04:50.7211349Z TRACE:: Synchronizer.GetEnumerator(): Exited thread.
+2022-04-24T01:04:50.7239114Z TRACE:: AlgorithmManager.Run(): Firing On End Of Algorithm...
+2022-04-24T01:04:50.7233304Z TRACE:: Debug: TQQQ - 2021-11-25 00:00:00: Close=85.11
+ROC = 0.03, ROC Percent = 3.0%
+2022-04-24T01:04:50.7252929Z TRACE:: Debug: TQQQ - 2021-11-27 00:00:00: Close=80.42
+ROC = -0.04, ROC Percent = -4.0%
+2022-04-24T01:04:50.7265642Z TRACE:: Debug: TQQQ - 2021-11-30 00:00:00: Close=85.42
+ROC = 0.03, ROC Percent = 3.0%
+2022-04-24T01:04:50.7272675Z TRACE:: Debug: TQQQ - 2021-12-01 00:00:00: Close=81.75
+ROC = -0.04, ROC Percent = -4.0%
+2022-04-24T01:04:50.7277312Z TRACE:: Engine.Run(): Exiting Algorithm Manager
+2022-04-24T01:04:50.7286033Z TRACE:: Debug: TQQQ - 2021-12-02 00:00:00: Close=77.55
+ROC = -0.08, ROC Percent = -8.0%
+2022-04-24T01:04:50.7292466Z TRACE:: Debug: TQQQ - 2021-12-03 00:00:00: Close=79.01
+ROC = 0.03, ROC Percent = 3.0%
+2022-04-24T01:04:50.7303150Z TRACE:: Debug: TQQQ - 2021-12-04 00:00:00: Close=75.04
+ROC = -0.06, ROC Percent = -6.0%
+2022-04-24T01:04:50.7315974Z TRACE:: Debug: TQQQ - 2021-12-07 00:00:00: Close=76.79
+ROC = 0.02, ROC Percent = 2.0%
+2022-04-24T01:04:50.7325653Z TRACE:: Debug: TQQQ - 2021-12-08 00:00:00: Close=83.72
+ROC = 0.03, ROC Percent = 3.0%
+2022-04-24T01:04:50.7388151Z TRACE:: FileSystemDataFeed.Exit(): Start. Setting cancellation token...
+2022-04-24T01:04:50.7391809Z TRACE:: Debug: TQQQ - 2021-12-09 00:00:00: Close=84.89
+ROC = 0.01, ROC Percent = 1.0%
+2022-04-24T01:04:50.7403379Z TRACE:: Debug: TQQQ - 2021-12-10 00:00:00: Close=81.22
+ROC = -0.03, ROC Percent = -3.0%
+2022-04-24T01:04:50.7409877Z TRACE:: FileSystemDataFeed.Exit(): Exit Finished.
+2022-04-24T01:04:50.7420282Z TRACE:: Debug: TQQQ - 2021-12-11 00:00:00: Close=83.74
+ROC = 0.01, ROC Percent = 1.0%
+2022-04-24T01:04:50.7427509Z TRACE:: DefaultAlphaHandler.Exit(): Exiting...
+2022-04-24T01:04:50.7432791Z TRACE:: Debug: TQQQ - 2021-12-14 00:00:00: Close=80.14
+ROC = -0.04, ROC Percent = -4.0%
+2022-04-24T01:04:50.7458913Z TRACE:: Debug: TQQQ - 2021-12-15 00:00:00: Close=77.75
+ROC = 0.01, ROC Percent = 1.0%
+2022-04-24T01:04:50.7467312Z TRACE:: Debug: TQQQ - 2021-12-16 00:00:00: Close=82.89
+ROC = 0.07, ROC Percent = 7.0%
+2022-04-24T01:04:50.7469690Z TRACE:: Debug: TQQQ - 2021-12-17 00:00:00: Close=76.57
+ROC = -0.08, ROC Percent = -8.0%
+2022-04-24T01:04:50.7471674Z TRACE:: Debug: TQQQ - 2021-12-18 00:00:00: Close=75.4
+ROC = 0.01, ROC Percent = 1.0%
+2022-04-24T01:04:50.7480500Z TRACE:: Debug: TQQQ - 2021-12-21 00:00:00: Close=73.14
+ROC = 0.01, ROC Percent = 1.0%
+2022-04-24T01:04:50.7483676Z TRACE:: Debug: TQQQ - 2021-12-22 00:00:00: Close=78.04
+ROC = 0.04, ROC Percent = 4.0%
+2022-04-24T01:04:50.7486437Z TRACE:: Debug: TQQQ - 2021-12-23 00:00:00: Close=80.82
+ROC = 0.04, ROC Percent = 4.0%
+2022-04-24T01:04:50.7495567Z TRACE:: Debug: TQQQ - 2021-12-24 00:00:00: Close=82.74
+ROC = 0.02, ROC Percent = 2.0%
+2022-04-24T01:04:50.7525409Z TRACE:: Debug: TQQQ - 2021-12-28 00:00:00: Close=86.69
+ROC = 0.04, ROC Percent = 4.0%
+2022-04-24T01:04:50.7567245Z TRACE:: Debug: TQQQ - 2021-12-29 00:00:00: Close=85.68
+ROC = -0.02, ROC Percent = -2.0%
+2022-04-24T01:04:50.7575531Z TRACE:: Debug: TQQQ - 2021-12-30 00:00:00: Close=85.54
+ROC = -0.0, ROC Percent = -0.0%
+2022-04-24T01:04:50.7581426Z TRACE:: Debug: TQQQ - 2021-12-31 00:00:00: Close=84.74
+ROC = -0.01, ROC Percent = -1.0%
+2022-04-24T01:04:50.7586279Z TRACE:: DefaultAlphaHandler.Exit(): Ended
+2022-04-24T01:04:50.7588153Z TRACE:: Debug: TQQQ - 2022-01-01 00:00:00: Close=83.17
+ROC = -0.01, ROC Percent = -1.0%
+2022-04-24T01:04:50.7599077Z TRACE:: BacktestingResultHandler.Exit(): starting...
+2022-04-24T01:04:50.7601615Z TRACE:: Debug: Algorithm Id:(1666764420) completed in 0.91 seconds at 1k data points per second. Processing total of 694 data points.
+2022-04-24T01:04:50.7609405Z TRACE:: BacktestingResultHandler.Exit(): Saving logs...
+2022-04-24T01:04:50.7858485Z TRACE:: StopSafely(): waiting for 'Result Thread' thread to stop...
+2022-04-24T01:04:50.7862097Z TRACE:: Debug: Your log was successfully created and can be retrieved from: /Results/1666764420-log.txt
+2022-04-24T01:04:50.7886877Z TRACE:: BacktestingResultHandler.Run(): Ending Thread...
+2022-04-24T01:04:51.0458260Z TRACE:: 
+STATISTICS:: Total Trades 0
+STATISTICS:: Average Win 0%
+STATISTICS:: Average Loss 0%
+STATISTICS:: Compounding Annual Return 0%
+STATISTICS:: Drawdown 0%
+STATISTICS:: Expectancy 0
+STATISTICS:: Net Profit 0%
+STATISTICS:: Sharpe Ratio 0
+STATISTICS:: Probabilistic Sharpe Ratio 0%
+STATISTICS:: Loss Rate 0%
+STATISTICS:: Win Rate 0%
+STATISTICS:: Profit-Loss Ratio 0
+STATISTICS:: Alpha 0
+STATISTICS:: Beta 0
+STATISTICS:: Annual Standard Deviation 0
+STATISTICS:: Annual Variance 0
+STATISTICS:: Information Ratio -0.714
+STATISTICS:: Tracking Error 0.064
+STATISTICS:: Treynor Ratio 0
+STATISTICS:: Total Fees $0.00
+STATISTICS:: Estimated Strategy Capacity $0
+STATISTICS:: Lowest Capacity Asset 
+STATISTICS:: Fitness Score 0
+STATISTICS:: Kelly Criterion Estimate 0
+STATISTICS:: Kelly Criterion Probability Value 0
+STATISTICS:: Sortino Ratio 79228162514264337593543950335
+STATISTICS:: Return Over Maximum Drawdown 79228162514264337593543950335
+STATISTICS:: Portfolio Turnover 0
+STATISTICS:: Total Insights Generated 0
+STATISTICS:: Total Insights Closed 0
+STATISTICS:: Total Insights Analysis Completed 0
+STATISTICS:: Long Insight Count 0
+STATISTICS:: Short Insight Count 0
+STATISTICS:: Long/Short Ratio 100%
+STATISTICS:: Estimated Monthly Alpha Value $0
+STATISTICS:: Total Accumulated Estimated Alpha Value $0
+STATISTICS:: Mean Population Estimated Insight Value $0
+STATISTICS:: Mean Population Direction 0%
+STATISTICS:: Mean Population Magnitude 0%
+STATISTICS:: Rolling Averaged Population Direction 0%
+STATISTICS:: Rolling Averaged Population Magnitude 0%
+STATISTICS:: OrderListHash d41d8cd98f00b204e9800998ecf8427e
+2022-04-24T01:04:51.0460612Z TRACE:: BacktestingResultHandler.SendAnalysisResult(): Processed final packet
+2022-04-24T01:04:51.0464613Z TRACE:: Engine.Run(): Disconnecting from brokerage...
+2022-04-24T01:04:51.0468350Z TRACE:: Engine.Run(): Disposing of setup handler...
+2022-04-24T01:04:51.0477790Z TRACE:: Engine.Main(): Analysis Completed and Results Posted.
+2022-04-24T01:04:51.0487973Z TRACE:: Engine.Main(): Packet removed from queue: 1666764420
+2022-04-24T01:04:51.0492898Z TRACE:: LeanEngineSystemHandlers.Dispose(): start...
+2022-04-24T01:04:51.0498014Z TRACE:: LeanEngineSystemHandlers.Dispose(): Disposed of system handlers.
+2022-04-24T01:04:51.0501760Z TRACE:: LeanEngineAlgorithmHandlers.Dispose(): start...
+2022-04-24T01:04:51.0581691Z TRACE:: LeanEngineAlgorithmHandlers.Dispose(): Disposed of algorithm handlers.

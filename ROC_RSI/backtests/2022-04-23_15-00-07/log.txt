@@ -1,0 +1,102 @@
+2022-04-23T22:00:13.0478569Z TRACE:: Config.Get(): Configuration key not found. Key: data-directory - Using default value: ../../../Data/
+2022-04-23T22:00:13.0508330Z TRACE:: Config.Get(): Configuration key not found. Key: version-id - Using default value: 
+2022-04-23T22:00:13.0511741Z TRACE:: Config.Get(): Configuration key not found. Key: cache-location - Using default value: /Lean/Data
+2022-04-23T22:00:13.0515433Z TRACE:: Engine.Main(): LEAN ALGORITHMIC TRADING ENGINE v2.5.0.0 Mode: DEBUG (64bit) Host: DESKTOP-0LAT4UV
+2022-04-23T22:00:13.0569974Z TRACE:: Engine.Main(): Started 10:00 PM
+2022-04-23T22:00:13.0630062Z TRACE:: Config.Get(): Configuration key not found. Key: lean-manager-type - Using default value: LocalLeanManager
+2022-04-23T22:00:13.0842722Z TRACE:: JobQueue.NextJob(): Selected /LeanCLI/main.py
+2022-04-23T22:00:13.1606559Z TRACE:: Config.GetValue(): scheduled-event-leaky-bucket-capacity - Using default value: 120
+2022-04-23T22:00:13.1610004Z TRACE:: Config.GetValue(): scheduled-event-leaky-bucket-time-interval-minutes - Using default value: 1440
+2022-04-23T22:00:13.1613503Z TRACE:: Config.GetValue(): scheduled-event-leaky-bucket-refill-amount - Using default value: 18
+2022-04-23T22:00:13.1687123Z TRACE:: Config.Get(): Configuration key not found. Key: job-organization-id - Using default value: 
+2022-04-23T22:00:13.1701838Z TRACE:: Config.Get(): Configuration key not found. Key: data-permission-manager - Using default value: DataPermissionManager
+2022-04-23T22:00:13.2116803Z TRACE:: AlgorithmManager.CreateTokenBucket(): Initializing LeakyBucket: Capacity: 120 RefillAmount: 18 TimeInterval: 1440
+2022-04-23T22:00:13.2142258Z TRACE:: Config.GetValue(): algorithm-manager-time-loop-maximum - Using default value: 20
+2022-04-23T22:00:13.2317259Z TRACE:: TextSubscriptionDataSourceReader.SetCacheSize(): Setting cache size to 71582788 items
+2022-04-23T22:00:13.5398832Z TRACE:: Config.GetValue(): algorithm-creation-timeout - Using default value: 90
+2022-04-23T22:00:13.5438574Z TRACE:: PythonInitializer.Initialize(): start...
+2022-04-23T22:00:14.3988756Z TRACE:: PythonInitializer.Initialize(): ended
+2022-04-23T22:00:14.4024475Z TRACE:: AlgorithmPythonWrapper(): Python version 3.6.8 |Anaconda, Inc.| (default, Dec 30 2018, 01:25:33) 
+[GCC 7.3.0]: Importing python module main
+2022-04-23T22:00:16.1075175Z TRACE:: AlgorithmPythonWrapper(): main successfully imported.
+2022-04-23T22:00:16.1154347Z TRACE:: AlgorithmPythonWrapper(): Creating IAlgorithm instance.
+2022-04-23T22:00:16.1236186Z TRACE:: Config.GetValue(): api-data-update-period - Using default value: 1
+2022-04-23T22:00:16.2298159Z TRACE:: Config.GetValue(): mute-python-library-logging - Using default value: True
+2022-04-23T22:00:16.2444935Z TRACE:: LocalObjectStore.Initialize(): Storage Root: /Storage/QCAlgorithm. StorageFileCount 100. StorageLimitMB 5
+2022-04-23T22:00:16.2593380Z TRACE:: BacktestingSetupHandler.Setup(): Setting up job: UID: 0, PID: 907417205, Version: 2.5.0.0, Source: WebIDE
+2022-04-23T22:00:16.2643135Z TRACE:: Config.Get(): Configuration key not found. Key: security-data-feeds - Using default value: 
+2022-04-23T22:00:16.3893299Z TRACE:: BaseSetupHandler.SetupCurrencyConversions():
+Symbol      Quantity    Conversion = Value in USD
+USD: $      100000.00 @       1.00 = $100000.0
+-------------------------------------------------
+CashBook Total Value:                $100000.0
+
+2022-04-23T22:00:16.3934960Z TRACE:: SetUp Backtesting: User: 0 ProjectId: 907417205 AlgoId: 1695069482
+2022-04-23T22:00:16.3943734Z TRACE:: Dates: Start: 01/01/2021 End: 01/01/2022 Cash: ¤100,000.00 MaximumRuntime: 100.00:00:00 MaxOrders: 2147483647
+2022-04-23T22:00:16.3968696Z TRACE:: BacktestingResultHandler(): Sample Period Set: 131.76
+2022-04-23T22:00:16.3978811Z TRACE:: Time.TradeableDates(): Security Count: 1
+2022-04-23T22:00:16.4033712Z TRACE:: Config.GetValue(): forward-console-messages - Using default value: True
+2022-04-23T22:00:16.4049910Z TRACE:: JOB HANDLERS: 
+2022-04-23T22:00:16.4052995Z TRACE::          DataFeed:     QuantConnect.Lean.Engine.DataFeeds.FileSystemDataFeed
+2022-04-23T22:00:16.4055812Z TRACE::          Setup:        QuantConnect.Lean.Engine.Setup.BacktestingSetupHandler
+2022-04-23T22:00:16.4058263Z TRACE::          RealTime:     QuantConnect.Lean.Engine.RealTime.BacktestingRealTimeHandler
+2022-04-23T22:00:16.4061329Z TRACE::          Results:      QuantConnect.Lean.Engine.Results.BacktestingResultHandler
+2022-04-23T22:00:16.4063668Z TRACE::          Transactions: QuantConnect.Lean.Engine.TransactionHandlers.BacktestingTransactionHandler
+2022-04-23T22:00:16.4066276Z TRACE::          Alpha:        QuantConnect.Lean.Engine.Alphas.DefaultAlphaHandler
+2022-04-23T22:00:16.4068752Z TRACE::          ObjectStore:  QuantConnect.Lean.Engine.Storage.LocalObjectStore
+2022-04-23T22:00:16.4072349Z TRACE::          History Provider:     QuantConnect.Lean.Engine.HistoricalData.HistoryProviderManager
+2022-04-23T22:00:16.4179658Z TRACE:: Debug: Launching analysis for 1695069482 with LEAN Engine v2.5.0.0
+2022-04-23T22:00:16.4313740Z TRACE:: Event Name "Daily Sampling", scheduled to run at 1/1/2021 5:00:00 AM (UTC)...
+2022-04-23T22:00:16.4318413Z TRACE:: AlgorithmManager.Run(): Begin DataStream - Start: 1/1/2021 12:00:00 AM Stop: 1/1/2022 11:59:59 PM
+2022-04-23T22:00:16.4479739Z TRACE:: AlgorithmManager.Stream(): WarmupHistoryRequest: TQQQ.YahooData: Start: 9/23/2020 4:00:00 AM End: 1/1/2021 5:00:00 AM Resolution: Daily
+2022-04-23T22:00:16.4547493Z TRACE:: Config.GetValue(): data-feed-max-work-weight - Using default value: 400
+2022-04-23T22:00:16.4551221Z TRACE:: Config.GetValue(): data-feed-workers-count - Using default value: 8
+2022-04-23T22:00:16.4553665Z TRACE:: WeightedWorkScheduler(): will use 8 workers and MaxWorkWeight is 400
+2022-04-23T22:00:16.4724747Z TRACE:: Config.GetValue(): show-missing-data-logs - Using default value: False
+2022-04-23T22:00:16.5828499Z ERROR:: Extensions.SetRuntimeError(): Extensions.SetRuntimeError(): RuntimeError at 12/30/2020 5:00:00 AM UTC. Context: OnData Python.Runtime.PythonException: AttributeError : 'float' object has no attribute 'Current'
+  File "/LeanCLI/main.py", line 50, in OnData
+    self.Debug("ROC: " + str(self.roc_since_open.Current.Value))
+===
+   at Python.Runtime.PyObject.Invoke(PyTuple args, PyDict kw)
+   at Python.Runtime.PyObject.TryInvoke(InvokeBinder binder, Object[] args, Object& result)
+   at CallSite.Target(Closure , CallSite , Object , PythonSlice )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecuteVoid2[T0,T1](CallSite site, T0 arg0, T1 arg1)
+   at QuantConnect.AlgorithmFactory.Python.Wrappers.AlgorithmPythonWrapper.OnData(Slice slice) in /LeanCloud/CI.Builder/bin/Debug/src/QuantConnect/Lean/AlgorithmFactory/Python/Wrappers/AlgorithmPythonWrapper.cs:line 592
+   at QuantConnect.Lean.Engine.AlgorithmManager.Run(AlgorithmNodePacket job, IAlgorithm algorithm, ISynchronizer synchronizer, ITransactionHandler transactions, IResultHandler results, IRealTimeHandler realtime, ILeanManager leanManager, IAlphaHandler alphas, CancellationToken token) in /LeanCloud/CI.Builder/bin/Debug/src/QuantConnect/Lean/Engine/AlgorithmManager.cs:line 613
+2022-04-23T22:00:16.6749008Z TRACE:: Engine.Run(): Exiting Algorithm Manager
+2022-04-23T22:00:16.6757834Z TRACE:: FileSystemDataFeed.Exit(): Start. Setting cancellation token...
+2022-04-23T22:00:16.6767236Z TRACE:: FileSystemDataFeed.Exit(): Exit Finished.
+2022-04-23T22:00:16.6770460Z TRACE:: Engine.Run(): Sending runtime error to user...
+2022-04-23T22:00:16.6867933Z TRACE:: DefaultAlphaHandler.Exit(): Exiting...
+2022-04-23T22:00:16.6922954Z TRACE:: DefaultAlphaHandler.Exit(): Ended
+2022-04-23T22:00:16.6929076Z TRACE:: BacktestingResultHandler.Exit(): starting...
+2022-04-23T22:00:16.7020323Z TRACE:: BacktestingResultHandler.Exit(): Saving logs...
+2022-04-23T22:00:16.7096526Z ERROR:: Runtime Error: AttributeError : 'float' object has no attribute 'Current'
+  at OnData
+    self.Debug("ROC: " + str(self.roc_since_open.Current.Value))
+===
+   at Python.Runtime.PyObject.Invoke(PyTuple args in main.py: line 50
+
+ AttributeError : 'float' object has no attribute 'Current'
+  at OnData
+    self.Debug("ROC: " + str(self.roc_since_open.Current.Value))
+===
+   at Python.Runtime.PyObject.Invoke(PyTuple args in main.py: line 50
+
+2022-04-23T22:00:16.7097194Z TRACE:: StopSafely(): waiting for 'Result Thread' thread to stop...
+2022-04-23T22:00:16.7099419Z TRACE:: Debug: Algorithm Id:(1695069482) completed in 0.27 seconds at 0k data points per second. Processing total of 3 data points.
+2022-04-23T22:00:16.7104100Z TRACE:: Debug: Initilize Complete.
+Algorithm warming up...
+2022-04-23T22:00:16.7106641Z TRACE:: Debug: Your log was successfully created and can be retrieved from: /Results/1695069482-log.txt
+2022-04-23T22:00:16.7110401Z TRACE:: BacktestingResultHandler.Run(): Ending Thread...
+2022-04-23T22:00:16.7843051Z TRACE:: 
+STATISTICS:: OrderListHash d41d8cd98f00b204e9800998ecf8427e
+2022-04-23T22:00:16.7847254Z TRACE:: BacktestingResultHandler.SendAnalysisResult(): Processed final packet
+2022-04-23T22:00:16.7857192Z TRACE:: Engine.Run(): Disconnecting from brokerage...
+2022-04-23T22:00:16.7875635Z TRACE:: Engine.Run(): Disposing of setup handler...
+2022-04-23T22:00:16.7901212Z TRACE:: Engine.Main(): Analysis Completed and Results Posted.
+2022-04-23T22:00:16.7916289Z TRACE:: Engine.Main(): Packet removed from queue: 1695069482
+2022-04-23T22:00:16.7922485Z TRACE:: LeanEngineSystemHandlers.Dispose(): start...
+2022-04-23T22:00:16.7927440Z TRACE:: LeanEngineSystemHandlers.Dispose(): Disposed of system handlers.
+2022-04-23T22:00:16.7931610Z TRACE:: LeanEngineAlgorithmHandlers.Dispose(): start...
+2022-04-23T22:00:16.8013454Z TRACE:: LeanEngineAlgorithmHandlers.Dispose(): Disposed of algorithm handlers.

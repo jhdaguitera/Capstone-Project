@@ -1,0 +1,377 @@
+2022-04-23T22:17:59.1678807Z TRACE:: Config.Get(): Configuration key not found. Key: data-directory - Using default value: ../../../Data/
+2022-04-23T22:17:59.1708949Z TRACE:: Config.Get(): Configuration key not found. Key: version-id - Using default value: 
+2022-04-23T22:17:59.1712267Z TRACE:: Config.Get(): Configuration key not found. Key: cache-location - Using default value: /Lean/Data
+2022-04-23T22:17:59.1716532Z TRACE:: Engine.Main(): LEAN ALGORITHMIC TRADING ENGINE v2.5.0.0 Mode: DEBUG (64bit) Host: DESKTOP-0LAT4UV
+2022-04-23T22:17:59.1763892Z TRACE:: Engine.Main(): Started 10:17 PM
+2022-04-23T22:17:59.1807204Z TRACE:: Config.Get(): Configuration key not found. Key: lean-manager-type - Using default value: LocalLeanManager
+2022-04-23T22:17:59.2024863Z TRACE:: JobQueue.NextJob(): Selected /LeanCLI/main.py
+2022-04-23T22:17:59.2614194Z TRACE:: Config.GetValue(): scheduled-event-leaky-bucket-capacity - Using default value: 120
+2022-04-23T22:17:59.2617313Z TRACE:: Config.GetValue(): scheduled-event-leaky-bucket-time-interval-minutes - Using default value: 1440
+2022-04-23T22:17:59.2619757Z TRACE:: Config.GetValue(): scheduled-event-leaky-bucket-refill-amount - Using default value: 18
+2022-04-23T22:17:59.2687515Z TRACE:: Config.Get(): Configuration key not found. Key: job-organization-id - Using default value: 
+2022-04-23T22:17:59.2697302Z TRACE:: Config.Get(): Configuration key not found. Key: data-permission-manager - Using default value: DataPermissionManager
+2022-04-23T22:17:59.2842775Z TRACE:: AlgorithmManager.CreateTokenBucket(): Initializing LeakyBucket: Capacity: 120 RefillAmount: 18 TimeInterval: 1440
+2022-04-23T22:17:59.2860949Z TRACE:: Config.GetValue(): algorithm-manager-time-loop-maximum - Using default value: 20
+2022-04-23T22:17:59.2967376Z TRACE:: TextSubscriptionDataSourceReader.SetCacheSize(): Setting cache size to 71582788 items
+2022-04-23T22:17:59.5199116Z TRACE:: Config.GetValue(): algorithm-creation-timeout - Using default value: 90
+2022-04-23T22:17:59.5236800Z TRACE:: PythonInitializer.Initialize(): start...
+2022-04-23T22:18:00.2819192Z TRACE:: PythonInitializer.Initialize(): ended
+2022-04-23T22:18:00.2859425Z TRACE:: AlgorithmPythonWrapper(): Python version 3.6.8 |Anaconda, Inc.| (default, Dec 30 2018, 01:25:33) 
+[GCC 7.3.0]: Importing python module main
+2022-04-23T22:18:02.0300223Z TRACE:: AlgorithmPythonWrapper(): main successfully imported.
+2022-04-23T22:18:02.0369788Z TRACE:: AlgorithmPythonWrapper(): Creating IAlgorithm instance.
+2022-04-23T22:18:02.0465645Z TRACE:: Config.GetValue(): api-data-update-period - Using default value: 1
+2022-04-23T22:18:02.1523071Z TRACE:: Config.GetValue(): mute-python-library-logging - Using default value: True
+2022-04-23T22:18:02.1691570Z TRACE:: LocalObjectStore.Initialize(): Storage Root: /Storage/QCAlgorithm. StorageFileCount 100. StorageLimitMB 5
+2022-04-23T22:18:02.1838359Z TRACE:: BacktestingSetupHandler.Setup(): Setting up job: UID: 0, PID: 907417205, Version: 2.5.0.0, Source: WebIDE
+2022-04-23T22:18:02.1879917Z TRACE:: Config.Get(): Configuration key not found. Key: security-data-feeds - Using default value: 
+2022-04-23T22:18:02.3126367Z TRACE:: BaseSetupHandler.SetupCurrencyConversions():
+Symbol      Quantity    Conversion = Value in USD
+USD: $      100000.00 @       1.00 = $100000.0
+-------------------------------------------------
+CashBook Total Value:                $100000.0
+
+2022-04-23T22:18:02.3157278Z TRACE:: SetUp Backtesting: User: 0 ProjectId: 907417205 AlgoId: 1625261003
+2022-04-23T22:18:02.3165104Z TRACE:: Dates: Start: 01/01/2021 End: 01/01/2022 Cash: ¤100,000.00 MaximumRuntime: 100.00:00:00 MaxOrders: 2147483647
+2022-04-23T22:18:02.3190429Z TRACE:: BacktestingResultHandler(): Sample Period Set: 131.76
+2022-04-23T22:18:02.3203062Z TRACE:: Time.TradeableDates(): Security Count: 1
+2022-04-23T22:18:02.3252686Z TRACE:: Config.GetValue(): forward-console-messages - Using default value: True
+2022-04-23T22:18:02.3272630Z TRACE:: JOB HANDLERS: 
+2022-04-23T22:18:02.3276132Z TRACE::          DataFeed:     QuantConnect.Lean.Engine.DataFeeds.FileSystemDataFeed
+2022-04-23T22:18:02.3279494Z TRACE::          Setup:        QuantConnect.Lean.Engine.Setup.BacktestingSetupHandler
+2022-04-23T22:18:02.3281909Z TRACE::          RealTime:     QuantConnect.Lean.Engine.RealTime.BacktestingRealTimeHandler
+2022-04-23T22:18:02.3284044Z TRACE::          Results:      QuantConnect.Lean.Engine.Results.BacktestingResultHandler
+2022-04-23T22:18:02.3285969Z TRACE::          Transactions: QuantConnect.Lean.Engine.TransactionHandlers.BacktestingTransactionHandler
+2022-04-23T22:18:02.3288409Z TRACE::          Alpha:        QuantConnect.Lean.Engine.Alphas.DefaultAlphaHandler
+2022-04-23T22:18:02.3290519Z TRACE::          ObjectStore:  QuantConnect.Lean.Engine.Storage.LocalObjectStore
+2022-04-23T22:18:02.3293016Z TRACE::          History Provider:     QuantConnect.Lean.Engine.HistoricalData.HistoryProviderManager
+2022-04-23T22:18:02.3543498Z TRACE:: Event Name "Daily Sampling", scheduled to run at 1/1/2021 5:00:00 AM (UTC)...
+2022-04-23T22:18:02.3546932Z TRACE:: AlgorithmManager.Run(): Begin DataStream - Start: 1/1/2021 12:00:00 AM Stop: 1/1/2022 11:59:59 PM
+2022-04-23T22:18:02.3710366Z TRACE:: AlgorithmManager.Stream(): WarmupHistoryRequest: TQQQ.YahooData: Start: 9/23/2020 4:00:00 AM End: 1/1/2021 5:00:00 AM Resolution: Daily
+2022-04-23T22:18:02.3743630Z TRACE:: Debug: Launching analysis for 1625261003 with LEAN Engine v2.5.0.0
+2022-04-23T22:18:02.3778066Z TRACE:: Config.GetValue(): data-feed-max-work-weight - Using default value: 400
+2022-04-23T22:18:02.3782807Z TRACE:: Config.GetValue(): data-feed-workers-count - Using default value: 8
+2022-04-23T22:18:02.3785508Z TRACE:: WeightedWorkScheduler(): will use 8 workers and MaxWorkWeight is 400
+2022-04-23T22:18:02.3960995Z TRACE:: Config.GetValue(): show-missing-data-logs - Using default value: False
+2022-04-23T22:18:02.5137898Z TRACE:: AlgorithmManager.Stream(): Finished warmup
+2022-04-23T22:18:02.5252528Z TRACE:: Debug: Initilize Complete.
+Algorithm warming up...
+ROC = -0.011, ROC Percent = -1.1
+2022-04-23T22:18:02.5257565Z TRACE:: Debug: ROC = 0.008, ROC Percent = 0.8
+2022-04-23T22:18:02.5552415Z TRACE:: UniverseSelection.AddPendingInternalDataFeeds(): Adding internal benchmark data feed SPY,#0,SPY,Hour,TradeBar,Trade,Adjusted,OpenInterest,Internal
+2022-04-23T22:18:02.7768430Z TRACE:: Debug: Algorithm finished warming up.
+ROC = 0.008, ROC Percent = 0.8
+2022-04-23T22:18:02.7772128Z TRACE:: Debug: ROC = -0.056, ROC Percent = -5.6
+2022-04-23T22:18:02.7776609Z TRACE:: Debug: ROC = 0.034, ROC Percent = 3.4
+2022-04-23T22:18:02.7780414Z TRACE:: Debug: ROC = 0.006, ROC Percent = 0.6
+2022-04-23T22:18:02.7783681Z TRACE:: Debug: ROC = 0.045, ROC Percent = 4.5
+2022-04-23T22:18:02.7787492Z TRACE:: Debug: ROC = 0.016, ROC Percent = 1.6
+2022-04-23T22:18:02.7792417Z TRACE:: Debug: ROC = -0.016, ROC Percent = -1.6
+2022-04-23T22:18:02.7800710Z TRACE:: Debug: ROC = -0.006, ROC Percent = -0.6
+2022-04-23T22:18:02.7806260Z TRACE:: Debug: ROC = 0.017, ROC Percent = 1.7
+2022-04-23T22:18:02.7809582Z TRACE:: Debug: ROC = -0.02, ROC Percent = -2.0
+2022-04-23T22:18:02.7815312Z TRACE:: Debug: ROC = -0.022, ROC Percent = -2.2
+2022-04-23T22:18:02.7817925Z TRACE:: Debug: ROC = 0.02, ROC Percent = 2.0
+2022-04-23T22:18:02.7824385Z TRACE:: Debug: ROC = 0.033, ROC Percent = 3.3
+2022-04-23T22:18:02.7827095Z TRACE:: Debug: ROC = 0.012, ROC Percent = 1.2
+2022-04-23T22:18:02.7834847Z TRACE:: Debug: ROC = 0.001, ROC Percent = 0.1
+2022-04-23T22:18:02.7838074Z TRACE:: Debug: ROC = -0.004, ROC Percent = -0.4
+2022-04-23T22:18:02.7842991Z TRACE:: Debug: ROC = -0.003, ROC Percent = -0.3
+2022-04-23T22:18:02.7846377Z TRACE:: Debug: ROC = -0.061, ROC Percent = -6.1
+2022-04-23T22:18:02.7850117Z TRACE:: Debug: ROC = 0.006, ROC Percent = 0.6
+2022-04-23T22:18:02.7854449Z TRACE:: Debug: ROC = -0.047, ROC Percent = -4.7
+2022-04-23T22:18:02.7858715Z TRACE:: Debug: ROC = 0.038, ROC Percent = 3.8
+2022-04-23T22:18:02.7864166Z TRACE:: Debug: ROC = 0.019, ROC Percent = 1.9
+2022-04-23T22:18:02.7866579Z TRACE:: Debug: ROC = -0.032, ROC Percent = -3.2
+2022-04-23T22:18:02.7868912Z TRACE:: Debug: ROC = 0.021, ROC Percent = 2.1
+2022-04-23T22:18:02.7872882Z TRACE:: Debug: ROC = 0.001, ROC Percent = 0.1
+2022-04-23T22:18:02.7874857Z TRACE:: Debug: ROC = 0.004, ROC Percent = 0.4
+2022-04-23T22:18:02.7878375Z TRACE:: Debug: ROC = 0.008, ROC Percent = 0.8
+2022-04-23T22:18:02.7881222Z TRACE:: Debug: ROC = -0.021, ROC Percent = -2.1
+2022-04-23T22:18:02.7883761Z TRACE:: Debug: ROC = 0.001, ROC Percent = 0.1
+2022-04-23T22:18:02.7887229Z TRACE:: Debug: ROC = 0.024, ROC Percent = 2.4
+2022-04-23T22:18:02.7889850Z TRACE:: Debug: ROC = -0.016, ROC Percent = -1.6
+2022-04-23T22:18:02.7891757Z TRACE:: Debug: ROC = 0.014, ROC Percent = 1.4
+2022-04-23T22:18:02.7894800Z TRACE:: Debug: ROC = 0.021, ROC Percent = 2.1
+2022-04-23T22:18:02.7897478Z TRACE:: Debug: ROC = -0.026, ROC Percent = -2.6
+2022-04-23T22:18:02.7900246Z TRACE:: Debug: ROC = -0.038, ROC Percent = -3.8
+2022-04-23T22:18:02.7902679Z TRACE:: Debug: ROC = 0.044, ROC Percent = 4.4
+2022-04-23T22:18:02.7905091Z TRACE:: Debug: ROC = 0.053, ROC Percent = 5.3
+2022-04-23T22:18:02.7907141Z TRACE:: Debug: ROC = -0.081, ROC Percent = -8.1
+2022-04-23T22:18:02.7909736Z TRACE:: Debug: ROC = -0.013, ROC Percent = -1.3
+2022-04-23T22:18:02.7911836Z TRACE:: Debug: ROC = 0.039, ROC Percent = 3.9
+2022-04-23T22:18:02.7914850Z TRACE:: Debug: ROC = -0.053, ROC Percent = -5.3
+2022-04-23T22:18:02.7917541Z TRACE:: Debug: ROC = -0.077, ROC Percent = -7.7
+2022-04-23T22:18:02.7919506Z TRACE:: Debug: ROC = -0.045, ROC Percent = -4.5
+2022-04-23T22:18:02.7921334Z TRACE:: Debug: ROC = 0.018, ROC Percent = 1.8
+2022-04-23T22:18:02.7924491Z TRACE:: Debug: ROC = -0.08, ROC Percent = -8.0
+2022-04-23T22:18:02.7927296Z TRACE:: Debug: ROC = 0.038, ROC Percent = 3.8
+2022-04-23T22:18:02.7929370Z TRACE:: Debug: ROC = -0.049, ROC Percent = -4.9
+2022-04-23T22:18:02.7931934Z TRACE:: Debug: ROC = 0.02, ROC Percent = 2.0
+2022-04-23T22:18:02.7937571Z TRACE:: Debug: ROC = 0.015, ROC Percent = 1.5
+2022-04-23T22:18:02.7940495Z TRACE:: Debug: ROC = 0.029, ROC Percent = 2.9
+2022-04-23T22:18:02.7945575Z TRACE:: Debug: ROC = -0.005, ROC Percent = -0.5
+2022-04-23T22:18:02.7949249Z TRACE:: Debug: ROC = 0.043, ROC Percent = 4.3
+2022-04-23T22:18:02.7955265Z TRACE:: Debug: ROC = -0.047, ROC Percent = -4.7
+2022-04-23T22:18:02.7958572Z TRACE:: Debug: ROC = 0.014, ROC Percent = 1.4
+2022-04-23T22:18:02.7964946Z TRACE:: Debug: ROC = 0.032, ROC Percent = 3.2
+2022-04-23T22:18:02.7967165Z TRACE:: Debug: ROC = -0.023, ROC Percent = -2.3
+2022-04-23T22:18:02.7969932Z TRACE:: Debug: ROC = -0.063, ROC Percent = -6.3
+2022-04-23T22:18:02.7973468Z TRACE:: Debug: ROC = 0.013, ROC Percent = 1.3
+2022-04-23T22:18:02.7975369Z TRACE:: Debug: ROC = 0.046, ROC Percent = 4.6
+2022-04-23T22:18:02.7977868Z TRACE:: Debug: ROC = 0.004, ROC Percent = 0.4
+2022-04-23T22:18:02.8481712Z TRACE:: Debug: ROC = 0.028, ROC Percent = 2.8
+2022-04-23T22:18:02.8484486Z TRACE:: Debug: ROC = 0.013, ROC Percent = 1.3
+2022-04-23T22:18:02.8486711Z TRACE:: Debug: ROC = 0.035, ROC Percent = 3.5
+2022-04-23T22:18:02.8489903Z TRACE:: Debug: ROC = 0.001, ROC Percent = 0.1
+2022-04-23T22:18:02.8492774Z TRACE:: Debug: ROC = 0.011, ROC Percent = 1.1
+2022-04-23T22:18:02.8495941Z TRACE:: Debug: ROC = 0.004, ROC Percent = 0.4
+2022-04-23T22:18:02.8498462Z TRACE:: Debug: ROC = 0.031, ROC Percent = 3.1
+2022-04-23T22:18:02.8504659Z TRACE:: Debug: ROC = 0.005, ROC Percent = 0.5
+2022-04-23T22:18:02.8508823Z TRACE:: Debug: ROC = 0.02, ROC Percent = 2.0
+2022-04-23T22:18:02.8512173Z TRACE:: Debug: ROC = -0.038, ROC Percent = -3.8
+2022-04-23T22:18:02.8516116Z TRACE:: Debug: ROC = 0.018, ROC Percent = 1.8
+2022-04-23T22:18:02.8522108Z TRACE:: Debug: ROC = -0.001, ROC Percent = -0.1
+2022-04-23T22:18:02.8528921Z TRACE:: Debug: ROC = -0.013, ROC Percent = -1.3
+2022-04-23T22:18:02.8533178Z TRACE:: Debug: ROC = -0.015, ROC Percent = -1.5
+2022-04-23T22:18:02.8535826Z TRACE:: Debug: ROC = 0.039, ROC Percent = 3.9
+2022-04-23T22:18:02.8538055Z TRACE:: Debug: ROC = -0.033, ROC Percent = -3.3
+2022-04-23T22:18:02.8540060Z TRACE:: Debug: ROC = 0.032, ROC Percent = 3.2
+2022-04-23T22:18:02.8542242Z TRACE:: Debug: ROC = 0.017, ROC Percent = 1.7
+2022-04-23T22:18:02.8545440Z TRACE:: Debug: ROC = -0.015, ROC Percent = -1.5
+2022-04-23T22:18:02.8548149Z TRACE:: Debug: ROC = -0.007, ROC Percent = -0.7
+2022-04-23T22:18:02.8549953Z TRACE:: Debug: ROC = -0.019, ROC Percent = -1.9
+2022-04-23T22:18:02.8552013Z TRACE:: Debug: ROC = 0.003, ROC Percent = 0.3
+2022-04-23T22:18:02.8554198Z TRACE:: Debug: ROC = -0.026, ROC Percent = -2.6
+2022-04-23T22:18:02.8556441Z TRACE:: Debug: ROC = -0.03, ROC Percent = -3.0
+2022-04-23T22:18:02.8559686Z TRACE:: Debug: ROC = -0.028, ROC Percent = -2.8
+2022-04-23T22:18:02.8561886Z TRACE:: Debug: ROC = 0.025, ROC Percent = 2.5
+2022-04-23T22:18:02.8564708Z TRACE:: Debug: ROC = -0.002, ROC Percent = -0.2
+2022-04-23T22:18:02.8567304Z TRACE:: Debug: ROC = -0.063, ROC Percent = -6.3
+2022-04-23T22:18:02.8570206Z TRACE:: Debug: ROC = 0.054, ROC Percent = 5.4
+2022-04-23T22:18:02.8572824Z TRACE:: Debug: ROC = -0.03, ROC Percent = -3.0
+2022-04-23T22:18:02.8575492Z TRACE:: Debug: ROC = -0.005, ROC Percent = -0.5
+2022-04-23T22:18:02.8577393Z TRACE:: Debug: ROC = 0.033, ROC Percent = 3.3
+2022-04-23T22:18:02.8579399Z TRACE:: Debug: ROC = -0.002, ROC Percent = -0.2
+2022-04-23T22:18:02.8582542Z TRACE:: Debug: ROC = -0.03, ROC Percent = -3.0
+2022-04-23T22:18:02.8584548Z TRACE:: Debug: ROC = 0.058, ROC Percent = 5.8
+2022-04-23T22:18:02.8587145Z TRACE:: Debug: ROC = 0.043, ROC Percent = 4.3
+2022-04-23T22:18:02.8589135Z TRACE:: Debug: ROC = -0.031, ROC Percent = -3.1
+2022-04-23T22:18:02.8591385Z TRACE:: Debug: ROC = 0.028, ROC Percent = 2.8
+2022-04-23T22:18:02.8593136Z TRACE:: Debug: ROC = -0.01, ROC Percent = -1.0
+2022-04-23T22:18:02.8596476Z TRACE:: Debug: ROC = 0.004, ROC Percent = 0.4
+2022-04-23T22:18:02.8599036Z TRACE:: Debug: ROC = -0.008, ROC Percent = -0.8
+2022-04-23T22:18:02.8601789Z TRACE:: Debug: ROC = -0.002, ROC Percent = -0.2
+2022-04-23T22:18:02.8606697Z TRACE:: Debug: ROC = -0.022, ROC Percent = -2.2
+2022-04-23T22:18:02.8611573Z TRACE:: Debug: ROC = 0.002, ROC Percent = 0.2
+2022-04-23T22:18:02.8616091Z TRACE:: Debug: ROC = -0.006, ROC Percent = -0.6
+2022-04-23T22:18:02.8618486Z TRACE:: Debug: ROC = 0.033, ROC Percent = 3.3
+2022-04-23T22:18:02.8624194Z TRACE:: Debug: ROC = 0.014, ROC Percent = 1.4
+2022-04-23T22:18:02.8628472Z TRACE:: Debug: ROC = -0.015, ROC Percent = -1.5
+2022-04-23T22:18:02.8634919Z TRACE:: Debug: ROC = -0.011, ROC Percent = -1.1
+2022-04-23T22:18:02.8640645Z TRACE:: Debug: ROC = 0.028, ROC Percent = 2.8
+2022-04-23T22:18:02.8643433Z TRACE:: Debug: ROC = 0.007, ROC Percent = 0.7
+2022-04-23T22:18:02.8645855Z TRACE:: Debug: ROC = 0.024, ROC Percent = 2.4
+2022-04-23T22:18:02.8648114Z TRACE:: Debug: ROC = -0.016, ROC Percent = -1.6
+2022-04-23T22:18:02.8650878Z TRACE:: Debug: ROC = -0.014, ROC Percent = -1.4
+2022-04-23T22:18:02.8653358Z TRACE:: Debug: ROC = 0.048, ROC Percent = 4.8
+2022-04-23T22:18:02.8656510Z TRACE:: Debug: ROC = -0.009, ROC Percent = -0.9
+2022-04-23T22:18:02.8659115Z TRACE:: Debug: ROC = 0.016, ROC Percent = 1.6
+2022-04-23T22:18:02.8661474Z TRACE:: Debug: ROC = 0.029, ROC Percent = 2.9
+2022-04-23T22:18:02.8663458Z TRACE:: Debug: ROC = 0.002, ROC Percent = 0.2
+2022-04-23T22:18:02.8667468Z TRACE:: Debug: ROC = 0.001, ROC Percent = 0.1
+2022-04-23T22:18:02.8669938Z TRACE:: Debug: ROC = -0.008, ROC Percent = -0.8
+2022-04-23T22:18:02.8672225Z TRACE:: Debug: ROC = 0.024, ROC Percent = 2.4
+2022-04-23T22:18:02.9175591Z TRACE:: Debug: ROC = 0.012, ROC Percent = 1.2
+2022-04-23T22:18:02.9178624Z TRACE:: Debug: ROC = -0.003, ROC Percent = -0.3
+2022-04-23T22:18:02.9180731Z TRACE:: Debug: ROC = 0.004, ROC Percent = 0.4
+2022-04-23T22:18:02.9183971Z TRACE:: Debug: ROC = 0.017, ROC Percent = 1.7
+2022-04-23T22:18:02.9186730Z TRACE:: Debug: ROC = 0.008, ROC Percent = 0.8
+2022-04-23T22:18:02.9189360Z TRACE:: Debug: ROC = -0.013, ROC Percent = -1.3
+2022-04-23T22:18:02.9191827Z TRACE:: Debug: ROC = 0.027, ROC Percent = 2.7
+2022-04-23T22:18:02.9194382Z TRACE:: Debug: ROC = 0.023, ROC Percent = 2.3
+2022-04-23T22:18:02.9197009Z TRACE:: Debug: ROC = -0.0, ROC Percent = -0.0
+2022-04-23T22:18:02.9199643Z TRACE:: Debug: ROC = 0.002, ROC Percent = 0.2
+2022-04-23T22:18:02.9201861Z TRACE:: Debug: ROC = -0.015, ROC Percent = -1.5
+2022-04-23T22:18:02.9204330Z TRACE:: Debug: ROC = -0.021, ROC Percent = -2.1
+2022-04-23T22:18:02.9206683Z TRACE:: Debug: ROC = -0.032, ROC Percent = -3.2
+2022-04-23T22:18:02.9208965Z TRACE:: Debug: ROC = 0.006, ROC Percent = 0.6
+2022-04-23T22:18:02.9211533Z TRACE:: Debug: ROC = 0.025, ROC Percent = 2.5
+2022-04-23T22:18:02.9213717Z TRACE:: Debug: ROC = 0.018, ROC Percent = 1.8
+2022-04-23T22:18:02.9215846Z TRACE:: Debug: ROC = 0.021, ROC Percent = 2.1
+2022-04-23T22:18:02.9218605Z TRACE:: Debug: ROC = 0.008, ROC Percent = 0.8
+2022-04-23T22:18:02.9221820Z TRACE:: Debug: ROC = -0.031, ROC Percent = -3.1
+2022-04-23T22:18:02.9224341Z TRACE:: Debug: ROC = 0.002, ROC Percent = 0.2
+2022-04-23T22:18:02.9227355Z TRACE:: Debug: ROC = 0.01, ROC Percent = 1.0
+2022-04-23T22:18:02.9229572Z TRACE:: Debug: ROC = 0.018, ROC Percent = 1.8
+2022-04-23T22:18:02.9232265Z TRACE:: Debug: ROC = -0.014, ROC Percent = -1.4
+2022-04-23T22:18:02.9234492Z TRACE:: Debug: ROC = 0.012, ROC Percent = 1.2
+2022-04-23T22:18:02.9236892Z TRACE:: Debug: ROC = 0.004, ROC Percent = 0.4
+2022-04-23T22:18:02.9238796Z TRACE:: Debug: ROC = 0.012, ROC Percent = 1.2
+2022-04-23T22:18:02.9241439Z TRACE:: Debug: ROC = -0.003, ROC Percent = -0.3
+2022-04-23T22:18:02.9243862Z TRACE:: Debug: ROC = 0.002, ROC Percent = 0.2
+2022-04-23T22:18:02.9245915Z TRACE:: Debug: ROC = -0.019, ROC Percent = -1.9
+2022-04-23T22:18:02.9248892Z TRACE:: Debug: ROC = -0.016, ROC Percent = -1.6
+2022-04-23T22:18:02.9252609Z TRACE:: Debug: ROC = 0.015, ROC Percent = 1.5
+2022-04-23T22:18:02.9254679Z TRACE:: Debug: ROC = 0.007, ROC Percent = 0.7
+2022-04-23T22:18:02.9257113Z TRACE:: Debug: ROC = 0.011, ROC Percent = 1.1
+2022-04-23T22:18:02.9259941Z TRACE:: Debug: ROC = -0.003, ROC Percent = -0.3
+2022-04-23T22:18:02.9262359Z TRACE:: Debug: ROC = -0.024, ROC Percent = -2.4
+2022-04-23T22:18:02.9264989Z TRACE:: Debug: ROC = 0.031, ROC Percent = 3.1
+2022-04-23T22:18:02.9267840Z TRACE:: Debug: ROC = 0.021, ROC Percent = 2.1
+2022-04-23T22:18:02.9272124Z TRACE:: Debug: ROC = 0.035, ROC Percent = 3.5
+2022-04-23T22:18:02.9279824Z TRACE:: Debug: ROC = 0.004, ROC Percent = 0.4
+2022-04-23T22:18:02.9290629Z TRACE:: Debug: ROC = -0.001, ROC Percent = -0.1
+2022-04-23T22:18:02.9304341Z TRACE:: Debug: ROC = -0.012, ROC Percent = -1.2
+2022-04-23T22:18:02.9319883Z TRACE:: Debug: ROC = 0.024, ROC Percent = 2.4
+2022-04-23T22:18:02.9329780Z TRACE:: Debug: ROC = 0.027, ROC Percent = 2.7
+2022-04-23T22:18:02.9340192Z TRACE:: Debug: ROC = -0.005, ROC Percent = -0.5
+2022-04-23T22:18:02.9342812Z TRACE:: Debug: ROC = -0.003, ROC Percent = -0.3
+2022-04-23T22:18:02.9348324Z TRACE:: Debug: ROC = -0.012, ROC Percent = -1.2
+2022-04-23T22:18:02.9351053Z TRACE:: Debug: ROC = 0.018, ROC Percent = 1.8
+2022-04-23T22:18:02.9354412Z TRACE:: Debug: ROC = 0.003, ROC Percent = 0.3
+2022-04-23T22:18:02.9357151Z TRACE:: Debug: ROC = -0.009, ROC Percent = -0.9
+2022-04-23T22:18:02.9359651Z TRACE:: Debug: ROC = -0.012, ROC Percent = -1.2
+2022-04-23T22:18:02.9363895Z TRACE:: Debug: ROC = -0.036, ROC Percent = -3.6
+2022-04-23T22:18:02.9365901Z TRACE:: Debug: ROC = -0.021, ROC Percent = -2.1
+2022-04-23T22:18:02.9368064Z TRACE:: Debug: ROC = -0.02, ROC Percent = -2.0
+2022-04-23T22:18:02.9371079Z TRACE:: Debug: ROC = 0.018, ROC Percent = 1.8
+2022-04-23T22:18:02.9374048Z TRACE:: Debug: ROC = 0.013, ROC Percent = 1.3
+2022-04-23T22:18:02.9376605Z TRACE:: Debug: ROC = -0.032, ROC Percent = -3.2
+2022-04-23T22:18:02.9379100Z TRACE:: Debug: ROC = -0.014, ROC Percent = -1.4
+2022-04-23T22:18:02.9383044Z TRACE:: Debug: ROC = -0.013, ROC Percent = -1.3
+2022-04-23T22:18:02.9385772Z TRACE:: Debug: ROC = 0.02, ROC Percent = 2.0
+2022-04-23T22:18:02.9389267Z TRACE:: Debug: ROC = 0.018, ROC Percent = 1.8
+2022-04-23T22:18:02.9392055Z TRACE:: Debug: ROC = 0.022, ROC Percent = 2.2
+2022-04-23T22:18:02.9394660Z TRACE:: Debug: ROC = 0.001, ROC Percent = 0.1
+2022-04-23T22:18:02.9399906Z TRACE:: Debug: ROC = -0.047, ROC Percent = -4.7
+2022-04-23T22:18:02.9408092Z TRACE:: Debug: ROC = -0.015, ROC Percent = -1.5
+2022-04-23T22:18:02.9410394Z TRACE:: Debug: ROC = -0.025, ROC Percent = -2.5
+2022-04-23T22:18:02.9414135Z TRACE:: Debug: ROC = 0.013, ROC Percent = 1.3
+2022-04-23T22:18:02.9416854Z TRACE:: Debug: ROC = -0.048, ROC Percent = -4.8
+2022-04-23T22:18:02.9420856Z TRACE:: Debug: ROC = 0.03, ROC Percent = 3.0
+2022-04-23T22:18:02.9423396Z TRACE:: Debug: ROC = 0.048, ROC Percent = 4.8
+2022-04-23T22:18:02.9426589Z TRACE:: Debug: ROC = 0.001, ROC Percent = 0.1
+2022-04-23T22:18:02.9430098Z TRACE:: Debug: ROC = -0.024, ROC Percent = -2.4
+2022-04-23T22:18:02.9432248Z TRACE:: Debug: ROC = -0.01, ROC Percent = -1.0
+2022-04-23T22:18:02.9435885Z TRACE:: Debug: ROC = -0.022, ROC Percent = -2.2
+2022-04-23T22:18:02.9441654Z TRACE:: Debug: ROC = 0.004, ROC Percent = 0.4
+2022-04-23T22:18:02.9445261Z TRACE:: Debug: ROC = 0.024, ROC Percent = 2.4
+2022-04-23T22:18:02.9454065Z TRACE:: Debug: ROC = 0.008, ROC Percent = 0.8
+2022-04-23T22:18:02.9462404Z TRACE:: Debug: ROC = 0.041, ROC Percent = 4.1
+2022-04-23T22:18:02.9464949Z TRACE:: Debug: ROC = 0.013, ROC Percent = 1.3
+2022-04-23T22:18:02.9471359Z TRACE:: Debug: ROC = -0.008, ROC Percent = -0.8
+2022-04-23T22:18:02.9474019Z TRACE:: Debug: ROC = 0.025, ROC Percent = 2.5
+2022-04-23T22:18:02.9478700Z TRACE:: Debug: ROC = -0.015, ROC Percent = -1.5
+2022-04-23T22:18:02.9481026Z TRACE:: Debug: ROC = 0.018, ROC Percent = 1.8
+2022-04-23T22:18:02.9483316Z TRACE:: Debug: ROC = -0.01, ROC Percent = -1.0
+2022-04-23T22:18:02.9486800Z TRACE:: Debug: ROC = 0.003, ROC Percent = 0.3
+2022-04-23T22:18:02.9489971Z TRACE:: Debug: ROC = 0.017, ROC Percent = 1.7
+2022-04-23T22:18:02.9492745Z TRACE:: Debug: ROC = 0.04, ROC Percent = 4.0
+2022-04-23T22:18:02.9997716Z TRACE:: Debug: ROC = 0.006, ROC Percent = 0.6
+2022-04-23T22:18:03.0000660Z TRACE:: Debug: ROC = 0.018, ROC Percent = 1.8
+2022-04-23T22:18:03.0003578Z TRACE:: Debug: ROC = 0.028, ROC Percent = 2.8
+2022-04-23T22:18:03.0006161Z TRACE:: Debug: ROC = 0.027, ROC Percent = 2.7
+2022-04-23T22:18:03.0010026Z TRACE:: Debug: ROC = -0.011, ROC Percent = -1.1
+2022-04-23T22:18:03.0013054Z TRACE:: Debug: ROC = -0.004, ROC Percent = -0.4
+2022-04-23T22:18:03.0016505Z TRACE:: Debug: ROC = -0.029, ROC Percent = -2.9
+2022-04-23T22:18:03.0019483Z TRACE:: Debug: ROC = -0.022, ROC Percent = -2.2
+2022-04-23T22:18:03.0023348Z TRACE:: Debug: ROC = -0.015, ROC Percent = -1.5
+2022-04-23T22:18:03.0030400Z TRACE:: Debug: ROC = 0.022, ROC Percent = 2.2
+2022-04-23T22:18:03.0035810Z TRACE:: Debug: ROC = -0.009, ROC Percent = -0.9
+2022-04-23T22:18:03.0038366Z TRACE:: Debug: ROC = 0.028, ROC Percent = 2.8
+2022-04-23T22:18:03.0042503Z TRACE:: Debug: ROC = -0.001, ROC Percent = -0.1
+2022-04-23T22:18:03.0045765Z TRACE:: Debug: ROC = 0.015, ROC Percent = 1.5
+2022-04-23T22:18:03.0048385Z TRACE:: Debug: ROC = 0.004, ROC Percent = 0.4
+2022-04-23T22:18:03.0052535Z TRACE:: Debug: ROC = -0.046, ROC Percent = -4.6
+2022-04-23T22:18:03.0055048Z TRACE:: Debug: ROC = -0.005, ROC Percent = -0.5
+2022-04-23T22:18:03.0254201Z TRACE:: Synchronizer.GetEnumerator(): Exited thread.
+2022-04-23T22:18:03.0258994Z TRACE:: AlgorithmManager.Run(): Firing On End Of Algorithm...
+2022-04-23T22:18:03.0289647Z TRACE:: Engine.Run(): Exiting Algorithm Manager
+2022-04-23T22:18:03.0320361Z TRACE:: FileSystemDataFeed.Exit(): Start. Setting cancellation token...
+2022-04-23T22:18:03.0333893Z TRACE:: FileSystemDataFeed.Exit(): Exit Finished.
+2022-04-23T22:18:03.0339007Z TRACE:: DefaultAlphaHandler.Exit(): Exiting...
+2022-04-23T22:18:03.0379524Z TRACE:: DefaultAlphaHandler.Exit(): Ended
+2022-04-23T22:18:03.0384859Z TRACE:: BacktestingResultHandler.Exit(): starting...
+2022-04-23T22:18:03.0388243Z TRACE:: BacktestingResultHandler.Exit(): Saving logs...
+2022-04-23T22:18:03.0558955Z TRACE:: Debug: ROC = 0.03, ROC Percent = 3.0
+2022-04-23T22:18:03.0783006Z TRACE:: StopSafely(): waiting for 'Result Thread' thread to stop...
+2022-04-23T22:18:03.0784688Z TRACE:: Debug: ROC = -0.036, ROC Percent = -3.6
+2022-04-23T22:18:03.0789249Z TRACE:: Debug: ROC = 0.028, ROC Percent = 2.8
+2022-04-23T22:18:03.0795287Z TRACE:: Debug: ROC = -0.036, ROC Percent = -3.6
+2022-04-23T22:18:03.0800488Z TRACE:: Debug: ROC = -0.081, ROC Percent = -8.1
+2022-04-23T22:18:03.0805250Z TRACE:: Debug: ROC = 0.03, ROC Percent = 3.0
+2022-04-23T22:18:03.0812454Z TRACE:: Debug: ROC = -0.062, ROC Percent = -6.2
+2022-04-23T22:18:03.0814721Z TRACE:: Debug: ROC = 0.02, ROC Percent = 2.0
+2022-04-23T22:18:03.0818200Z TRACE:: Debug: ROC = 0.035, ROC Percent = 3.5
+2022-04-23T22:18:03.0821407Z TRACE:: Debug: ROC = 0.011, ROC Percent = 1.1
+2022-04-23T22:18:03.0823471Z TRACE:: Debug: ROC = -0.034, ROC Percent = -3.4
+2022-04-23T22:18:03.0825854Z TRACE:: Debug: ROC = 0.01, ROC Percent = 1.0
+2022-04-23T22:18:03.0828319Z TRACE:: Debug: ROC = -0.043, ROC Percent = -4.3
+2022-04-23T22:18:03.0831268Z TRACE:: Debug: ROC = 0.009, ROC Percent = 0.9
+2022-04-23T22:18:03.0833637Z TRACE:: Debug: ROC = 0.07, ROC Percent = 7.0
+2022-04-23T22:18:03.0836563Z TRACE:: Debug: ROC = -0.083, ROC Percent = -8.3
+2022-04-23T22:18:03.0838670Z TRACE:: Debug: ROC = 0.013, ROC Percent = 1.3
+2022-04-23T22:18:03.0841266Z TRACE:: Debug: ROC = 0.009, ROC Percent = 0.9
+2022-04-23T22:18:03.0843347Z TRACE:: Debug: ROC = 0.039, ROC Percent = 3.9
+2022-04-23T22:18:03.0845374Z TRACE:: Debug: ROC = 0.02, ROC Percent = 2.0
+2022-04-23T22:18:03.0847645Z TRACE:: Debug: ROC = 0.038, ROC Percent = 3.8
+2022-04-23T22:18:03.0851267Z TRACE:: Debug: ROC = -0.02, ROC Percent = -2.0
+2022-04-23T22:18:03.0853451Z TRACE:: Debug: ROC = -0.001, ROC Percent = -0.1
+2022-04-23T22:18:03.0855352Z TRACE:: Debug: ROC = -0.008, ROC Percent = -0.8
+2022-04-23T22:18:03.0859642Z TRACE:: Debug: ROC = -0.014, ROC Percent = -1.4
+2022-04-23T22:18:03.0861824Z TRACE:: Debug: Algorithm Id:(1625261003) completed in 0.70 seconds at 1k data points per second. Processing total of 694 data points.
+2022-04-23T22:18:03.0863882Z TRACE:: Debug: Your log was successfully created and can be retrieved from: /Results/1625261003-log.txt
+2022-04-23T22:18:03.0868788Z TRACE:: BacktestingResultHandler.Run(): Ending Thread...
+2022-04-23T22:18:03.2329668Z TRACE:: 
+STATISTICS:: Total Trades 0
+STATISTICS:: Average Win 0%
+STATISTICS:: Average Loss 0%
+STATISTICS:: Compounding Annual Return 0%
+STATISTICS:: Drawdown 0%
+STATISTICS:: Expectancy 0
+STATISTICS:: Net Profit 0%
+STATISTICS:: Sharpe Ratio 0
+STATISTICS:: Probabilistic Sharpe Ratio 0%
+STATISTICS:: Loss Rate 0%
+STATISTICS:: Win Rate 0%
+STATISTICS:: Profit-Loss Ratio 0
+STATISTICS:: Alpha 0
+STATISTICS:: Beta 0
+STATISTICS:: Annual Standard Deviation 0
+STATISTICS:: Annual Variance 0
+STATISTICS:: Information Ratio -0.714
+STATISTICS:: Tracking Error 0.064
+STATISTICS:: Treynor Ratio 0
+STATISTICS:: Total Fees $0.00
+STATISTICS:: Estimated Strategy Capacity $0
+STATISTICS:: Lowest Capacity Asset 
+STATISTICS:: Fitness Score 0
+STATISTICS:: Kelly Criterion Estimate 0
+STATISTICS:: Kelly Criterion Probability Value 0
+STATISTICS:: Sortino Ratio 79228162514264337593543950335
+STATISTICS:: Return Over Maximum Drawdown 79228162514264337593543950335
+STATISTICS:: Portfolio Turnover 0
+STATISTICS:: Total Insights Generated 0
+STATISTICS:: Total Insights Closed 0
+STATISTICS:: Total Insights Analysis Completed 0
+STATISTICS:: Long Insight Count 0
+STATISTICS:: Short Insight Count 0
+STATISTICS:: Long/Short Ratio 100%
+STATISTICS:: Estimated Monthly Alpha Value $0
+STATISTICS:: Total Accumulated Estimated Alpha Value $0
+STATISTICS:: Mean Population Estimated Insight Value $0
+STATISTICS:: Mean Population Direction 0%
+STATISTICS:: Mean Population Magnitude 0%
+STATISTICS:: Rolling Averaged Population Direction 0%
+STATISTICS:: Rolling Averaged Population Magnitude 0%
+STATISTICS:: OrderListHash d41d8cd98f00b204e9800998ecf8427e
+2022-04-23T22:18:03.2341588Z TRACE:: BacktestingResultHandler.SendAnalysisResult(): Processed final packet
+2022-04-23T22:18:03.2349177Z TRACE:: Engine.Run(): Disconnecting from brokerage...
+2022-04-23T22:18:03.2354621Z TRACE:: Engine.Run(): Disposing of setup handler...
+2022-04-23T22:18:03.2369242Z TRACE:: Engine.Main(): Analysis Completed and Results Posted.
+2022-04-23T22:18:03.2380765Z TRACE:: Engine.Main(): Packet removed from queue: 1625261003
+2022-04-23T22:18:03.2386442Z TRACE:: LeanEngineSystemHandlers.Dispose(): start...
+2022-04-23T22:18:03.2393111Z TRACE:: LeanEngineSystemHandlers.Dispose(): Disposed of system handlers.
+2022-04-23T22:18:03.2398967Z TRACE:: LeanEngineAlgorithmHandlers.Dispose(): start...
+2022-04-23T22:18:03.2462061Z TRACE:: LeanEngineAlgorithmHandlers.Dispose(): Disposed of algorithm handlers.

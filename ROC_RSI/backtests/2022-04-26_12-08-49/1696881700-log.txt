@@ -1,0 +1,6 @@
+2021-01-01 00:00:00 Launching analysis for 1696881700 with LEAN Engine v2.5.0.0
+2020-12-30 00:00:00 Runtime Error: AttributeError : attribute is read-only
+  at OnData
+    self.ROC = round((self.roc_since_open * 100) in main.py: line 37
+
+2020-12-30 00:00:00 Algorithm Id:(1696881700) completed in 0.25 seconds at 0k data points per second. Processing total of 3 data points.
