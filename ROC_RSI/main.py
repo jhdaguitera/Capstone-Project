@@ -45,13 +45,18 @@ class ROC_RSI(QCAlgorithm):
         self.roc_since_open = ((self.close_price - self.open_price) / self.open_price) * 100        
         self.roc_rounded = round(self.roc_since_open, 1)
                
+        #Momentum calculated
+        self.mom = (self.close_price - self.open_price) * 100        
+        self.mom_rounded = round(self.mom, 1)
         #if ROC less than 0, then print Down Trend
         if self.roc_since_open < 0:
-           self.Debug(f"ROC: {self.roc_rounded }%  :  DOWN-TREND")   
+    
+           self.Debug(f"Momentum: {self.mom_rounded }, ROC: {self.roc_rounded }%  :  DOWN-TREND")   
         
         #if ROC is greater than 0, then print Up Trend
         if self.roc_since_open > 0:
-           self.Debug(f"ROC: {self.roc_rounded }%  :  UP-TREND")     
+        #   self.Debug(f"Momentum: {self.mom_rounded }") 
+           self.Debug(f"Momentum: {self.mom_rounded }, ROC: {self.roc_rounded }%  :  UP-TREND")     
         self.Debug("---------------------------------------------------------------------------------------------")
     
        
